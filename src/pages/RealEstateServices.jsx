@@ -8,7 +8,8 @@ import {
     Home,
     Search,
     FileText,
-    BadgeCheck
+    BadgeCheck,
+    Phone
 } from 'lucide-react';
 import RealEstateHeroImage from '../assets/realestate-hero.png';
 import RealEstateInteriorImage from '../assets/realestate-interior.png';
