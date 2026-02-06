@@ -28,7 +28,7 @@ const Navbar = () => {
         { name: 'Contact', path: '/contact' },
     ];
 
-    const darkHeroPaths = ['/services/lng-components'];
+    const darkHeroPaths = ['/services/lng-components', '/services/building-materials'];
     const isDarkHero = darkHeroPaths.includes(location.pathname);
 
     const getLinkClass = (path) => {

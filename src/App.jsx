@@ -6,6 +6,7 @@ import About from './pages/About';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
 import LngComponents from './pages/LngComponents';
+import BuildingMaterials from './pages/BuildingMaterials'; // Added import for BuildingMaterials
 import ScrollToTop from './components/layout/ScrollToTop';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Route path="services" element={<Services />} />
             <Route path="contact" element={<Contact />} />
             <Route path="services/lng-components" element={<LngComponents />} />
+            <Route path="services/building-materials" element={<BuildingMaterials />} /> {/* Added route for BuildingMaterials */}
           </Route>
         </Routes>
       </Router>

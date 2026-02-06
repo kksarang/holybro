@@ -18,7 +18,8 @@ export const services = [
         icon: BrickWall,
         features: ['Cement & Steel', 'Finishing Materials', 'Aggregates', 'Commercial & Residential'],
         color: 'bg-amber-50 text-amber-600',
-        borderColor: 'hover:border-amber-200'
+        borderColor: 'hover:border-amber-200',
+        link: '/services/building-materials'
     },
     {
         title: 'Limousine Services',
