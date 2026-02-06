@@ -31,20 +31,22 @@ const ServicesOverview = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1, duration: 0.5 }}
-                            className={`bg-white rounded-3xl p-8 shadow-card hover:shadow-xl transition-all duration-300 border-2 border-transparent ${service.borderColor} group cursor-pointer h-full flex flex-col`}
+                            className={`bg-white rounded-3xl shadow-card hover:shadow-xl transition-all duration-300 border-2 border-transparent ${service.borderColor} group cursor-pointer h-full flex flex-col overflow-hidden`}
                         >
-                            <div className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-6 ${service.color} transition-transform group-hover:scale-110 group-hover:rotate-3`}>
-                                <service.icon className="h-7 w-7" />
-                            </div>
-                            <h3 className="text-xl font-bold text-slate-800 mb-3 group-hover:text-primary transition-colors">{service.title}</h3>
-                            <p className="text-slate-600 text-sm leading-relaxed mb-6 flex-grow">
-                                {service.shortDescription || service.description}
-                            </p>
-                            <div className="mt-auto">
-                                <Link to={service.link || "/services"} className="text-primary font-semibold text-sm hover:text-primary-dark transition-colors flex items-center group-hover:translate-x-1 duration-300">
-                                    Learn more <ArrowRight className="ml-1 h-4 w-4" />
-                                </Link>
-                            </div>
+                            <Link to={service.link || "/services"} className="flex flex-col h-full p-8 block text-left">
+                                <div className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-6 ${service.color} transition-transform group-hover:scale-110 group-hover:rotate-3`}>
+                                    <service.icon className="h-7 w-7" />
+                                </div>
+                                <h3 className="text-xl font-bold text-slate-800 mb-3 group-hover:text-primary transition-colors">{service.title}</h3>
+                                <p className="text-slate-600 text-sm leading-relaxed mb-6 flex-grow">
+                                    {service.shortDescription || service.description}
+                                </p>
+                                <div className="mt-auto">
+                                    <span className="text-primary font-semibold text-sm hover:text-primary-dark transition-colors flex items-center group-hover:translate-x-1 duration-300">
+                                        Learn more <ArrowRight className="ml-1 h-4 w-4" />
+                                    </span>
+                                </div>
+                            </Link>
                         </motion.div>
                     ))}
                 </div>

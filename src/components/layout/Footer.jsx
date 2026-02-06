@@ -54,11 +54,18 @@ const Footer = () => {
                         <ul className="space-y-4 text-sm">
                             <li className="flex items-start">
                                 <MapPin className="h-5 w-5 mr-3 text-primary shrink-0" />
-                                <span>Zone 24, Street 840, Building 22, Doha, Qatar</span>
+                                <span>
+                                    Madhina Khalifa South, AL Rabeeha building 3,<br />
+                                    2nd Floor -Room No.S4,<br />
+                                    Al jazeera Al Arabia District -34,<br />
+                                    Street No. 362 - Building no 128,<br />
+                                    PO. Box .92807<br />
+                                    State of Qatar
+                                </span>
                             </li>
                             <li className="flex items-center">
                                 <Phone className="h-5 w-5 mr-3 text-primary shrink-0" />
-                                <span>+974 1234 5678</span>
+                                <span>+974 55949262</span>
                             </li>
                             <li className="flex items-center">
                                 <Mail className="h-5 w-5 mr-3 text-primary shrink-0" />

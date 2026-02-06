@@ -64,7 +64,14 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <h3 className="text-lg font-semibold text-slate-800">Visit Us</h3>
-                                        <p className="text-slate-600">Zone 24, Street 840, Building 22<br />Doha, Qatar</p>
+                                        <p className="text-slate-600">
+                                            Madhina Khalifa South, AL Rabeeha building 3,<br />
+                                            2nd Floor -Room No.S4,<br />
+                                            Al jazeera Al Arabia District -34,<br />
+                                            Street No. 362 - Building no 128,<br />
+                                            PO. Box .92807<br />
+                                            State of Qatar
+                                        </p>
                                     </div>
                                 </div>
 
@@ -74,7 +81,7 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <h3 className="text-lg font-semibold text-slate-800">Call Us</h3>
-                                        <p className="text-slate-600">+974 1234 5678</p>
+                                        <p className="text-slate-600">+974 55949262</p>
                                         <p className="text-slate-500 text-sm">Mon-Sat, 8am - 6pm</p>
                                     </div>
                                 </div>
