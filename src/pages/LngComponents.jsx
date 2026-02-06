@@ -13,6 +13,10 @@ import {
     Database
 } from 'lucide-react';
 import LngHeroImage from '../assets/lng-plant.png';
+import LngShipImage from '../assets/lng-ship.png';
+import LngRigImage from '../assets/lng-rig.png';
+import LngPipesImage from '../assets/lng-pipes.png';
+import Gallery from '../components/ui/Gallery';
 
 const LngComponents = () => {
     return (
@@ -175,6 +179,16 @@ const LngComponents = () => {
                     </div>
                 </div>
             </section>
+
+            {/* Gallery Section */}
+            <Gallery
+                title="Project Gallery"
+                images={[
+                    { id: '1', src: LngShipImage, alt: 'LNG Tanker Ship', caption: 'Global LNG Export Logistics' },
+                    { id: '2', src: LngRigImage, alt: 'Offshore LNG Rig', caption: 'Offshore Exploration & Extraction' },
+                    { id: '3', src: LngPipesImage, alt: 'Cryogenic Piping', caption: 'Precision Cryogenic Engineering' },
+                ]}
+            />
 
             {/* Compliance & Support Layout */}
             <section className="py-16 bg-white overflow-hidden">
