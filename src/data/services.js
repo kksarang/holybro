@@ -28,7 +28,8 @@ export const services = [
         icon: Car,
         features: ['VIP Transfers', 'Corporate Travel', 'Luxury Fleet', 'Chauffeur Service'],
         color: 'bg-purple-50 text-purple-600',
-        borderColor: 'hover:border-purple-200'
+        borderColor: 'hover:border-purple-200',
+        link: '/services/limousine'
     },
     {
         title: 'Professional Manpower',
@@ -37,7 +38,8 @@ export const services = [
         icon: HardHat,
         features: ['Skilled Labor', 'Oil & Gas Specialists', 'Logistics Staff', 'Facilities Management'],
         color: 'bg-indigo-50 text-indigo-600',
-        borderColor: 'hover:border-indigo-200'
+        borderColor: 'hover:border-indigo-200',
+        link: '/services/manpower'
     },
     {
         title: 'Real Estate Services',
@@ -46,7 +48,8 @@ export const services = [
         icon: Building2,
         features: ['Property Development', 'Sales & Leasing', 'Investment Consulting', 'Asset Management'],
         color: 'bg-emerald-50 text-emerald-600',
-        borderColor: 'hover:border-emerald-200'
+        borderColor: 'hover:border-emerald-200',
+        link: '/services/real-estate'
     },
     {
         title: 'Commercial Transportation',
@@ -55,6 +58,7 @@ export const services = [
         icon: Truck,
         features: ['Fleet Services', 'Cargo Movement', 'Industrial Logistics', 'Material Transport'],
         color: 'bg-slate-50 text-slate-600',
-        borderColor: 'hover:border-slate-200'
+        borderColor: 'hover:border-slate-200',
+        link: '/services/transportation'
     }
 ];
