@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import Hero from '../components/home/Hero';
 import ServicesOverview from '../components/home/ServicesOverview';
+import Testimonials from '../components/home/Testimonials';
 import HomeCTA from '../components/home/HomeCTA';
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
 
             <Hero />
             <ServicesOverview />
+            <Testimonials />
             <HomeCTA />
         </>
     );
