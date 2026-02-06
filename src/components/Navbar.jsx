@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import Button from './ui/Button';
+import logo from '../assets/logo.svg';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -27,6 +28,25 @@ const Navbar = () => {
         { name: 'Contact', path: '/contact' },
     ];
 
+    const darkHeroPaths = ['/services/lng-components'];
+    const isDarkHero = darkHeroPaths.includes(location.pathname);
+
+    const getLinkClass = (path) => {
+        const isActive = location.pathname === path;
+        const base = "text-sm font-medium transition-colors";
+
+        if (isScrolled) {
+            return `${base} hover:text-primary ${isActive ? 'text-primary font-semibold' : 'text-slate-600'}`;
+        }
+
+        // Not scrolled (transparent bg)
+        if (isDarkHero) {
+            return `${base} hover:text-cyan-300 ${isActive ? 'text-white font-bold' : 'text-white/90'}`;
+        }
+
+        return `${base} hover:text-primary ${isActive ? 'text-primary font-semibold' : 'text-slate-600'}`;
+    };
+
     return (
         <nav
             className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'glass shadow-soft' : 'bg-transparent'
@@ -36,7 +56,12 @@ const Navbar = () => {
                 <div className="flex justify-between items-center h-24">
                     {/* Logo */}
                     <Link to="/" className="flex items-center space-x-2 group">
-                        <img src="/logo.svg" alt="Holybro Group" className="h-12 w-auto object-contain" />
+                        <img
+                            src={logo}
+                            alt="Holybro Group"
+                            className="h-12 w-auto object-contain transition-all duration-300"
+                            style={{ filter: !isScrolled && isDarkHero ? 'brightness(0) invert(1)' : 'none' }}
+                        />
                     </Link>
 
                     {/* Desktop Menu */}
@@ -45,14 +70,13 @@ const Navbar = () => {
                             <Link
                                 key={link.name}
                                 to={link.path}
-                                className={`text-sm font-medium transition-colors hover:text-primary ${location.pathname === link.path ? 'text-primary font-semibold' : 'text-slate-600'
-                                    }`}
+                                className={getLinkClass(link.path)}
                             >
                                 {link.name}
                             </Link>
                         ))}
                         <Link to="/contact">
-                            <Button variant="primary" className="px-8 py-2.5 text-sm">
+                            <Button variant="primary" className="px-8 py-2.5 text-sm shadow-lg shadow-primary/20">
                                 Get Quote
                             </Button>
                         </Link>
@@ -62,7 +86,7 @@ const Navbar = () => {
                     <div className="md:hidden">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
-                            className="text-slate-600 hover:text-primary transition-colors"
+                            className={`${!isScrolled && isDarkHero ? 'text-white hover:text-cyan-300' : 'text-slate-600 hover:text-primary'} transition-colors`}
                         >
                             {isOpen ? <X size={28} /> : <Menu size={28} />}
                         </button>
@@ -72,7 +96,7 @@ const Navbar = () => {
 
             {/* Mobile Menu */}
             {isOpen && (
-                <div className="md:hidden bg-white/95 backdrop-blur-xl border-t border-slate-100 absolute w-full shadow-xl">
+                <div className="md:hidden bg-white/95 backdrop-blur-xl border-t border-slate-100 absolute w-full shadow-xl text-slate-900">
                     <div className="px-6 pt-4 pb-8 space-y-3">
                         {navLinks.map((link) => (
                             <Link

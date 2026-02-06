@@ -1,38 +1,8 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Building2, TrendingUp, Truck, Wrench, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import Button from '../ui/Button';
-
-const services = [
-    {
-        icon: Building2,
-        title: 'Real Estate',
-        description: 'Premier property management and real estate solutions tailored to your investment needs.',
-        color: 'bg-blue-50 text-blue-600',
-        borderColor: 'hover:border-blue-200'
-    },
-    {
-        icon: TrendingUp,
-        title: 'Trading & Contracting',
-        description: 'High-quality construction materials and generic contracting services for large-scale projects.',
-        color: 'bg-purple-50 text-primary',
-        borderColor: 'hover:border-primary/20'
-    },
-    {
-        icon: Truck,
-        title: 'Limousine Services',
-        description: 'Luxury transportation services ensuring comfort, style, and punctuality for every ride.',
-        color: 'bg-orange-50 text-orange-600',
-        borderColor: 'hover:border-orange-200'
-    },
-    {
-        icon: Wrench,
-        title: 'Maintenance',
-        description: 'Comprehensive facility management and maintenance services for residential and commercial.',
-        color: 'bg-teal-50 text-teal-600',
-        borderColor: 'hover:border-teal-200'
-    },
-];
+import { services } from '../../data/services';
 
 const ServicesOverview = () => {
     return (
@@ -53,7 +23,7 @@ const ServicesOverview = () => {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8">
                     {services.map((service, index) => (
                         <motion.div
                             key={service.title}
@@ -68,10 +38,10 @@ const ServicesOverview = () => {
                             </div>
                             <h3 className="text-xl font-bold text-slate-800 mb-3 group-hover:text-primary transition-colors">{service.title}</h3>
                             <p className="text-slate-600 text-sm leading-relaxed mb-6 flex-grow">
-                                {service.description}
+                                {service.shortDescription || service.description}
                             </p>
                             <div className="mt-auto">
-                                <Link to="/services" className="text-primary font-semibold text-sm hover:text-primary-dark transition-colors flex items-center group-hover:translate-x-1 duration-300">
+                                <Link to={service.link || "/services"} className="text-primary font-semibold text-sm hover:text-primary-dark transition-colors flex items-center group-hover:translate-x-1 duration-300">
                                     Learn more <ArrowRight className="ml-1 h-4 w-4" />
                                 </Link>
                             </div>

@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
+import LngComponents from './pages/LngComponents';
 import ScrollToTop from './components/layout/ScrollToTop';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             <Route path="about" element={<About />} />
             <Route path="services" element={<Services />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="services/lng-components" element={<LngComponents />} />
           </Route>
         </Routes>
       </Router>

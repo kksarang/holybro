@@ -1,46 +1,9 @@
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Building2, TrendingUp, Truck, Wrench, Leaf, Car, Anchor } from 'lucide-react';
 import HomeCTA from '../components/home/HomeCTA';
 
-const services = [
-    {
-        icon: Building2,
-        title: 'Real Estate',
-        description: 'We offer comprehensive real estate solutions including property management, leasing, and sales. Our portfolio includes premium commercial and residential properties across Qatar.',
-        features: ['Property Management', 'Commercial Leasing', 'Asset Valuation', 'Tenant Services']
-    },
-    {
-        icon: TrendingUp,
-        title: 'Trading',
-        description: 'A leading supplier of high-quality construction materials, industrial tools, and safety equipment. We ensure timely delivery and competitive pricing for all your project needs.',
-        features: ['Construction Materials', 'Safety Equipment', 'Industrial Tools', 'Global Sourcing']
-    },
-    {
-        icon: Wrench,
-        title: 'Contracting & Maintenance',
-        description: 'Full-spectrum contracting services for civil, electrical, and mechanical works. Our maintenance division ensures your facilities operate at peak efficiency.',
-        features: ['Civil Contracting', 'MEP Services', 'Facility Management', 'Preventive Maintenance']
-    },
-    {
-        icon: Anchor, // Using Anchor as proxy for Transport/Logistics generic or Truck
-        title: 'Transportation',
-        description: 'Reliable logistics and heavy transportation services. We maintain a fleet of modern vehicles to support construction and industrial logistics tailored to your schedule.',
-        features: ['Heavy Equipment Transport', 'Logistics Planning', 'Material Handling', 'Fleet Management']
-    },
-    {
-        icon: Leaf,
-        title: 'Coco Peat',
-        description: 'As a sustainable initiative, we supply high-grade Coco Peat products for agricultural and horticultural use, promoting eco-friendly farming practices.',
-        features: ['Organic Growing Medium', 'Water Retention', 'Eco-friendly', 'Bulk Supply']
-    },
-    {
-        icon: Car,
-        title: 'Limousine Services',
-        description: 'Experience luxury and comfort with our premium limousine fleet. Perfect for corporate travel, events, and VIP airport transfers with professional chauffeurs.',
-        features: ['VIP Transfers', 'Corporate Travel', 'Luxury Fleet', '24/7 Availability']
-    }
-];
+import { services } from '../data/services';
 
 const Services = () => {
     return (
@@ -72,26 +35,52 @@ const Services = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: index * 0.1 }}
-                                className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col"
+                                className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full group"
                             >
-                                <div className="p-8 flex-1">
-                                    <div className="w-14 h-14 bg-emerald-50 rounded-lg flex items-center justify-center mb-6 text-primary">
-                                        <service.icon className="h-8 w-8" />
-                                    </div>
-                                    <h3 className="text-2xl font-bold text-slate-800 mb-4">{service.title}</h3>
-                                    <p className="text-slate-600 mb-6 leading-relaxed">
-                                        {service.description}
-                                    </p>
-
-                                    <div className="space-y-2">
-                                        {service.features.map((feature) => (
-                                            <div key={feature} className="flex items-center text-sm text-slate-500">
-                                                <div className="w-1.5 h-1.5 bg-accent rounded-full mr-2" />
-                                                {feature}
+                                {service.link ? (
+                                    <Link to={service.link} className="flex flex-col flex-1 h-full block">
+                                        <div className="p-8 flex-1">
+                                            <div className="w-14 h-14 bg-emerald-50 rounded-lg flex items-center justify-center mb-6 text-primary group-hover:bg-emerald-100 transition-colors">
+                                                <service.icon className="h-8 w-8" />
                                             </div>
-                                        ))}
+                                            <h3 className="text-2xl font-bold text-slate-800 mb-4 group-hover:text-emerald-700 transition-colors">{service.title}</h3>
+                                            <p className="text-slate-600 mb-6 leading-relaxed">
+                                                {service.description}
+                                            </p>
+
+                                            <div className="space-y-2 mt-auto">
+                                                {service.features.map((feature) => (
+                                                    <div key={feature} className="flex items-center text-sm text-slate-500">
+                                                        <div className="w-1.5 h-1.5 bg-accent rounded-full mr-2" />
+                                                        {feature}
+                                                    </div>
+                                                ))}
+                                            </div>
+                                            <div className="mt-6 pt-4 border-t border-slate-100 flex items-center text-emerald-600 font-semibold text-sm">
+                                                Learn More <span className="ml-1 text-lg">→</span>
+                                            </div>
+                                        </div>
+                                    </Link>
+                                ) : (
+                                    <div className="p-8 flex-1">
+                                        <div className="w-14 h-14 bg-emerald-50 rounded-lg flex items-center justify-center mb-6 text-primary">
+                                            <service.icon className="h-8 w-8" />
+                                        </div>
+                                        <h3 className="text-2xl font-bold text-slate-800 mb-4">{service.title}</h3>
+                                        <p className="text-slate-600 mb-6 leading-relaxed">
+                                            {service.description}
+                                        </p>
+
+                                        <div className="space-y-2">
+                                            {service.features.map((feature) => (
+                                                <div key={feature} className="flex items-center text-sm text-slate-500">
+                                                    <div className="w-1.5 h-1.5 bg-accent rounded-full mr-2" />
+                                                    {feature}
+                                                </div>
+                                            ))}
+                                        </div>
                                     </div>
-                                </div>
+                                )}
                             </motion.div>
                         ))}
                     </div>
