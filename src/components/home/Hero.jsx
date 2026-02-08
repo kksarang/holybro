@@ -92,7 +92,7 @@ const Hero = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1, y: [0, 10, 0] }}
                 transition={{ delay: 1, duration: 2, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center cursor-pointer"
+                className="absolute bottom-10 left-0 w-full z-20 flex flex-col items-center cursor-pointer"
             >
                 <span className="text-slate-400 text-xs tracking-widest uppercase mb-2 drop-shadow-md">Scroll Down</span>
                 <ScrollLink to="about" smooth={true} duration={800} offset={-80}>
