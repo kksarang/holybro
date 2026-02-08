@@ -62,7 +62,7 @@ const Navbar = () => {
                     {/* Logo */}
                     <div className="flex-shrink-0 flex items-center">
                         <NavLink to="/" className="flex items-center gap-1">
-                            <img src={logo} alt="HolyBro Group" className="h-12 w-auto object-contain" />
+                            <img src={logo} alt="Holy Bro International" className="h-12 w-auto object-contain" />
                         </NavLink>
                     </div>
 

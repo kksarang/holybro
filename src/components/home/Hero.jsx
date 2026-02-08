@@ -51,10 +51,10 @@ const Hero = () => {
                     </div>
 
                     {/* Main Heading */}
-                    <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight tracking-tight drop-shadow-2xl">
+                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight mb-4 drop-shadow-lg">
                         HOLY BRO <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-slate-400">
-                            GROUP W.L.L
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-cyan to-blue-500">
+                            INTERNATIONAL W.L.L
                         </span>
                     </h1>
 

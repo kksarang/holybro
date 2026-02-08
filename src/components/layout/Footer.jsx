@@ -11,7 +11,7 @@ const Footer = () => {
                     {/* Company Info */}
                     <div>
                         <Link to="/" className="inline-block mb-6">
-                            <img src={logo} alt="HolyBro Group" className="h-16 w-auto object-contain" />
+                            <img src={logo} alt="Holy Bro International" className="h-16 w-auto object-contain" />
                         </Link>
                         <p className="text-slate-400 text-sm leading-relaxed mb-6">
                             A leading conglomerate providing top-tier services in Real Estate, Trading, Contracting, and more. Committed to excellence and quality since 2008.
@@ -77,7 +77,7 @@ const Footer = () => {
                 </div>
 
                 <div className="border-t border-slate-800 pt-8 text-center text-xs text-slate-500">
-                    <p>&copy; {new Date().getFullYear()} Holybro Group. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} Holy Bro International W.L.L. All rights reserved.</p>
                 </div>
             </div>
         </footer>

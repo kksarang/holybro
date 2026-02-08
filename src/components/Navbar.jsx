@@ -58,7 +58,7 @@ const Navbar = () => {
                     <Link to="/" className="flex items-center space-x-2 group">
                         <img
                             src={logo}
-                            alt="Holybro Group"
+                            alt="Holy Bro International"
                             className="h-12 w-auto object-contain transition-all duration-300"
                             style={{ filter: !isScrolled && isDarkHero ? 'brightness(0) invert(1)' : 'none' }}
                         />

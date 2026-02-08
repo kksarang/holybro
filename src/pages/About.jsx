@@ -15,7 +15,7 @@ const About = () => {
             <div className="bg-slate-900 py-20 text-center relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-primary-900 to-slate-900 opacity-50" />
                 <div className="relative z-10 px-4">
-                    <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">About Holybro Group</h1>
+                    <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">About Holy Bro International</h1>
                     <p className="text-lg text-slate-300 max-w-2xl mx-auto">
                         Building trust and delivering quality since 2008.
                     </p>
