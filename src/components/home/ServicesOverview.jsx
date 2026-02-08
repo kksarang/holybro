@@ -1,65 +1,70 @@
-import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
+import Section from '../layout/Section';
+import Container from '../layout/Container';
 import Button from '../ui/Button';
 import { services } from '../../data/services';
 
 const ServicesOverview = () => {
     return (
-        <section className="py-24 bg-background-alt relative">
-            <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-20 pointer-events-none"></div>
-
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div className="text-center mb-16">
-                    <span className="text-primary font-semibold tracking-wider uppercase text-sm bg-primary/5 px-4 py-1.5 rounded-full inline-block mb-4">
-                        What We Do
+        <Section className="bg-industrial-900 border-t border-industrial-800" dark>
+            <Container>
+                {/* Section Header */}
+                <div className="text-center max-w-3xl mx-auto mb-16">
+                    <span className="text-accent-cyan font-semibold tracking-widest uppercase text-xs mb-3 block">
+                        Our Expertise
                     </span>
-                    <h2 className="text-3xl md:text-5xl font-bold text-slate-900 tracking-tight mb-4">
-                        Providing World-Class <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent-cyan">Services</span>
+                    <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
+                        Providing World-Class <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-light to-accent-cyan">Industrial Solutions</span>
                     </h2>
-                    <p className="mt-4 max-w-2xl text-lg text-slate-500 mx-auto font-light">
-                        We offer a diverse portfolio of business solutions designed to meet the highest standards of quality, combining innovation with reliability.
+                    <p className="text-gray-400 text-lg font-light leading-relaxed">
+                        We deliver a diverse portfolio of business solutions designed to meet the highest standards of quality, combining innovation with operational excellence.
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8">
+                {/* Services Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {services.map((service, index) => (
-                        <motion.div
+                        <div
                             key={service.title}
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: index * 0.1, duration: 0.5 }}
-                            className={`bg-white rounded-3xl shadow-card hover:shadow-xl transition-all duration-300 border-2 border-transparent ${service.borderColor} group cursor-pointer h-full flex flex-col overflow-hidden`}
+                            className="group relative bg-industrial-800/50 backdrop-blur-sm border border-white/5 rounded-2xl p-8 hover:bg-industrial-800 transition-all duration-300 hover:border-primary/30 hover:shadow-glow flex flex-col"
                         >
-                            <Link to={service.link || "/services"} className="flex flex-col h-full p-8 block text-left">
-                                <div className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-6 ${service.color} transition-transform group-hover:scale-110 group-hover:rotate-3`}>
-                                    <service.icon className="h-7 w-7" />
-                                </div>
-                                <h3 className="text-xl font-bold text-slate-800 mb-3 group-hover:text-primary transition-colors">{service.title}</h3>
-                                <p className="text-slate-600 text-sm leading-relaxed mb-6 flex-grow">
-                                    {service.shortDescription || service.description}
-                                </p>
-                                <div className="mt-auto">
-                                    <span className="text-primary font-semibold text-sm hover:text-primary-dark transition-colors flex items-center group-hover:translate-x-1 duration-300">
-                                        Learn more <ArrowRight className="ml-1 h-4 w-4" />
-                                    </span>
-                                </div>
-                            </Link>
-                        </motion.div>
+                            {/* Icon */}
+                            <div className="w-14 h-14 rounded-xl bg-industrial-700/50 flex items-center justify-center mb-6 text-accent-cyan group-hover:scale-110 group-hover:bg-primary/10 group-hover:text-primary-light transition-all duration-300 border border-white/5 group-hover:border-primary/20">
+                                <service.icon className="h-7 w-7" />
+                            </div>
+
+                            {/* Content */}
+                            <h3 className="text-xl font-bold text-white mb-3 group-hover:text-primary-light transition-colors">
+                                {service.title}
+                            </h3>
+                            <p className="text-gray-400 text-sm leading-relaxed mb-6 flex-grow">
+                                {service.description}
+                            </p>
+
+                            {/* CTA */}
+                            <div className="mt-auto pt-6 border-t border-white/5">
+                                <Link
+                                    to={service.link}
+                                    className="inline-flex items-center text-sm font-semibold text-white group-hover:text-accent-cyan transition-colors"
+                                >
+                                    View Details <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                                </Link>
+                            </div>
+                        </div>
                     ))}
                 </div>
 
+                {/* View All CTA */}
                 <div className="mt-16 text-center">
                     <Link to="/services">
-                        <Button variant="outline" className="px-8 py-3 border-slate-200 text-slate-600 hover:border-primary hover:text-white">
-                            View all services
+                        <Button variant="outline" className="text-white border-white/20 hover:bg-white/10 hover:border-white">
+                            View All Services
                         </Button>
                     </Link>
                 </div>
-            </div>
-        </section>
+            </Container>
+        </Section>
     );
 };
 

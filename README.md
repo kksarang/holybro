@@ -53,3 +53,25 @@ This project is ready for **Netlify** or **Vercel** deployment.
 
 -   **Forms**: The contact form is a frontend integration ready to be connected to a backend or service like FormSubmit.co.
 -   **SEO**: Meta tags are managed via `react-helmet-async` in each page component.
+
+
+
+https://kksarang.github.io/holybro/?v=2Step 1: Create account
+
+Go to 👉 https://www.emailjs.com
+
+Create account
+
+Add Email Service (Gmail / Outlook)
+
+Create Email Template
+
+Template example:
+
+Name: {{name}}
+Email: {{email}}
+Subject: {{subject}}
+Message: {{message}}
+
+Step 2: Install EmailJS
+npm install emailjs-com

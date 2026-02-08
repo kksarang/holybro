@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import logo from '../../assets/logo.png';
 
 const Footer = () => {
     return (
@@ -9,9 +10,9 @@ const Footer = () => {
 
                     {/* Company Info */}
                     <div>
-                        <h3 className="text-2xl font-bold text-white mb-6 uppercase tracking-wider">
-                            Holybro<span className="text-accent">Group</span>
-                        </h3>
+                        <Link to="/" className="inline-block mb-6">
+                            <img src={logo} alt="HolyBro Group" className="h-16 w-auto object-contain" />
+                        </Link>
                         <p className="text-slate-400 text-sm leading-relaxed mb-6">
                             A leading conglomerate providing top-tier services in Real Estate, Trading, Contracting, and more. Committed to excellence and quality since 2008.
                         </p>

@@ -1,9 +1,13 @@
+import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { ArrowRight, CheckCircle2 } from 'lucide-react';
 import HomeCTA from '../components/home/HomeCTA';
-
+import Section from '../components/layout/Section';
+import Container from '../components/layout/Container';
 import { services } from '../data/services';
+import BuildingHeroImage from '../assets/building-hero.png'; // Use a generic hero image
 
 const Services = () => {
     return (
@@ -13,20 +17,34 @@ const Services = () => {
                 <meta name="description" content="Explore Holybro Group's diverse services including Real Estate, Trading, Contracting, Transportation, and Limousine services." />
             </Helmet>
 
-            {/* Page Header */}
-            <div className="bg-slate-900 py-20 text-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-emerald-900 to-slate-900 opacity-50" />
-                <div className="relative z-10 px-4">
-                    <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Our Services</h1>
-                    <p className="text-lg text-slate-300 max-w-2xl mx-auto">
-                        Delivering excellence across multiple sectors with a commitment to quality and integrity.
-                    </p>
+            {/* Hero Section */}
+            <div className="relative h-[50vh] flex items-center justify-center overflow-hidden">
+                <div className="absolute inset-0">
+                    <img
+                        src={BuildingHeroImage}
+                        alt="Holybro Services"
+                        className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-r from-industrial-900 via-industrial-900/90 to-industrial-800/80" />
                 </div>
+
+                <Container className="relative z-10 text-center">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8 }}
+                    >
+                        <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Our Services</h1>
+                        <p className="text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
+                            Delivering excellence across multiple sectors with a commitment to quality, integrity, and innovation.
+                        </p>
+                    </motion.div>
+                </Container>
             </div>
 
             {/* Services Grid */}
-            <div className="py-20 bg-paper">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <Section className="bg-slate-50">
+                <Container>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {services.map((service, index) => (
                             <motion.div
@@ -35,57 +53,48 @@ const Services = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: index * 0.1 }}
-                                className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full group"
+                                className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 flex flex-col h-full"
                             >
-                                {service.link ? (
-                                    <Link to={service.link} className="flex flex-col flex-1 h-full block">
-                                        <div className="p-8 flex-1">
-                                            <div className="w-14 h-14 bg-emerald-50 rounded-lg flex items-center justify-center mb-6 text-primary group-hover:bg-emerald-100 transition-colors">
-                                                <service.icon className="h-8 w-8" />
-                                            </div>
-                                            <h3 className="text-2xl font-bold text-slate-800 mb-4 group-hover:text-emerald-700 transition-colors">{service.title}</h3>
-                                            <p className="text-slate-600 mb-6 leading-relaxed">
-                                                {service.description}
-                                            </p>
-
-                                            <div className="space-y-2 mt-auto">
-                                                {service.features.map((feature) => (
-                                                    <div key={feature} className="flex items-center text-sm text-slate-500">
-                                                        <div className="w-1.5 h-1.5 bg-accent rounded-full mr-2" />
-                                                        {feature}
-                                                    </div>
-                                                ))}
-                                            </div>
-                                            <div className="mt-6 pt-4 border-t border-slate-100 flex items-center text-emerald-600 font-semibold text-sm">
-                                                Learn More <span className="ml-1 text-lg">→</span>
-                                            </div>
-                                        </div>
-                                    </Link>
-                                ) : (
-                                    <div className="p-8 flex-1">
-                                        <div className="w-14 h-14 bg-emerald-50 rounded-lg flex items-center justify-center mb-6 text-primary">
-                                            <service.icon className="h-8 w-8" />
-                                        </div>
-                                        <h3 className="text-2xl font-bold text-slate-800 mb-4">{service.title}</h3>
-                                        <p className="text-slate-600 mb-6 leading-relaxed">
-                                            {service.description}
-                                        </p>
-
-                                        <div className="space-y-2">
-                                            {service.features.map((feature) => (
-                                                <div key={feature} className="flex items-center text-sm text-slate-500">
-                                                    <div className="w-1.5 h-1.5 bg-accent rounded-full mr-2" />
-                                                    {feature}
-                                                </div>
-                                            ))}
-                                        </div>
+                                <div className="p-8 flex flex-col h-full">
+                                    <div className="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-industrial-900 transition-colors duration-300">
+                                        <service.icon className={`h-8 w-8 text-${service.color}-600 group-hover:text-white transition-colors duration-300`} />
                                     </div>
-                                )}
+
+                                    <h3 className="text-2xl font-bold text-industrial-900 mb-4 group-hover:text-accent-cyan transition-colors">
+                                        {service.title}
+                                    </h3>
+
+                                    <p className="text-slate-600 mb-8 leading-relaxed flex-grow">
+                                        {service.description}
+                                    </p>
+
+                                    <div className="space-y-3 mb-8">
+                                        {service.features.slice(0, 3).map((feature, idx) => (
+                                            <div key={idx} className="flex items-start text-sm text-slate-500">
+                                                <CheckCircle2 className={`w-4 h-4 text-${service.color}-500 mr-2 mt-0.5 flex-shrink-0`} />
+                                                <span>{feature}</span>
+                                            </div>
+                                        ))}
+                                    </div>
+
+                                    {service.link ? (
+                                        <Link
+                                            to={service.link}
+                                            className="inline-flex items-center text-industrial-600 font-semibold group-hover:text-accent-cyan transition-colors mt-auto"
+                                        >
+                                            Learn More <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+                                        </Link>
+                                    ) : (
+                                        <span className="inline-flex items-center text-slate-400 font-medium cursor-not-allowed mt-auto">
+                                            Coming Soon
+                                        </span>
+                                    )}
+                                </div>
                             </motion.div>
                         ))}
                     </div>
-                </div>
-            </div>
+                </Container>
+            </Section>
 
             <HomeCTA />
         </>

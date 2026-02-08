@@ -1,80 +1,107 @@
+import { Link as ScrollLink } from 'react-scroll';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { ArrowRight, Play } from 'lucide-react';
-import Button from '../ui/Button';
+import { motion, useScroll, useTransform } from 'framer-motion';
+import { ChevronDown, ArrowRight } from 'lucide-react';
 
 const Hero = () => {
+    const { scrollY } = useScroll();
+    const y = useTransform(scrollY, [0, 500], [0, 200]);
+    const opacity = useTransform(scrollY, [0, 300], [1, 0]);
+
+    // Placeholder for PDF-style image (City Skyline + Rope Access)
+    // Recommendation: Replace with actual asset if available
+    const heroBgUrl = "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop";
+
     return (
-        <div className="relative bg-background min-h-screen flex items-center overflow-hidden pt-20">
-            {/* Background Decoration */}
-            <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-tr from-primary-light/20 to-accent-cyan/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 opacity-50 animate-pulse-slow" />
-            <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-br from-secondary-light/30 to-primary-light/10 rounded-full blur-3xl translate-y-1/3 -translate-x-1/4 opacity-50" />
+        <section id="home" className="relative h-screen min-h-[800px] w-full overflow-hidden flex items-center">
+            {/* 1. Hero Background Image with Parallax */}
+            <motion.div
+                className="absolute inset-0 w-full h-full z-0"
+                style={{ y }}
+            >
+                <div
+                    className="absolute inset-0 bg-cover bg-center bg-no-repeat transform scale-105"
+                    style={{
+                        backgroundImage: `url('${heroBgUrl}')`,
+                        backgroundPosition: 'center 20%' // Focus on upper part of buildings
+                    }}
+                ></div>
+            </motion.div>
 
-            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20">
+            {/* 2. Overlay & Styling - Blue-Black Gradient */}
+            {/* Darker on top, slightly transparent in center/bottom-right for image visibility */}
+            <div className="absolute inset-0 z-10 bg-gradient-to-b from-industrial-950/90 via-industrial-900/60 to-industrial-950/80"></div>
+            <div className="absolute inset-0 z-10 bg-gradient-to-r from-industrial-950/80 via-transparent to-transparent"></div>
 
-                {/* Text Content */}
+            {/* 3. Content Container */}
+            <div className="relative z-20 container mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center">
+
                 <motion.div
                     initial={{ opacity: 0, x: -30 }}
                     animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.8 }}
-                    className="flex-1 text-center lg:text-left"
+                    transition={{ duration: 1, ease: "easeOut" }}
+                    className="max-w-4xl"
                 >
-                    <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-slate-900 leading-[1.1] mb-4 tracking-tight">
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-light via-secondary to-primary-dark pb-2">
-                            HOLY BRO GROUP
+                    {/* Tagline */}
+                    <div className="flex items-center gap-3 mb-6">
+                        <div className="h-0.5 w-12 bg-accent-cyan shadow-[0_0_10px_rgba(34,211,238,0.5)]"></div>
+                        <span className="text-accent-cyan font-bold tracking-[0.2em] text-sm md:text-base uppercase shadow-black drop-shadow-md">
+                            Providing Sustainable Development
+                        </span>
+                    </div>
+
+                    {/* Main Heading */}
+                    <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight tracking-tight drop-shadow-2xl">
+                        HOLY BRO <br />
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-slate-400">
+                            GROUP W.L.L
                         </span>
                     </h1>
-                    <p className="text-xl sm:text-2xl font-medium text-slate-600 mb-8 max-w-2xl mx-auto lg:mx-0">
-                        Providing Sustainable Development
-                    </p>
-                    <p className="text-lg sm:text-xl text-slate-600 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0 font-light">
-                        Holybro Group provides tailored digital solutions, real estate services, and premium contracting. We elevate your business with modern strategies and precision using the latest technologies.
+
+                    {/* Subheading */}
+                    <p className="text-lg md:text-2xl text-slate-200 max-w-2xl mb-10 font-light leading-relaxed border-l-4 border-industrial-600 pl-6 backdrop-blur-sm bg-industrial-950/10 py-2 rounded-r-lg">
+                        Delivering reliable industrial, construction, manpower, and transportation solutions across Qatar.
                     </p>
 
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <Link to="/services">
-                            <Button variant="primary" className="w-full sm:w-auto px-8 py-4 text-lg shadow-glow hover:shadow-glow-lg">
-                                Explore Services <ArrowRight className="ml-2 h-5 w-5" />
-                            </Button>
+                    {/* Call-To-Action Buttons */}
+                    <div className="flex flex-col sm:flex-row gap-5">
+                        <Link
+                            to="/services"
+                            className="group relative px-8 py-4 bg-accent-cyan hover:bg-cyan-400 text-industrial-950 rounded-lg cursor-pointer transition-all duration-300 transform hover:-translate-y-1 font-bold text-lg flex items-center justify-center overflow-hidden shadow-lg shadow-cyan-900/20"
+                        >
+                            <span className="relative z-10 flex items-center">
+                                Explore Services
+                                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                            </span>
+                            <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
                         </Link>
-                        <Link to="/contact">
-                            <Button variant="secondary" className="w-full sm:w-auto px-8 py-4 text-lg group">
-                                Contact Us
-                            </Button>
-                        </Link>
-                    </div>
-                </motion.div>
 
-                {/* Hero Illustration / Image */}
-                <motion.div
-                    initial={{ opacity: 0, scale: 0.9, y: 30 }}
-                    animate={{ opacity: 1, scale: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.2 }}
-                    className="flex-1 w-full max-w-lg lg:max-w-none relative"
-                >
-                    <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl shadow-primary/20 border-4 border-white transform rotate-3 hover:rotate-0 transition-all duration-500">
-                        <img
-                            src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop"
-                            alt="Agency Team"
-                            className="w-full h-auto object-cover"
-                        />
-                        {/* Floating Badge */}
-                        <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-md p-4 rounded-2xl shadow-lg border border-white/50 flex items-center gap-4 animate-float">
-                            <div className="bg-green-100 p-3 rounded-full text-green-600">
-                                <Play className="h-6 w-6 fill-current" />
-                            </div>
-                            <div>
-                                <p className="text-xs text-slate-500 font-semibold uppercase">Growth</p>
-                                <p className="text-lg font-bold text-slate-800">+250%</p>
-                            </div>
-                        </div>
+                        <Link
+                            to="/contact"
+                            className="px-8 py-4 border border-slate-400 text-white rounded-lg hover:border-white hover:bg-white/10 transition-all duration-300 font-medium text-lg flex items-center justify-center backdrop-blur-sm cursor-pointer"
+                        >
+                            Get in Touch
+                        </Link>
                     </div>
-                    {/* Decorative Elements */}
-                    <div className="absolute top-10 -right-10 w-24 h-24 bg-accent-cyan/10 rounded-full blur-xl animate-pulse" />
-                    <div className="absolute -bottom-5 -left-5 w-32 h-32 bg-secondary/10 rounded-full blur-xl animate-pulse" />
                 </motion.div>
             </div>
-        </div>
+
+            {/* Scroll Indicator */}
+            <motion.div
+                style={{ opacity }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1, y: [0, 10, 0] }}
+                transition={{ delay: 1, duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center cursor-pointer"
+            >
+                <span className="text-slate-400 text-xs tracking-widest uppercase mb-2 drop-shadow-md">Scroll Down</span>
+                <ScrollLink to="about" smooth={true} duration={800} offset={-80}>
+                    <div className="p-2 rounded-full bg-industrial-950/30 backdrop-blur-md border border-slate-600/50 hover:border-accent-cyan/50 transition-colors">
+                        <ChevronDown className="h-6 w-6 text-accent-cyan" />
+                    </div>
+                </ScrollLink>
+            </motion.div>
+        </section>
     );
 };
 
