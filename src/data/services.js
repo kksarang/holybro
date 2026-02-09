@@ -22,7 +22,7 @@ export const services = [
         link: '/services/building-materials'
     },
     {
-        title: 'Limousine Services',
+        title: 'Transportation',
         description: 'Premium limousine and luxury transportation services for corporate clients, VIPs, airport transfers, and executive travel.',
         shortDescription: 'Luxury Limousine Services',
         icon: Car,
