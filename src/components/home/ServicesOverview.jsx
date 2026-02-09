@@ -111,6 +111,12 @@ const ServicesOverview = () => {
                     <h2 className="text-4xl md:text-6xl font-extrabold text-slate-900 mb-6 leading-tight">
                         Providing World-Class{' '}
                         <span className="animated-gradient">
+
+                        </span>
+                    </h2>
+                    <h2 className="text-4xl md:text-6xl font-extrabold text-slate-900 mb-6 leading-tight">
+                        {' '}
+                        <span className="animated-gradient">
                             Industrial Solutions
                         </span>
                     </h2>
