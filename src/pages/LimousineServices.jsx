@@ -17,8 +17,17 @@ import LimoChauffeurImage from '../assets/limo-chauffeur.png';
 import ServiceLayout from '../components/services/ServiceLayout';
 import Section from '../components/layout/Section';
 import Container from '../components/layout/Container';
+import { useSEO } from '../hooks/useSEO';
 
 const LimousineServices = () => {
+    // SEO Metadata
+    useSEO({
+        title: 'Premium Limousine & Chauffeur Services | Holy Bro International W.L.L',
+        description: 'Luxury limousine and professional chauffeur services in Qatar. Corporate transportation, airport transfers, and VIP transport solutions with premium fleet.',
+        ogTitle: 'Premium Limousine & Chauffeur Services | Holy Bro International W.L.L',
+        ogDescription: 'Luxury limousine and professional chauffeur services in Qatar. Corporate transportation, airport transfers, and VIP transport solutions.'
+    });
+
     const galleryImages = [
         { id: '1', src: LimoHeroImage, alt: 'Luxury Limousine Fleet', caption: 'Premium Corporate Fleet' },
         { id: '2', src: LimoInteriorImage, alt: 'Luxury Interior', caption: 'Executive Class Interiors' },

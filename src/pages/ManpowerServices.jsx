@@ -17,8 +17,17 @@ import ManpowerMeetingImage from '../assets/manpower-meeting.png';
 import ServiceLayout from '../components/services/ServiceLayout';
 import Section from '../components/layout/Section';
 import Container from '../components/layout/Container';
+import { useSEO } from '../hooks/useSEO';
 
 const ManpowerServices = () => {
+    // SEO Metadata
+    useSEO({
+        title: 'Manpower Supply & Recruitment Services | Holy Bro International W.L.L',
+        description: 'Professional manpower supply and recruitment services in Qatar. Skilled workers, technical staff, and labor solutions for construction, industrial, and commercial sectors.',
+        ogTitle: 'Manpower Supply & Recruitment Services | Holy Bro International W.L.L',
+        ogDescription: 'Professional manpower supply and recruitment services in Qatar. Skilled workers, technical staff, and labor solutions for all sectors.'
+    });
+
     const galleryImages = [
         { id: '1', src: ManpowerTeamImage, alt: 'Skilled Workforce', caption: 'Expert Teams for Every Sector' },
         { id: '2', src: ManpowerMeetingImage, alt: 'Project Management', caption: 'On-site Supervision & Safety' },

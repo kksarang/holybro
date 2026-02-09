@@ -18,8 +18,17 @@ import BuildingHeroImage from '../assets/building-hero.png'; // Reusing for vari
 import ServiceLayout from '../components/services/ServiceLayout';
 import Section from '../components/layout/Section';
 import Container from '../components/layout/Container';
+import { useSEO } from '../hooks/useSEO';
 
 const RealEstateServices = () => {
+    // SEO Metadata
+    useSEO({
+        title: 'Real Estate Services & Property Management | Holy Bro International W.L.L',
+        description: 'Comprehensive real estate services in Qatar. Property management, leasing, sales, investment consulting, and facility management solutions for commercial and residential properties.',
+        ogTitle: 'Real Estate Services & Property Management | Holy Bro International W.L.L',
+        ogDescription: 'Comprehensive real estate services in Qatar. Property management, leasing, sales, investment consulting, and facility management solutions.'
+    });
+
     const galleryImages = [
         { id: '1', src: RealEstateHeroImage, alt: 'Modern Properties', caption: 'Premium Commercial Spaces' },
         { id: '2', src: RealEstateInteriorImage, alt: 'Luxury Interiors', caption: 'High-End Residential Units' },

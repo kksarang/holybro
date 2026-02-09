@@ -18,8 +18,17 @@ import ProjectLogisticsImage from '../assets/building-hero.png';
 import ServiceLayout from '../components/services/ServiceLayout';
 import Section from '../components/layout/Section';
 import ContainerLayout from '../components/layout/Container'; // Renamed to avoid overlap with Lucide Container icon
+import { useSEO } from '../hooks/useSEO';
 
 const CommercialTransportation = () => {
+    // SEO Metadata
+    useSEO({
+        title: 'Commercial Transportation & Logistics | Holy Bro International W.L.L',
+        description: 'Professional commercial transportation and logistics services in Qatar. Heavy equipment transport, cargo delivery, fleet management, and supply chain solutions.',
+        ogTitle: 'Commercial Transportation & Logistics | Holy Bro International W.L.L',
+        ogDescription: 'Professional commercial transportation and logistics services in Qatar. Heavy equipment transport, cargo delivery, and fleet management.'
+    });
+
     const galleryImages = [
         { id: '1', src: TransportHeroImage, alt: 'Heavy Transport', caption: 'Heavy Equipment Logistics' },
         { id: '2', src: IndustrialCargoImage, alt: 'Industrial Cargo', caption: 'Safe Cargo Handling' },

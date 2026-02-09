@@ -18,8 +18,17 @@ import LngPipesImage from '../assets/lng-pipes.png';
 import ServiceLayout from '../components/services/ServiceLayout';
 import Section from '../components/layout/Section';
 import Container from '../components/layout/Container';
+import { useSEO } from '../hooks/useSEO';
 
 const LngComponents = () => {
+    // SEO Metadata
+    useSEO({
+        title: 'LNG Plant Components & Equipment | Holy Bro International W.L.L',
+        description: 'Specialized supplier of LNG plant components, cryogenic equipment, and natural gas processing solutions in Qatar. ISO-certified quality for energy sector projects.',
+        ogTitle: 'LNG Plant Components & Equipment | Holy Bro International W.L.L',
+        ogDescription: 'Specialized supplier of LNG plant components, cryogenic equipment, and natural gas processing solutions in Qatar.'
+    });
+
     const galleryImages = [
         { id: '1', src: LngShipImage, alt: 'LNG Tanker Ship', caption: 'Global LNG Export Logistics' },
         { id: '2', src: LngRigImage, alt: 'Offshore LNG Rig', caption: 'Offshore Exploration & Extraction' },

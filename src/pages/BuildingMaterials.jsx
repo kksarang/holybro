@@ -18,8 +18,17 @@ import BuildingFinishingImage from '../assets/building-finishing.png';
 import ServiceLayout from '../components/services/ServiceLayout';
 import Section from '../components/layout/Section';
 import Container from '../components/layout/Container';
+import { useSEO } from '../hooks/useSEO';
 
 const BuildingMaterials = () => {
+    // SEO Metadata
+    useSEO({
+        title: 'Building Materials Supply | Holy Bro International W.L.L',
+        description: 'Premium building materials supplier in Qatar. Structural steel, concrete, finishing materials, and construction supplies for industrial and commercial projects.',
+        ogTitle: 'Building Materials Supply | Holy Bro International W.L.L',
+        ogDescription: 'Premium building materials supplier in Qatar. Structural steel, concrete, finishing materials, and construction supplies for industrial and commercial projects.'
+    });
+
     const galleryImages = [
         { id: '1', src: BuildingSteelImage, alt: 'Structural Steel', caption: 'High-Grade Steel Reinforcement' },
         { id: '2', src: BuildingConcreteImage, alt: 'Concrete Works', caption: 'Ready-mix Concrete Supply' },
