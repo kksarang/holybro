@@ -51,9 +51,19 @@ const Navbar = () => {
     ];
 
     const isHome = location.pathname === '/';
-    // Navbar style based on scroll and page
-    const navBackground = scrolled || !isHome || isOpen ? 'bg-industrial-900/90 backdrop-blur-md shadow-industrial' : 'bg-transparent';
-    const textColor = scrolled || !isHome || isOpen ? 'text-white' : 'text-white'; // Always white for contrast on dark theme
+    const isHome = location.pathname === '/';
+
+    // Strict Navbar Background Rules
+    // Default: rgba(11, 60, 93, 0.75) -> bg-primary/75
+    // Scrolled: #0B3C5D -> bg-primary
+    const navBackground = scrolled
+        ? 'bg-primary shadow-lg'
+        : 'bg-primary/75 backdrop-blur-md';
+
+    // Text Color Rules (Strict: Always White)
+    const textColor = 'text-white';
+    const linkBaseClass = "text-sm font-medium transition-colors text-white hover:text-white/80";
+    const activeLinkClass = "text-white font-bold border-b-2 border-secondary pb-1";
 
     return (
         <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${navBackground}`}>
@@ -68,7 +78,7 @@ const Navbar = () => {
 
                     {/* Desktop Menu */}
                     <div className="hidden lg:flex space-x-8 items-center">
-                        <NavLink to="/" className="text-sm font-medium transition-colors hover:text-secondary text-white">
+                        <NavLink to="/" className={({ isActive }) => isActive ? activeLinkClass : linkBaseClass}>
                             Home
                         </NavLink>
 
@@ -78,7 +88,7 @@ const Navbar = () => {
                             onMouseEnter={() => setServicesOpen(true)}
                             onMouseLeave={() => setServicesOpen(false)}
                         >
-                            <button className="flex items-center text-sm font-medium transition-colors hover:text-secondary text-white focus:outline-none">
+                            <button className={`flex items-center focus:outline-none ${servicesOpen || location.pathname.includes('/services') ? activeLinkClass : linkBaseClass}`}>
                                 Services <ChevronDown className="ml-1 h-4 w-4" />
                             </button>
 
@@ -148,10 +158,10 @@ const Navbar = () => {
                             </AnimatePresence>
                         </div>
 
-                        <NavLink to="/about" className="text-sm font-medium transition-colors hover:text-secondary text-white">
-                            About Uss
+                        <NavLink to="/about" className={({ isActive }) => isActive ? activeLinkClass : linkBaseClass}>
+                            About Us
                         </NavLink>
-                        <NavLink to="/contact" className="text-sm font-medium transition-colors hover:text-secondary text-white">
+                        <NavLink to="/contact" className={({ isActive }) => isActive ? activeLinkClass : linkBaseClass}>
                             Contact
                         </NavLink>
 
