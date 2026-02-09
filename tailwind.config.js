@@ -8,14 +8,14 @@ export default {
     extend: {
       colors: {
         primary: {
-          light: "#1F5F8B", // Medium Blue as light variant
-          DEFAULT: "#0B3C5D", // Dark Blue (Main Brand)
-          dark: "#082D46",  // Darker shade
+          light: "#1F5F8B", // Medium Blue for backgrounds
+          DEFAULT: "#0B3C5D", // Dark Blue (Background Brand Color)
+          dark: "#082D46",  // Darker shade for deep backgrounds
         },
         secondary: {
-          light: "#3F82B3",
-          DEFAULT: "#1F5F8B", // Medium Blue
-          dark: "#154466",
+          light: "#3D9EFF", // Lighter variant of theme color
+          DEFAULT: "#0B73D9", // THEME COLOR - Primary Action/Accent
+          dark: "#0960B8",  // Darker variant for hover states
         },
         industrial: {
           50: "#F9FAFB",
@@ -31,7 +31,7 @@ export default {
           950: "#0B0B0B", // Darker Black for backgrounds
         },
         accent: {
-          cyan: "#1F5F8B", // Remapped to Medium Blue to enforce brand consistency
+          cyan: "#0B73D9", // Theme color for accents
           amber: "#F59E0B", // Warning colors kept for utility
           lime: "#84CC16",  // Success colors kept for utility
         },
@@ -59,7 +59,7 @@ export default {
       },
       boxShadow: {
         'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
-        'glow': '0 0 15px rgba(37, 99, 235, 0.3)',
+        'glow': '0 0 15px rgba(11, 115, 217, 0.3)', // Theme color glow
         'card': '0 10px 30px -5px rgba(0, 0, 0, 0.05)',
         'industrial': '0 2px 10px rgba(0, 0, 0, 0.2)',
       },
