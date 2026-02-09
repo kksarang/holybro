@@ -51,7 +51,6 @@ const Navbar = () => {
     ];
 
     const isHome = location.pathname === '/';
-    const isHome = location.pathname === '/';
 
     // Strict Navbar Background Rules
     // Default: rgba(11, 60, 93, 0.75) -> bg-primary/75
