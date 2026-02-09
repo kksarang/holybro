@@ -82,18 +82,31 @@ const Hero = () => {
                 </motion.div>
             </div>
 
-            {/* Scroll Indicator */}
+            {/* Scroll Indicator - Enhanced & Stylish */}
             <motion.div
                 style={{ opacity }}
                 initial={{ opacity: 0 }}
-                animate={{ opacity: 1, y: [0, 10, 0] }}
+                animate={{ opacity: 1, y: [0, 15, 0] }}
                 transition={{ delay: 1, duration: 2, repeat: Infinity, ease: "easeInOut" }}
                 className="absolute bottom-10 left-0 w-full z-20 flex flex-col items-center cursor-pointer"
             >
-                <span className="text-slate-400 text-xs tracking-widest uppercase mb-2 drop-shadow-md">Scroll Down</span>
                 <ScrollLink to="about" smooth={true} duration={800} offset={-80}>
-                    <div className="p-2 rounded-full bg-industrial-950/30 backdrop-blur-md border border-slate-600/50 hover:border-secondary transition-colors">
-                        <ChevronDown className="h-6 w-6 text-secondary" />
+                    <div className="flex flex-col items-center gap-3 group">
+                        {/* Animated Text */}
+                        <span className="text-white font-semibold tracking-[0.25em] text-xs uppercase opacity-90 group-hover:opacity-100 transition-opacity">
+                            Scroll Down
+                        </span>
+
+                        {/* Glowing Animated Icon */}
+                        <div className="relative">
+                            {/* Outer glow ring */}
+                            <div className="absolute inset-0 rounded-full bg-secondary/20 blur-xl scale-150 group-hover:bg-secondary/40 transition-all"></div>
+
+                            {/* Icon container */}
+                            <div className="relative p-3 rounded-full bg-gradient-to-br from-secondary to-primary border-2 border-white/30 shadow-2xl group-hover:border-white/60 group-hover:scale-110 transition-all duration-300">
+                                <ChevronDown className="h-6 w-6 text-white drop-shadow-lg" />
+                            </div>
+                        </div>
                     </div>
                 </ScrollLink>
             </motion.div>
