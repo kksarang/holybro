@@ -41,7 +41,12 @@ const ServicesOverview = () => {
                             className="group relative bg-slate-50 border border-slate-200 rounded-2xl p-8 hover:bg-white transition-all duration-300 hover:border-secondary/30 hover:shadow-glow flex flex-col"
                         >
                             {/* Icon */}
-                            <div className="w-16 h-16 bg-gradient-to-br from-secondary to-primary rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-md">
+                            <div
+                                className="w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-all duration-300 shadow-md"
+                                style={{
+                                    background: 'linear-gradient(90deg, #2A2F74 0%,#005AA7 45%, #00A3D9 100%)'
+                                }}
+                            >
                                 <service.icon className="h-8 w-8 text-white" />
                             </div>
 
