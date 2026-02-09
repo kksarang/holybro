@@ -27,13 +27,7 @@ const Hero = () => {
                 ></div>
             </motion.div>
 
-            {/* 2. Overlay & Styling - Strong Gradient for Readability */}
-            <div
-                className="absolute inset-0 z-10"
-                style={{
-                    background: 'linear-gradient(to right, rgba(11, 60, 93, 0.85), rgba(11, 60, 93, 0.65), rgba(11, 60, 93, 0.85))'
-                }}
-            ></div>
+            {/* 2. Overlay Removed - Clean Background */}
 
             {/* 3. Content Container */}
             <div className="relative z-20 container mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center">
