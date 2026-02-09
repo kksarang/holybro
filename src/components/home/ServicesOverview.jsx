@@ -15,7 +15,10 @@ const ServicesOverview = () => {
                         Our Expertise
                     </span>
                     <h2 className="text-3xl md:text-5xl font-bold text-industrial-900 mb-6">
-                        Providing World-Class <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Industrial Solutions</span>
+                        Providing World-Class <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary"></span>
+                    </h2>
+                    <h2 className="text-3xl md:text-5xl font-bold text-industrial-900 mb-6">
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Industrial Solutions</span>
                     </h2>
                     <p className="text-slate-600 text-lg font-light leading-relaxed">
                         We deliver a diverse portfolio of business solutions designed to meet the highest standards of quality, combining innovation with operational excellence.
