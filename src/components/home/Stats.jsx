@@ -24,7 +24,15 @@ const Stats = () => {
                             transition={{ delay: index * 0.1, duration: 0.5 }}
                             className="px-4"
                         >
-                            <div className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary mb-2 font-mono">
+                            <div
+                                className="text-4xl md:text-5xl font-bold mb-2 font-mono"
+                                style={{
+                                    background: 'linear-gradient(90deg, #2A2F74 10%, #005AA7 45%, #00A3D9 110%)',
+                                    WebkitBackgroundClip: 'text',
+                                    WebkitTextFillColor: 'transparent',
+                                    backgroundClip: 'text'
+                                }}
+                            >
                                 {stat.value}
                             </div>
                             <div className="text-slate-600 font-medium text-sm md:text-base tracking-wide uppercase">

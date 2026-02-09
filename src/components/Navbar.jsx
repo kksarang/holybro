@@ -76,8 +76,22 @@ const Navbar = () => {
                             </Link>
                         ))}
                         <Link to="/contact">
-                            <Button variant="primary" className="px-8 py-2.5 text-sm shadow-lg shadow-primary/20">
-                                Get Quote
+                            <Button
+                                variant="primary"
+                                className="px-8 py-2.5 text-sm shadow-lg"
+                                style={{
+                                    background: '#ffffff',
+                                    border: 'none'
+                                }}
+                            >
+                                <span style={{
+                                    background: 'linear-gradient( #2A2F74 50%)',
+                                    WebkitBackgroundClip: 'text',
+                                    WebkitTextFillColor: 'transparent',
+                                    backgroundClip: 'text'
+                                }}>
+                                    Get Quote
+                                </span>
                             </Button>
                         </Link>
                     </div>
