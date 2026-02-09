@@ -26,7 +26,7 @@ const Gallery = ({ images, title = "Data Gallery" }) => {
             <div className="container mx-auto px-6">
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">{title}</h2>
-                    <div className="h-1 w-20 bg-cyan-500 mx-auto rounded-full"></div>
+                    <div className="h-1 w-20 bg-secondary mx-auto rounded-full"></div>
                 </div>
 
                 {/* Grid Layout */}

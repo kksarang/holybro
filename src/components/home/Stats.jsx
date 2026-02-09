@@ -24,7 +24,7 @@ const Stats = () => {
                             transition={{ delay: index * 0.1, duration: 0.5 }}
                             className="px-4"
                         >
-                            <div className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-accent-cyan to-blue-400 mb-2 font-mono">
+                            <div className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary mb-2 font-mono">
                                 {stat.value}
                             </div>
                             <div className="text-slate-400 font-medium text-sm md:text-base tracking-wide uppercase">

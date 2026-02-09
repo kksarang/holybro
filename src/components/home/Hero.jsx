@@ -2,15 +2,14 @@ import { Link as ScrollLink } from 'react-scroll';
 import { Link } from 'react-router-dom';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ChevronDown, ArrowRight } from 'lucide-react';
+import heroBg from '../../assets/hero-bg.jpg';
 
 const Hero = () => {
     const { scrollY } = useScroll();
     const y = useTransform(scrollY, [0, 500], [0, 200]);
     const opacity = useTransform(scrollY, [0, 300], [1, 0]);
 
-    // Placeholder for PDF-style image (City Skyline + Rope Access)
-    // Recommendation: Replace with actual asset if available
-    const heroBgUrl = "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop";
+    // Hero Background Image from assets
 
     return (
         <section id="home" className="relative h-screen min-h-[800px] w-full overflow-hidden flex items-center">
@@ -22,16 +21,14 @@ const Hero = () => {
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat transform scale-105"
                     style={{
-                        backgroundImage: `url('${heroBgUrl}')`,
+                        backgroundImage: `url('${heroBg}')`,
                         backgroundPosition: 'center 20%' // Focus on upper part of buildings
                     }}
                 ></div>
             </motion.div>
 
-            {/* 2. Overlay & Styling - Blue-Black Gradient */}
-            {/* Darker on top, slightly transparent in center/bottom-right for image visibility */}
-            <div className="absolute inset-0 z-10 bg-gradient-to-b from-industrial-950/90 via-industrial-900/60 to-industrial-950/80"></div>
-            <div className="absolute inset-0 z-10 bg-gradient-to-r from-industrial-950/80 via-transparent to-transparent"></div>
+            {/* 2. Overlay & Styling - Subtle Gradient */}
+            <div className="absolute inset-0 z-10 bg-gradient-to-r from-industrial-950/80 via-industrial-950/30 to-transparent"></div>
 
             {/* 3. Content Container */}
             <div className="relative z-20 container mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center">
@@ -44,8 +41,8 @@ const Hero = () => {
                 >
                     {/* Tagline */}
                     <div className="flex items-center gap-3 mb-6">
-                        <div className="h-0.5 w-12 bg-accent-cyan shadow-[0_0_10px_rgba(34,211,238,0.5)]"></div>
-                        <span className="text-accent-cyan font-bold tracking-[0.2em] text-sm md:text-base uppercase shadow-black drop-shadow-md">
+                        <div className="h-0.5 w-12 bg-white shadow-[0_0_10px_rgba(255,255,255,0.5)]"></div>
+                        <span className="text-white font-bold tracking-[0.2em] text-sm md:text-base uppercase shadow-black drop-shadow-md">
                             Providing Sustainable Development
                         </span>
                     </div>
@@ -53,13 +50,13 @@ const Hero = () => {
                     {/* Main Heading */}
                     <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight mb-4 drop-shadow-lg">
                         HOLY BRO <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-cyan to-blue-500">
+                        <span className="text-white">
                             INTERNATIONAL W.L.L
                         </span>
                     </h1>
 
                     {/* Subheading */}
-                    <p className="text-lg md:text-2xl text-slate-200 max-w-2xl mb-10 font-light leading-relaxed border-l-4 border-industrial-600 pl-6 backdrop-blur-sm bg-industrial-950/10 py-2 rounded-r-lg">
+                    <p className="text-lg md:text-2xl text-slate-200 max-w-2xl mb-10 font-light leading-relaxed border-l-4 border-secondary pl-6 backdrop-blur-sm bg-industrial-950/10 py-2 rounded-r-lg">
                         Delivering reliable industrial, construction, manpower, and transportation solutions across Qatar.
                     </p>
 
@@ -67,18 +64,18 @@ const Hero = () => {
                     <div className="flex flex-col sm:flex-row gap-5">
                         <Link
                             to="/services"
-                            className="group relative px-8 py-4 bg-accent-cyan hover:bg-cyan-400 text-industrial-950 rounded-lg cursor-pointer transition-all duration-300 transform hover:-translate-y-1 font-bold text-lg flex items-center justify-center overflow-hidden shadow-lg shadow-cyan-900/20"
+                            className="group relative px-8 py-4 bg-secondary hover:bg-primary text-white rounded-lg cursor-pointer transition-all duration-300 transform hover:-translate-y-1 font-bold text-lg flex items-center justify-center overflow-hidden shadow-lg shadow-blue-900/20"
                         >
                             <span className="relative z-10 flex items-center">
                                 Explore Services
                                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                             </span>
-                            <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+                            <div className="absolute inset-0 bg-white/10 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
                         </Link>
 
                         <Link
                             to="/contact"
-                            className="px-8 py-4 border border-slate-400 text-white rounded-lg hover:border-white hover:bg-white/10 transition-all duration-300 font-medium text-lg flex items-center justify-center backdrop-blur-sm cursor-pointer"
+                            className="px-8 py-4 border border-slate-400 text-white rounded-lg hover:border-secondary hover:bg-secondary/10 transition-all duration-300 font-medium text-lg flex items-center justify-center backdrop-blur-sm cursor-pointer"
                         >
                             Get in Touch
                         </Link>
@@ -96,8 +93,8 @@ const Hero = () => {
             >
                 <span className="text-slate-400 text-xs tracking-widest uppercase mb-2 drop-shadow-md">Scroll Down</span>
                 <ScrollLink to="about" smooth={true} duration={800} offset={-80}>
-                    <div className="p-2 rounded-full bg-industrial-950/30 backdrop-blur-md border border-slate-600/50 hover:border-accent-cyan/50 transition-colors">
-                        <ChevronDown className="h-6 w-6 text-accent-cyan" />
+                    <div className="p-2 rounded-full bg-industrial-950/30 backdrop-blur-md border border-slate-600/50 hover:border-secondary transition-colors">
+                        <ChevronDown className="h-6 w-6 text-secondary" />
                     </div>
                 </ScrollLink>
             </motion.div>

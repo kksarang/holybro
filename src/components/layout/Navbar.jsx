@@ -68,7 +68,7 @@ const Navbar = () => {
 
                     {/* Desktop Menu */}
                     <div className="hidden lg:flex space-x-8 items-center">
-                        <NavLink to="/" className="text-sm font-medium transition-colors hover:text-accent-cyan text-white">
+                        <NavLink to="/" className="text-sm font-medium transition-colors hover:text-secondary text-white">
                             Home
                         </NavLink>
 
@@ -78,7 +78,7 @@ const Navbar = () => {
                             onMouseEnter={() => setServicesOpen(true)}
                             onMouseLeave={() => setServicesOpen(false)}
                         >
-                            <button className="flex items-center text-sm font-medium transition-colors hover:text-accent-cyan text-white focus:outline-none">
+                            <button className="flex items-center text-sm font-medium transition-colors hover:text-secondary text-white focus:outline-none">
                                 Services <ChevronDown className="ml-1 h-4 w-4" />
                             </button>
 
@@ -103,7 +103,7 @@ const Navbar = () => {
                                                             <li key={item.path}>
                                                                 <NavLink
                                                                     to={item.path}
-                                                                    className="block text-sm text-gray-300 hover:text-accent-cyan hover:translate-x-1 transition-all"
+                                                                    className="block text-sm text-gray-300 hover:text-secondary hover:translate-x-1 transition-all"
                                                                 >
                                                                     {item.name}
                                                                 </NavLink>
@@ -124,7 +124,7 @@ const Navbar = () => {
                                                             <li key={item.path}>
                                                                 <NavLink
                                                                     to={item.path}
-                                                                    className="block text-sm text-gray-300 hover:text-accent-cyan hover:translate-x-1 transition-all"
+                                                                    className="block text-sm text-gray-300 hover:text-secondary hover:translate-x-1 transition-all"
                                                                 >
                                                                     {item.name}
                                                                 </NavLink>
@@ -148,10 +148,10 @@ const Navbar = () => {
                             </AnimatePresence>
                         </div>
 
-                        <NavLink to="/about" className="text-sm font-medium transition-colors hover:text-accent-cyan text-white">
-                            About Us
+                        <NavLink to="/about" className="text-sm font-medium transition-colors hover:text-secondary text-white">
+                            About Uss
                         </NavLink>
-                        <NavLink to="/contact" className="text-sm font-medium transition-colors hover:text-accent-cyan text-white">
+                        <NavLink to="/contact" className="text-sm font-medium transition-colors hover:text-secondary text-white">
                             Contact
                         </NavLink>
 
@@ -166,7 +166,7 @@ const Navbar = () => {
                     <div className="lg:hidden flex items-center">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
-                            className="text-white hover:text-accent-cyan focus:outline-none p-2"
+                            className="text-white hover:text-secondary focus:outline-none p-2"
                         >
                             <span className="sr-only">Open menu</span>
                             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}

@@ -8,49 +8,49 @@ export default {
     extend: {
       colors: {
         primary: {
-          light: "#3B82F6", // Vivid Blue
-          DEFAULT: "#2563EB", // Royal Blue
-          dark: "#1E40AF",  // Deep Blue
+          light: "#1F5F8B", // Medium Blue as light variant
+          DEFAULT: "#0B3C5D", // Dark Blue (Main Brand)
+          dark: "#082D46",  // Darker shade
         },
         secondary: {
-          light: "#64748B", // Slate 500
-          DEFAULT: "#475569", // Slate 600
-          dark: "#334155", // Slate 700
+          light: "#3F82B3",
+          DEFAULT: "#1F5F8B", // Medium Blue
+          dark: "#154466",
         },
         industrial: {
-          50: "#F8FAFC",
-          100: "#F1F5F9",
-          200: "#E2E8F0",
-          300: "#CBD5E1",
-          400: "#94A3B8",
-          500: "#64748B",
-          600: "#475569",
-          700: "#334155",
-          800: "#1E293B", // Main Dark BG
-          900: "#0F172A", // Darker Contrast
-          950: "#020617", // Almost Black
+          50: "#F9FAFB",
+          100: "#F3F4F6",
+          200: "#E5E7EB",
+          300: "#D1D5DB",
+          400: "#9CA3AF",
+          500: "#6B7280",
+          600: "#4B5563",
+          700: "#374151",
+          800: "#1F2937",
+          900: "#1C1C1C", // Dark Grey / Black (Text Color)
+          950: "#0B0B0B", // Darker Black for backgrounds
         },
         accent: {
-          cyan: "#06B6D4",
-          amber: "#F59E0B",
-          lime: "#84CC16",
+          cyan: "#1F5F8B", // Remapped to Medium Blue to enforce brand consistency
+          amber: "#F59E0B", // Warning colors kept for utility
+          lime: "#84CC16",  // Success colors kept for utility
         },
         background: {
-          DEFAULT: "#FFFFFF",
-          dark: "#0F172A",
-          alt: "#F8FAFC",
+          DEFAULT: "#FFFFFF", // White
+          dark: "#0B0B0B",
+          alt: "#F9FAFB",
         },
         surface: {
           DEFAULT: "#FFFFFF",
-          dark: "#1E293B",
+          dark: "#1C1C1C",
           translucent: "rgba(255, 255, 255, 0.9)",
-          darkTranslucent: "rgba(15, 23, 42, 0.8)",
+          darkTranslucent: "rgba(28, 28, 28, 0.8)",
         },
         text: {
-          primary: "#1E293B",
-          secondary: "#475569",
-          muted: "#94A3B8",
-          inverse: "#F8FAFC",
+          primary: "#1C1C1C", // Dark Grey / Black
+          secondary: "#4B5563",
+          muted: "#9CA3AF",
+          inverse: "#FFFFFF",
         },
       },
       fontFamily: {

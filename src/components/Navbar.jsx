@@ -28,8 +28,8 @@ const Navbar = () => {
         { name: 'Contact', path: '/contact' },
     ];
 
-    const darkHeroPaths = ['/services/lng-components', '/services/building-materials'];
-    const isDarkHero = darkHeroPaths.includes(location.pathname);
+    // All pages currently use a dark hero/banner section, so we always want white text when transparent
+    const isDarkHero = true;
 
     const getLinkClass = (path) => {
         const isActive = location.pathname === path;
@@ -39,9 +39,9 @@ const Navbar = () => {
             return `${base} hover:text-primary ${isActive ? 'text-primary font-semibold' : 'text-slate-600'}`;
         }
 
-        // Not scrolled (transparent bg)
+        // Not scrolled (transparent bg) on Dark Hero
         if (isDarkHero) {
-            return `${base} hover:text-cyan-300 ${isActive ? 'text-white font-bold' : 'text-white/90'}`;
+            return `${base} hover:text-secondary ${isActive ? 'text-white font-bold' : 'text-white'}`;
         }
 
         return `${base} hover:text-primary ${isActive ? 'text-primary font-semibold' : 'text-slate-600'}`;
@@ -86,7 +86,7 @@ const Navbar = () => {
                     <div className="md:hidden">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
-                            className={`${!isScrolled && isDarkHero ? 'text-white hover:text-cyan-300' : 'text-slate-600 hover:text-primary'} transition-colors`}
+                            className={`${!isScrolled && isDarkHero ? 'text-white hover:text-secondary' : 'text-slate-600 hover:text-primary'} transition-colors`}
                         >
                             {isOpen ? <X size={28} /> : <Menu size={28} />}
                         </button>

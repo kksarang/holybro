@@ -25,7 +25,7 @@ const Clients = () => {
                         <motion.div
                             key={index}
                             whileHover={{ scale: 1.05, y: -5 }}
-                            className="flex items-center justify-center p-4 bg-white rounded-xl border border-slate-200 h-24 shadow-sm hover:shadow-md hover:border-accent-cyan/30 transition-all duration-300 cursor-pointer group"
+                            className="flex items-center justify-center p-4 bg-white rounded-xl border border-slate-200 h-24 shadow-sm hover:shadow-md hover:border-secondary/30 transition-all duration-300 cursor-pointer group"
                         >
                             {/* Placeholder for Logo - Styled as Text */}
                             <span className="font-bold text-slate-700 group-hover:text-industrial-900 text-center text-sm md:text-base leading-tight">

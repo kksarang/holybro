@@ -17,7 +17,7 @@ const Certifications = () => {
             <Container>
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold text-industrial-900 mb-4">Certified Excellence</h2>
-                    <div className="h-1 w-20 bg-accent-cyan mx-auto rounded-full mb-6"></div>
+                    <div className="h-1 w-20 bg-secondary mx-auto rounded-full mb-6"></div>
                     <p className="text-slate-600 max-w-2xl mx-auto">
                         We are committed to the highest international standards of quality, safety, and environmental responsibility.
                     </p>

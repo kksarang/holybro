@@ -40,7 +40,7 @@ const ServiceLayout = ({
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2 }}
-                        className="h-1 w-24 bg-accent-cyan mx-auto rounded-full"
+                        className="h-1 w-24 bg-secondary mx-auto rounded-full"
                     ></motion.div>
                 </Container>
             </div>
@@ -77,7 +77,7 @@ const ServiceLayout = ({
                             className="bg-slate-50 rounded-2xl p-8 border border-slate-200"
                         >
                             <h3 className="text-xl font-bold text-industrial-800 mb-6 flex items-center">
-                                <span className="w-2 h-8 bg-accent-cyan rounded-full mr-3"></span>
+                                <span className="w-2 h-8 bg-secondary rounded-full mr-3"></span>
                                 Key Capabilities
                             </h3>
                             <ul className="space-y-4">
