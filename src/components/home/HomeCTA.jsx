@@ -16,7 +16,7 @@ const HomeCTA = () => {
             <div
                 className="absolute inset-0 z-10"
                 style={{
-                    background: 'rgba(11, 60, 93, 0.84)'
+                    background: 'rgba(11, 60, 93, 0.76)'
                 }}
             ></div>
 
