@@ -8,6 +8,17 @@ import { services } from '../../data/services';
 const ServicesOverview = () => {
     return (
         <Section className="bg-white border-t border-slate-200">
+            <style>{`
+                .service-title {
+                    transition: all 0.3s ease;
+                }
+                .group:hover .service-title {
+                    background: linear-gradient(90deg, #2A2F74 0%, #005AA7 45%, #00A3D9 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                }
+            `}</style>
             <Container>
                 {/* Section Header */}
                 <div className="text-center max-w-3xl mx-auto mb-16">
@@ -51,7 +62,7 @@ const ServicesOverview = () => {
                             </div>
 
                             {/* Content */}
-                            <h3 className="text-xl font-bold text-industrial-900 mb-3 group-hover:text-secondary transition-colors">
+                            <h3 className="service-title text-xl font-bold text-industrial-900 mb-3">
                                 {service.title}
                             </h3>
                             <p className="text-slate-600 text-sm leading-relaxed mb-6 flex-grow">
