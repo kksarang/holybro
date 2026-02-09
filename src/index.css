@@ -8,7 +8,7 @@
   html {
     scroll-behavior: smooth;
   }
-  
+
   body {
     @apply bg-background text-text-primary font-sans antialiased overflow-x-hidden;
   }
@@ -27,7 +27,7 @@
   .text-gradient {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-light to-primary-dark;
   }
-  
+
   .text-gradient-industrial {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-industrial-800 to-primary-dark;
   }
@@ -35,7 +35,7 @@
   .bg-gradient-primary {
     @apply bg-gradient-to-r from-primary-light to-primary-dark;
   }
-  
+
   .bg-industrial-gradient {
     @apply bg-gradient-to-br from-industrial-900 via-industrial-800 to-industrial-950;
   }
@@ -43,12 +43,28 @@
   .glass {
     @apply bg-surface-translucent backdrop-blur-md border border-white/20 shadow-soft;
   }
-  
+
   .glass-dark {
     @apply bg-surface-darkTranslucent backdrop-blur-md border border-white/10 shadow-industrial text-white;
   }
-  
+
   .container-padding {
     @apply px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Skip to content link for accessibility */
+  .skip-to-content {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    background: #0F172A;
+    color: white;
+    padding: 0.5rem 1rem;
+    z-index: 9999;
+    transition: top 0.3s;
+  }
+
+  .skip-to-content:focus {
+    top: 0;
   }
 }

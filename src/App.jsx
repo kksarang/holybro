@@ -4,6 +4,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import Layout from './components/layout/Layout';
 import ScrollToTop from './components/layout/ScrollToTop';
 import LoadingSpinner from './components/layout/LoadingSpinner';
+import ErrorBoundary from './components/ErrorBoundary';
 
 // Lazy load pages
 const Home = lazy(() => import('./pages/Home'));
@@ -19,27 +20,29 @@ const CommercialTransportation = lazy(() => import('./pages/CommercialTransporta
 
 function App() {
   return (
-    <HelmetProvider>
-      <Router>
-        <ScrollToTop />
-        <Suspense fallback={<LoadingSpinner />}>
-          <Routes>
-            <Route path="/" element={<Layout />}>
-              <Route index element={<Home />} />
-              <Route path="about" element={<About />} />
-              <Route path="services" element={<Services />} />
-              <Route path="contact" element={<Contact />} />
-              <Route path="services/lng-components" element={<LngComponents />} />
-              <Route path="services/building-materials" element={<BuildingMaterials />} />
-              <Route path="services/limousine" element={<LimousineServices />} />
-              <Route path="services/manpower" element={<ManpowerServices />} />
-              <Route path="services/real-estate" element={<RealEstateServices />} />
-              <Route path="services/transportation" element={<CommercialTransportation />} />
-            </Route>
-          </Routes>
-        </Suspense>
-      </Router>
-    </HelmetProvider>
+    <ErrorBoundary>
+      <HelmetProvider>
+        <Router>
+          <ScrollToTop />
+          <Suspense fallback={<LoadingSpinner />}>
+            <Routes>
+              <Route path="/" element={<Layout />}>
+                <Route index element={<Home />} />
+                <Route path="about" element={<About />} />
+                <Route path="services" element={<Services />} />
+                <Route path="contact" element={<Contact />} />
+                <Route path="services/lng-components" element={<LngComponents />} />
+                <Route path="services/building-materials" element={<BuildingMaterials />} />
+                <Route path="services/limousine" element={<LimousineServices />} />
+                <Route path="services/manpower" element={<ManpowerServices />} />
+                <Route path="services/real-estate" element={<RealEstateServices />} />
+                <Route path="services/transportation" element={<CommercialTransportation />} />
+              </Route>
+            </Routes>
+          </Suspense>
+        </Router>
+      </HelmetProvider>
+    </ErrorBoundary>
   );
 }
 
