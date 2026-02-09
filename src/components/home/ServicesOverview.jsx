@@ -85,7 +85,14 @@ const ServicesOverview = () => {
                 {/* View All CTA */}
                 <div className="mt-16 text-center">
                     <Link to="/services">
-                        <Button variant="primary" size="lg">
+                        <Button
+                            variant="primary"
+                            size="lg"
+                            style={{
+                                background: 'linear-gradient(90deg, #2A2F74 0%)',
+                                border: 'none'
+                            }}
+                        >
                             View All Services
                             <ArrowRight className="ml-2 h-5 w-5" />
                         </Button>
