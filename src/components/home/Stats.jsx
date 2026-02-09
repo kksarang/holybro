@@ -12,9 +12,9 @@ const stats = [
 
 const Stats = () => {
     return (
-        <Section className="bg-industrial-900 border-y border-white/10" dark>
+        <Section className="bg-white border-y border-slate-200">
             <Container>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-white/10">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-slate-200">
                     {stats.map((stat, index) => (
                         <motion.div
                             key={index}
@@ -27,7 +27,7 @@ const Stats = () => {
                             <div className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary mb-2 font-mono">
                                 {stat.value}
                             </div>
-                            <div className="text-slate-400 font-medium text-sm md:text-base tracking-wide uppercase">
+                            <div className="text-slate-600 font-medium text-sm md:text-base tracking-wide uppercase">
                                 {stat.label}
                             </div>
                         </motion.div>
