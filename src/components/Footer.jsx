@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Facebook, Twitter, Instagram, Linkedin, MapPin, Phone, Mail } from 'lucide-react';
-import logo from '../assets/logo.svg';
+import logo from '../assets/logoone.png';
 
 const Footer = () => {
     return (
@@ -10,7 +10,7 @@ const Footer = () => {
                     {/* Brand Info */}
                     <div>
                         <Link to="/" className="flex items-center space-x-2 mb-6 group">
-                            <img src={logo} alt="Holy Bro International" className="h-12 w-auto object-contain mb-2" />
+                            <img src={logo} alt="Holy Bro International" className="h-16 w-600 object-contain mb-2" />
                         </Link>
                         <p className="text-slate-500 text-sm leading-relaxed mb-6 font-medium">
                             Building the future with excellence. Your trusted partner for Real Estate, Trading, and dynamic business solutions in Qatar.

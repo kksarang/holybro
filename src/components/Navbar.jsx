@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import Button from './ui/Button';
-import logo from '../assets/logo.svg';
+import logo from '../assets/logoone.png';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -59,7 +59,7 @@ const Navbar = () => {
                         <img
                             src={logo}
                             alt="Holy Bro International"
-                            className="h-12 w-auto object-contain transition-all duration-300"
+                            className="h-16 w-600 object-contain transition-all duration-300"
                             style={{ filter: !isScrolled && isDarkHero ? 'brightness(0) invert(1)' : 'none' }}
                         />
                     </Link>
