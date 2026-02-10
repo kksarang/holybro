@@ -2,7 +2,7 @@ import { Link as ScrollLink } from 'react-scroll';
 import { Link } from 'react-router-dom';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ChevronDown, ArrowRight } from 'lucide-react';
-import heroBg from '../../assets/hero-bg.jpg';
+import heroBg from '../../assets/home.png';
 
 const Hero = () => {
     const { scrollY } = useScroll();
@@ -55,9 +55,9 @@ const Hero = () => {
                     </h1>
 
                     {/* Subheading */}
-                    <p className="text-lg md:text-2xl text-slate-200 max-w-2xl mb-10 font-light leading-relaxed border-l-4 border-secondary pl-6 backdrop-blur-sm bg-industrial-950/10 py-2 rounded-r-lg">
+                    {/* <p className="text-lg md:text-2xl text-slate-200 max-w-2xl mb-10 font-light leading-relaxed border-l-4 border-secondary pl-6 backdrop-blur-sm bg-industrial-950/10 py-2 rounded-r-lg">
                         Delivering reliable industrial, construction, manpower, and transportation solutions across Qatar.
-                    </p>
+                    </p> */}
 
                     {/* Call-To-Action Buttons */}
                     <div className="flex flex-col sm:flex-row gap-5">

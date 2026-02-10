@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import ctaBg from '../../assets/hhhh.jpg';
+import ctaBg from '../../assets/hhh.png';
 
 const HomeCTA = () => {
     return (
@@ -16,7 +16,7 @@ const HomeCTA = () => {
             <div
                 className="absolute inset-0 z-10"
                 style={{
-                    background: 'rgba(11, 60, 93, 0.76)'
+                    background: 'rgba(11, 60, 93, 0.66)'
                 }}
             ></div>
 
