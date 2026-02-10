@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import ctaBg from '../../assets/hhh.png';
+import ctaBg from '../../assets/hhh_optimized.jpg';
 
 const HomeCTA = () => {
     return (
