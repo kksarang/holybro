@@ -59,7 +59,7 @@ const Navbar = () => {
                         <img
                             src={logo}
                             alt="Holy Bro International"
-                            className="h-16 w-600 object-contain transition-all duration-300"
+                            className="h-16 w-auto object-contain transition-all duration-300"
                             style={{ filter: !isScrolled && isDarkHero ? 'brightness(0) invert(1)' : 'none' }}
                         />
                     </Link>
