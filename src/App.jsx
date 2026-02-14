@@ -27,8 +27,8 @@ function App() {
           <ScrollToTop />
           <Suspense fallback={<LoadingSpinner />}>
             <Routes>
-              <Route path="/" element={<ComingSoon />} />
               <Route element={<Layout />}>
+                <Route index element={<ComingSoon />} />
                 <Route path="home" element={<Home />} />
                 <Route path="about" element={<About />} />
                 <Route path="services" element={<Services />} />
