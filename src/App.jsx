@@ -17,6 +17,7 @@ const LimousineServices = lazy(() => import('./pages/LimousineServices'));
 const ManpowerServices = lazy(() => import('./pages/ManpowerServices'));
 const RealEstateServices = lazy(() => import('./pages/RealEstateServices'));
 const CommercialTransportation = lazy(() => import('./pages/CommercialTransportation'));
+const ComingSoon = lazy(() => import('./pages/ComingSoon'));
 
 function App() {
   return (
@@ -26,8 +27,9 @@ function App() {
           <ScrollToTop />
           <Suspense fallback={<LoadingSpinner />}>
             <Routes>
-              <Route path="/" element={<Layout />}>
-                <Route index element={<Home />} />
+              <Route path="/" element={<ComingSoon />} />
+              <Route element={<Layout />}>
+                <Route path="home" element={<Home />} />
                 <Route path="about" element={<About />} />
                 <Route path="services" element={<Services />} />
                 <Route path="contact" element={<Contact />} />
