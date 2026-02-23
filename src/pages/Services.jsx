@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
+// eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
 import HomeCTA from '../components/home/HomeCTA';
@@ -55,41 +56,40 @@ const Services = () => {
                                 transition={{ delay: index * 0.1 }}
                                 className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 flex flex-col h-full"
                             >
-                                <div className="p-8 flex flex-col h-full">
-                                    <div className="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-industrial-900 transition-colors duration-300">
-                                        <service.icon className={`h-8 w-8 text-${service.color}-600 group-hover:text-white transition-colors duration-300`} />
-                                    </div>
+                                <Link to={service.slug ? `/services/${service.slug}` : '#'} className="block h-full focus:outline-none">
+                                    <div className="p-8 flex flex-col h-full">
+                                        <div className="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-industrial-900 transition-colors duration-300">
+                                            <service.icon className={`h-8 w-8 text-${service.color}-600 group-hover:text-white transition-colors duration-300`} />
+                                        </div>
 
-                                    <h3 className="text-2xl font-bold text-industrial-900 mb-4 group-hover:text-accent-cyan transition-colors">
-                                        {service.title}
-                                    </h3>
+                                        <h3 className="text-2xl font-bold text-industrial-900 mb-4 group-hover:text-accent-cyan transition-colors">
+                                            {service.title}
+                                        </h3>
 
-                                    <p className="text-slate-600 mb-8 leading-relaxed flex-grow">
-                                        {service.description}
-                                    </p>
+                                        <p className="text-slate-600 mb-8 leading-relaxed flex-grow">
+                                            {service.description}
+                                        </p>
 
-                                    <div className="space-y-3 mb-8">
-                                        {service.features.slice(0, 3).map((feature, idx) => (
-                                            <div key={idx} className="flex items-start text-sm text-slate-500">
-                                                <CheckCircle2 className={`w-4 h-4 text-${service.color}-500 mr-2 mt-0.5 flex-shrink-0`} />
-                                                <span>{feature}</span>
+                                        <div className="space-y-3 mb-8">
+                                            {service.features.slice(0, 3).map((feature, idx) => (
+                                                <div key={idx} className="flex items-start text-sm text-slate-500">
+                                                    <CheckCircle2 className={`w-4 h-4 text-${service.color}-500 mr-2 mt-0.5 flex-shrink-0`} />
+                                                    <span>{feature}</span>
+                                                </div>
+                                            ))}
+                                        </div>
+
+                                        {service.slug ? (
+                                            <div className="inline-flex items-center text-industrial-600 font-semibold group-hover:text-accent-cyan transition-colors mt-auto">
+                                                Learn More <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
                                             </div>
-                                        ))}
+                                        ) : (
+                                            <span className="inline-flex items-center text-slate-400 font-medium cursor-not-allowed mt-auto">
+                                                Coming Soon
+                                            </span>
+                                        )}
                                     </div>
-
-                                    {service.link ? (
-                                        <Link
-                                            to={service.link}
-                                            className="inline-flex items-center text-industrial-600 font-semibold group-hover:text-accent-cyan transition-colors mt-auto"
-                                        >
-                                            Learn More <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
-                                        </Link>
-                                    ) : (
-                                        <span className="inline-flex items-center text-slate-400 font-medium cursor-not-allowed mt-auto">
-                                            Coming Soon
-                                        </span>
-                                    )}
-                                </div>
+                                </Link>
                             </motion.div>
                         ))}
                     </div>

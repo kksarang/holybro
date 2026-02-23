@@ -128,48 +128,48 @@ const ServicesOverview = () => {
                 {/* Services Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                     {services.map((service, index) => (
-                        <div
+                        <Link
                             key={service.title}
-                            className="service-card group relative bg-white border border-slate-200 rounded-2xl p-10 flex flex-col"
-                            style={{
-                                animationDelay: `${index * 0.1}s`
-                            }}
+                            to={service.slug ? `/services/${service.slug}` : '#'}
+                            className="block focus:outline-none"
+                            style={{ animationDelay: `${index * 0.1}s` }}
                         >
-                            {/* Icon */}
-                            <div
-                                className="service-icon w-20 h-20 rounded-2xl flex items-center justify-center mb-8 shadow-lg"
-                                style={{
-                                    background: 'linear-gradient(135deg, #2A2F74 0%, #005AA7 45%, #00A3D9 100%)'
-                                }}
-                            >
-                                <service.icon className="h-10 w-10 text-white" strokeWidth={2} />
-                            </div>
-
-                            {/* Content */}
-                            <h3 className="service-title text-2xl font-bold mb-4">
-                                {service.title}
-                            </h3>
-                            <p className="text-slate-600 text-base leading-relaxed mb-8 flex-grow">
-                                {service.description}
-                            </p>
-
-                            {/* CTA */}
-                            <div className="mt-auto pt-6 border-t border-slate-200">
-                                <Link
-                                    to={service.link}
-                                    className="view-details-link text-base font-bold"
+                            <div className="service-card group relative bg-white border border-slate-200 rounded-2xl p-10 flex flex-col h-full">
+                                {/* Icon */}
+                                <div
+                                    className="service-icon w-20 h-20 rounded-2xl flex items-center justify-center mb-8 shadow-lg"
                                     style={{
-                                        background: 'linear-gradient(90deg, #2A2F74 0%, #005AA7 45%, #00A3D9 100%)',
-                                        WebkitBackgroundClip: 'text',
-                                        WebkitTextFillColor: 'transparent',
-                                        backgroundClip: 'text'
+                                        background: 'linear-gradient(135deg, #2A2F74 0%, #005AA7 45%, #00A3D9 100%)'
                                     }}
                                 >
-                                    View Details
-                                    <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" style={{ color: '#005AA7' }} />
-                                </Link>
+                                    <service.icon className="h-10 w-10 text-white" strokeWidth={2} />
+                                </div>
+
+                                {/* Content */}
+                                <h3 className="service-title text-2xl font-bold mb-4">
+                                    {service.title}
+                                </h3>
+                                <p className="text-slate-600 text-base leading-relaxed mb-8 flex-grow">
+                                    {service.description}
+                                </p>
+
+                                {/* CTA */}
+                                <div className="mt-auto pt-6 border-t border-slate-200">
+                                    <span
+                                        className="view-details-link text-base font-bold"
+                                        style={{
+                                            background: 'linear-gradient(90deg, #2A2F74 0%, #005AA7 45%, #00A3D9 100%)',
+                                            WebkitBackgroundClip: 'text',
+                                            WebkitTextFillColor: 'transparent',
+                                            backgroundClip: 'text'
+                                        }}
+                                    >
+                                        View Details
+                                        <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" style={{ color: '#005AA7' }} />
+                                    </span>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
 

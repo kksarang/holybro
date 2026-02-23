@@ -11,12 +11,8 @@ const Home = lazy(() => import('./pages/Home'));
 const About = lazy(() => import('./pages/About'));
 const Services = lazy(() => import('./pages/Services'));
 const Contact = lazy(() => import('./pages/Contact'));
-const LngComponents = lazy(() => import('./pages/LngComponents'));
-const BuildingMaterials = lazy(() => import('./pages/BuildingMaterials'));
-const Construction = lazy(() => import('./pages/Construction'));
-const ManpowerServices = lazy(() => import('./pages/ManpowerServices'));
-const Transportation = lazy(() => import('./pages/Transportation'));
-const CommercialTransportation = lazy(() => import('./pages/CommercialTransportation'));
+// Dynamic Slug Wrapper
+const ServiceDetails = lazy(() => import('./pages/ServiceDetails'));
 
 function App() {
   return (
@@ -31,12 +27,7 @@ function App() {
                 <Route path="about" element={<About />} />
                 <Route path="services" element={<Services />} />
                 <Route path="contact" element={<Contact />} />
-                <Route path="services/lng-components" element={<LngComponents />} />
-                <Route path="services/building-materials" element={<BuildingMaterials />} />
-                <Route path="services/construction" element={<Construction />} />
-                <Route path="services/manpower" element={<ManpowerServices />} />
-                <Route path="services/transportation" element={<Transportation />} />
-                <Route path="services/commercial-transportation" element={<CommercialTransportation />} />
+                <Route path="services/:slug" element={<ServiceDetails />} />
               </Route>
             </Routes>
           </Suspense>

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
+// eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from 'framer-motion';
 import Button from '../ui/Button';
 import logo from '../../assets/logoone.png';
@@ -22,7 +23,9 @@ const Navbar = () => {
 
     // Close mobile menu on route change
     useEffect(() => {
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setIsOpen(false);
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setServicesOpen(false);
     }, [location]);
 
@@ -30,27 +33,25 @@ const Navbar = () => {
         {
             title: "Industrial & Trading",
             items: [
-                { name: "LNG Plant Components", path: "/services/lng-components" },
+                { name: "LNG Plant Components", path: "/services/oil-gas-lng" },
                 { name: "Building Materials", path: "/services/building-materials" },
             ]
         },
         {
             title: "Workforce & Mobility",
             items: [
-                { name: "Manpower Supply", path: "/services/manpower" },
-                { name: "Commercial Transportation", path: "/services/transportation" },
-                { name: "Luxury Limousine", path: "/services/limousine" },
+                { name: "Manpower Supply", path: "/services/manpower-supply" },
+                { name: "Commercial Transportation", path: "/services/commercial-transportation" },
             ]
         },
         {
-            title: "Real Estate",
+            title: "Engineering & Freight",
             items: [
-                { name: "Property Services", path: "/services/real-estate" },
+                { name: "Construction & Contracting", path: "/services/construction-contracting" },
+                { name: "Transportation Services", path: "/services/transportation-services" },
             ]
         }
     ];
-
-    const isHome = location.pathname === '/';
 
     // Strict Navbar Background Rules
     // Default: rgba(11, 60, 93, 0.75) -> bg-primary/75
@@ -60,7 +61,6 @@ const Navbar = () => {
         : 'bg-primary/75 backdrop-blur-md';
 
     // Text Color Rules (Strict: Always White)
-    const textColor = 'text-white';
     const linkBaseClass = "text-sm font-medium transition-colors text-white hover:text-white/80";
     const activeLinkClass = "text-white font-bold border-b-2 border-secondary pb-1";
 

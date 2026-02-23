@@ -9,7 +9,7 @@ export const services = [
         features: ['Cryogenic Systems', 'LNG Equipment Supply', 'Quality Assurance', 'Automation Support'],
         color: 'bg-cyan-50 text-cyan-600',
         borderColor: 'hover:border-cyan-200',
-        link: '/services/lng-components'
+        slug: 'oil-gas-lng'
     },
     {
         title: 'Building Materials Supply',
@@ -19,7 +19,7 @@ export const services = [
         features: ['Structural & Civil Materials', 'Finishing & Architectural', 'MEP Construction Materials', 'Project-Based Customization'],
         color: 'bg-amber-50 text-amber-600',
         borderColor: 'hover:border-amber-200',
-        link: '/services/building-materials'
+        slug: 'building-materials'
     },
     {
         title: 'Transportation Services',
@@ -29,7 +29,7 @@ export const services = [
         features: ['Material Transport', 'Heavy Equipment Logistics', 'Fleet Management', 'GPS Tracking'],
         color: 'bg-green-50 text-green-600',
         borderColor: 'hover:border-green-200',
-        link: '/services/transportation'
+        slug: 'transportation-services'
     },
     {
         title: 'Commercial Transportation',
@@ -39,7 +39,7 @@ export const services = [
         features: ['Staff Transportation', 'Long-term Fleet Rental', 'Bulk & Distribution', 'Retail Logistics'],
         color: 'bg-orange-50 text-orange-600',
         borderColor: 'hover:border-orange-200',
-        link: '/services/commercial-transportation'
+        slug: 'commercial-transportation'
     },
     {
         title: 'Construction & Contracting',
@@ -49,7 +49,7 @@ export const services = [
         features: ['Civil & Infrastructure Works', 'Building Maintenance', 'AC Maintenance & HVAC', 'MEP Services'],
         color: 'bg-purple-50 text-purple-600',
         borderColor: 'hover:border-purple-200',
-        link: '/services/construction'
+        slug: 'construction-contracting'
     },
     {
         title: 'Professional Manpower Supply',
@@ -59,6 +59,6 @@ export const services = [
         features: ['Engineering Professionals', 'HSE & Safety Experts', 'Skilled Technical Workforce', 'Logistics Support'],
         color: 'bg-indigo-50 text-indigo-600',
         borderColor: 'hover:border-indigo-200',
-        link: '/services/manpower'
+        slug: 'manpower-supply'
     }
 ];
