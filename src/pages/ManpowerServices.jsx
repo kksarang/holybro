@@ -22,10 +22,10 @@ import { useSEO } from '../hooks/useSEO';
 const ManpowerServices = () => {
     // SEO Metadata
     useSEO({
-        title: 'Manpower Supply & Recruitment Services | Holy Bro International W.L.L',
-        description: 'Professional manpower supply and recruitment services in Qatar. Skilled workers, technical staff, and labor solutions for construction, industrial, and commercial sectors.',
-        ogTitle: 'Manpower Supply & Recruitment Services | Holy Bro International W.L.L',
-        ogDescription: 'Professional manpower supply and recruitment services in Qatar. Skilled workers, technical staff, and labor solutions for all sectors.'
+        title: 'Professional Manpower Supply Services | Holy Bro International W.L.L',
+        description: 'Strategic workforce solutions and professional manpower supply for engineering and industrial projects in Qatar.',
+        ogTitle: 'Professional Manpower Supply Services | Holy Bro International W.L.L',
+        ogDescription: 'Strategic workforce solutions for engineering and industrial projects in Qatar.'
     });
 
     const galleryImages = [
@@ -35,18 +35,18 @@ const ManpowerServices = () => {
     ];
 
     const features = [
-        'Skilled & Unskilled Labor',
-        'Civil, Mechanical & Electrical Teams',
-        'White-Collar Staffing',
-        'Visa & Payroll Management',
+        'Rigorous Screening',
+        'Skill Validation',
+        'Compliance & Documentation',
+        'Continuous Monitoring',
         'Rapid Mobilization',
         'Strict Safety Compliance'
     ];
 
     return (
         <ServiceLayout
-            title="Manpower Supply Services"
-            description="Connecting businesses with skilled, reliable, and compliant workforce solutions across all industrial sectors. We handle recruitment, visa processing, payroll, and accommodation, allowing you to focus on your core project goals."
+            title="Professional Manpower Supply"
+            description="Strategic Workforce Solutions for Engineering & Industrial Projects. Connecting businesses with skilled, reliable, and compliant workforce solutions across all industrial sectors. We handle recruitment, documentation, and compliance, allowing you to focus on your core project goals."
             heroImage={ManpowerHeroImage}
             features={features}
             galleryImages={galleryImages}
@@ -61,19 +61,19 @@ const ManpowerServices = () => {
 
                     <div className="grid md:grid-cols-3 gap-8">
                         <FeatureCard
-                            title="Vetted & Certified"
+                            title="Rigorous Screening"
                             icon={ClipboardCheck}
-                            desc="Every candidate undergoes rigorous screening, skill testing, and background checks."
+                            desc="Every candidate undergoes thorough background checks and rigorous initial screening."
                         />
                         <FeatureCard
-                            title="Rapid Mobilization"
-                            icon={Users}
-                            desc="We can deploy teams within 24-48 hours for urgent project requirements."
+                            title="Skill Validation"
+                            icon={Hammer}
+                            desc="Practical and theoretical skill testing ensures the right competency for every role."
                         />
                         <FeatureCard
-                            title="Full Compliance"
+                            title="Compliance & Documentation"
                             icon={Shield}
-                            desc="Fully compliant with Qatar Labor Law, WPS regulations, and safety standards."
+                            desc="Fully compliant with Qatar Labor Law, handling all necessary documentation and certifications."
                         />
                     </div>
                 </Container>
@@ -91,14 +91,12 @@ const ManpowerServices = () => {
 
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 {[
-                                    'General Helpers & Cleaners',
-                                    'Masons, Carpenters, Steel Fixers',
-                                    'Electricians & Plumbers',
-                                    'Welders (3G, 4G, 6G) & Fabricators',
-                                    'Painters & Decorators',
-                                    'HVAC Technicians',
-                                    'Riggers & Scaffolders',
-                                    'Safety Officers & Foremen'
+                                    'Engineers (Specialized project execution)',
+                                    'HSE Engineers & Safety Professionals',
+                                    'Technical & Skilled Workforce (Certified technicians)',
+                                    'Draughtsmen & Design Support (CAD/BIM)',
+                                    'Professional Drivers & Logistics Support',
+                                    'Certified Craftspeople & Tradesmen'
                                 ].map((trade, i) => (
                                     <div key={i} className="flex items-center p-4 bg-slate-50 rounded-lg border border-slate-100 hover:border-blue-200 transition-colors">
                                         <Hammer className="w-5 h-5 text-blue-600 mr-3 flex-shrink-0" />

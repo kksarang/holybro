@@ -13,9 +13,9 @@ const Services = lazy(() => import('./pages/Services'));
 const Contact = lazy(() => import('./pages/Contact'));
 const LngComponents = lazy(() => import('./pages/LngComponents'));
 const BuildingMaterials = lazy(() => import('./pages/BuildingMaterials'));
-const LimousineServices = lazy(() => import('./pages/LimousineServices'));
+const Construction = lazy(() => import('./pages/Construction'));
 const ManpowerServices = lazy(() => import('./pages/ManpowerServices'));
-const RealEstateServices = lazy(() => import('./pages/RealEstateServices'));
+const Transportation = lazy(() => import('./pages/Transportation'));
 const CommercialTransportation = lazy(() => import('./pages/CommercialTransportation'));
 
 function App() {
@@ -33,10 +33,10 @@ function App() {
                 <Route path="contact" element={<Contact />} />
                 <Route path="services/lng-components" element={<LngComponents />} />
                 <Route path="services/building-materials" element={<BuildingMaterials />} />
-                <Route path="services/limousine" element={<LimousineServices />} />
+                <Route path="services/construction" element={<Construction />} />
                 <Route path="services/manpower" element={<ManpowerServices />} />
-                <Route path="services/real-estate" element={<RealEstateServices />} />
-                <Route path="services/transportation" element={<CommercialTransportation />} />
+                <Route path="services/transportation" element={<Transportation />} />
+                <Route path="services/commercial-transportation" element={<CommercialTransportation />} />
               </Route>
             </Routes>
           </Suspense>

@@ -2,63 +2,63 @@ import { Factory, BrickWall, Car, HardHat, Building2, Truck } from 'lucide-react
 
 export const services = [
     {
-        title: 'LNG Plant Components',
-        description: 'Supply of high-quality LNG plant–related components, including industrial equipment, fittings, valves, and specialized infrastructure materials.',
+        title: 'Oil & Gas Components & LNG Supply',
+        description: 'Quality specialized Oil & Gas components and LNG equipment supporting energy and industrial infrastructure projects with high-quality, certified materials.',
         shortDescription: 'LNG Plant Components & Industrial Supplies',
         icon: Factory,
-        features: ['Industrial Equipment', 'Valves & Fittings', 'Specialized Infrastructure', 'Safety Standards'],
+        features: ['Cryogenic Systems', 'LNG Equipment Supply', 'Quality Assurance', 'Automation Support'],
         color: 'bg-cyan-50 text-cyan-600',
         borderColor: 'hover:border-cyan-200',
         link: '/services/lng-components'
     },
     {
         title: 'Building Materials Supply',
-        description: 'Comprehensive range of construction and building materials such as cement, steel, aggregates, and finishing materials for all project types.',
+        description: 'High-grade materials engineered for strength and durability, including structural steel, concrete, and premium finishing solutions for all projects.',
         shortDescription: 'Building & Construction Materials',
         icon: BrickWall,
-        features: ['Cement & Steel', 'Finishing Materials', 'Aggregates', 'Commercial & Residential'],
+        features: ['Structural & Civil Materials', 'Finishing & Architectural', 'MEP Construction Materials', 'Project-Based Customization'],
         color: 'bg-amber-50 text-amber-600',
         borderColor: 'hover:border-amber-200',
         link: '/services/building-materials'
     },
     {
-        title: 'Transportation',
-        description: 'Premium limousine and luxury transportation services for corporate clients, VIPs, airport transfers, and executive travel.',
-        shortDescription: 'Luxury Limousine Services',
-        icon: Car,
-        features: ['VIP Transfers', 'Corporate Travel', 'Luxury Fleet', 'Chauffeur Service'],
-        color: 'bg-purple-50 text-purple-600',
-        borderColor: 'hover:border-purple-200',
-        link: '/services/limousine'
-    },
-    {
-        title: 'Professional Manpower',
-        description: 'Reliable supply of skilled and semi-skilled manpower for industries including construction, oil & gas, logistics, and facilities management.',
-        shortDescription: 'Skilled & Professional Manpower Supply',
-        icon: HardHat,
-        features: ['Skilled Labor', 'Oil & Gas Specialists', 'Logistics Staff', 'Facilities Management'],
-        color: 'bg-indigo-50 text-indigo-600',
-        borderColor: 'hover:border-indigo-200',
-        link: '/services/manpower'
-    },
-    {
-        title: 'Real Estate Services',
-        description: 'End-to-end real estate solutions covering property development, buying, selling, leasing, and investment consulting.',
-        shortDescription: 'Real Estate Development & Management',
-        icon: Building2,
-        features: ['Property Development', 'Sales & Leasing', 'Investment Consulting', 'Asset Management'],
-        color: 'bg-emerald-50 text-emerald-600',
-        borderColor: 'hover:border-emerald-200',
-        link: '/services/real-estate'
+        title: 'Transportation Services',
+        description: 'Professional transportation solutions designed to ensure safe, timely, and efficient movement of goods across regions. Expertise in construction material and heavy equipment transport.',
+        shortDescription: 'Safe & Efficient Logistics Solutions',
+        icon: Truck,
+        features: ['Material Transport', 'Heavy Equipment Logistics', 'Fleet Management', 'GPS Tracking'],
+        color: 'bg-green-50 text-green-600',
+        borderColor: 'hover:border-green-200',
+        link: '/services/transportation'
     },
     {
         title: 'Commercial Transportation',
-        description: 'End-to-end commercial transportation and logistics solutions, including fleet services, cargo movement, and industrial logistics.',
-        shortDescription: 'Commercial Transportation & Logistics',
-        icon: Truck,
-        features: ['Fleet Services', 'Cargo Movement', 'Industrial Logistics', 'Material Transport'],
-        color: 'bg-slate-50 text-slate-600',
-        borderColor: 'hover:border-slate-200',
-        link: '/services/transportation'
+        description: 'Business Logistics & Fleet Solutions. We offer commercial transportation services for corporate clients, government entities, and private sector businesses.',
+        shortDescription: 'Corporate & Bulk Distribution Logistics',
+        icon: Car,
+        features: ['Staff Transportation', 'Long-term Fleet Rental', 'Bulk & Distribution', 'Retail Logistics'],
+        color: 'bg-orange-50 text-orange-600',
+        borderColor: 'hover:border-orange-200',
+        link: '/services/commercial-transportation'
+    },
+    {
+        title: 'Construction & Contracting',
+        description: 'Complete engineering and infrastructure solutions including civil works, building maintenance, AC/HVAC, and integrated MEP services.',
+        shortDescription: 'Engineering & Infrastructure Solutions',
+        icon: Building2,
+        features: ['Civil & Infrastructure Works', 'Building Maintenance', 'AC Maintenance & HVAC', 'MEP Services'],
+        color: 'bg-purple-50 text-purple-600',
+        borderColor: 'hover:border-purple-200',
+        link: '/services/construction'
+    },
+    {
+        title: 'Professional Manpower Supply',
+        description: 'Strategic workforce solutions and customized manpower supply for engineering, industrial, and construction projects across Qatar.',
+        shortDescription: 'Skilled Manpower Recruitment',
+        icon: HardHat,
+        features: ['Engineering Professionals', 'HSE & Safety Experts', 'Skilled Technical Workforce', 'Logistics Support'],
+        color: 'bg-indigo-50 text-indigo-600',
+        borderColor: 'hover:border-indigo-200',
+        link: '/services/manpower'
     }
 ];

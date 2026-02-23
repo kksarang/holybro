@@ -36,18 +36,17 @@ const BuildingMaterials = () => {
     ];
 
     const features = [
-        'Structural Steel & Rebar',
-        'Cement & Aggregates',
-        'Premium Finishing Materials',
-        'International Quality Standards',
-        'Bulk Supply Agreements',
-        'Efficient Logistics Network'
+        'Quality Assurance',
+        'On-Time Delivery',
+        'Competitive Pricing',
+        'Project-Based Customization',
+        'Strong Vendor Network'
     ];
 
     return (
         <ServiceLayout
             title="Building Materials Supply"
-            description="We specialize in the supply of premium-grade building and construction materials for residential, commercial, industrial, and infrastructure projects. Our materials meet international quality standards and are sourced from trusted global and regional manufacturers."
+            description="Powering Construction with Quality, Precision & Speed. We supply high-grade materials engineered for strength and durability. All materials comply with international and regional construction standards to ensure structural integrity and long-term performance."
             heroImage={BuildingHeroImage}
             features={features}
             galleryImages={galleryImages}
@@ -56,13 +55,13 @@ const BuildingMaterials = () => {
             <Section className="bg-slate-50">
                 <Container>
                     <div className="text-center max-w-3xl mx-auto mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-industrial-900 mb-4">Scope of Supply</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold text-industrial-900 mb-4">Our Core Supply Categories</h2>
                         <div className="h-1 w-20 bg-amber-500 mx-auto rounded-full"></div>
                     </div>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <ComponentCard
-                            title="Structural Materials"
+                            title="Structural & Civil"
                             icon={BrickWall}
                             color="text-amber-600"
                             bgColor="bg-amber-50"
@@ -70,62 +69,47 @@ const BuildingMaterials = () => {
                             dotColor="bg-amber-400"
                             items={[
                                 'Cement (OPC, SRC, PPC)',
-                                'Ready-mix concrete & blocks',
-                                'Aggregates (sand, stone)',
-                                'Bricks & masonry blocks'
+                                'Reinforcement steel & sections',
+                                'Ready-mix concrete',
+                                'Blocks & precast elements'
                             ]}
                             delay={0.1}
                         />
                         <ComponentCard
-                            title="Steel & Reinforcement"
-                            icon={Hammer}
-                            color="text-amber-600"
-                            bgColor="bg-amber-50"
-                            hoverBg="group-hover:bg-amber-100"
-                            dotColor="bg-amber-400"
-                            items={[
-                                'Reinforcement steel (Rebar)',
-                                'Structural steel (I-beams)',
-                                'Wire mesh & fasteners',
-                                'Galvanized components'
-                            ]}
-                            delay={0.2}
-                        />
-                        <ComponentCard
-                            title="Finishing Materials"
+                            title="Finishing & Architectural"
                             icon={PaintBucket}
                             color="text-amber-600"
                             bgColor="bg-amber-50"
                             hoverBg="group-hover:bg-amber-100"
                             dotColor="bg-amber-400"
                             items={[
-                                'Ceramic & marble tiles',
-                                'Gypsum boards & plaster',
-                                'Waterproofing & insulation',
-                                'Paints & coatings'
+                                'Tiles, marble & granite',
+                                'Gypsum boards & ceiling systems',
+                                'Waterproofing materials',
+                                'Timber and joinery materials'
                             ]}
-                            delay={0.3}
+                            delay={0.2}
                         />
                         <ComponentCard
-                            title="MEP Materials"
+                            title="MEP & Industrial"
                             icon={Factory}
                             color="text-amber-600"
                             bgColor="bg-amber-50"
                             hoverBg="group-hover:bg-amber-100"
                             dotColor="bg-amber-400"
                             items={[
-                                'Plumbing pipes & valves',
-                                'Electrical cables & conduits',
-                                'HVAC ducts & insulation',
-                                'Drainage solutions'
+                                'Plumbing & electrical accessories',
+                                'Mechanical system materials',
+                                'Electrical wiring & distribution',
+                                'Industrial facility supplies'
                             ]}
-                            delay={0.4}
+                            delay={0.3}
                         />
 
-                        <div className="bg-gradient-to-br from-amber-600 to-orange-700 rounded-2xl p-8 flex flex-col justify-center text-white shadow-xl lg:col-span-2 relative overflow-hidden group">
+                        <div className="bg-gradient-to-br from-amber-600 to-orange-700 rounded-2xl p-8 flex flex-col justify-center text-white shadow-xl lg:col-span-3 relative overflow-hidden group">
                             <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
-                            <h3 className="text-2xl font-bold mb-4 relative z-10">Need a Custom Quote?</h3>
-                            <p className="text-amber-100 mb-6 max-w-xl relative z-10">We handle BOQ-based quotations and bulk supply agreements for large-scale projects.</p>
+                            <h3 className="text-2xl font-bold mb-4 relative z-10">Premium Procurement Network</h3>
+                            <p className="text-amber-100 mb-6 max-w-xl relative z-10">We maintain strong procurement networks to ensure competitive pricing, product availability, and timely site delivery across Qatar.</p>
                             <div className="relative z-10">
                                 <a href="/contact" className="inline-flex items-center font-semibold hover:text-amber-200 transition-colors bg-white/10 px-6 py-3 rounded-lg backdrop-blur-sm border border-white/20 hover:bg-white/20">
                                     Request Quotation <ChevronRight className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" />

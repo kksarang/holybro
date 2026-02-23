@@ -15,9 +15,9 @@ const ServiceLayout = ({
     children
 }) => {
     return (
-        <div className="pt-20">
+        <div className="w-full">
             {/* Service Hero */}
-            <div className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
+            <div className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden pt-20">
                 <div className="absolute inset-0">
                     <img
                         src={heroImage}

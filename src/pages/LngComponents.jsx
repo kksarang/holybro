@@ -23,10 +23,10 @@ import { useSEO } from '../hooks/useSEO';
 const LngComponents = () => {
     // SEO Metadata
     useSEO({
-        title: 'LNG Plant Components & Equipment | Holy Bro International W.L.L',
-        description: 'Specialized supplier of LNG plant components, cryogenic equipment, and natural gas processing solutions in Qatar. ISO-certified quality for energy sector projects.',
-        ogTitle: 'LNG Plant Components & Equipment | Holy Bro International W.L.L',
-        ogDescription: 'Specialized supplier of LNG plant components, cryogenic equipment, and natural gas processing solutions in Qatar.'
+        title: 'Oil & Gas Components & LNG Equipment Supply | Holy Bro International W.L.L',
+        description: 'Holy Bro Group W.L.L provides specialized Oil & Gas components and LNG equipment supply services in Qatar, supporting energy and industrial infrastructure projects.',
+        ogTitle: 'Oil & Gas Components & LNG Equipment Supply | Holy Bro International W.L.L',
+        ogDescription: 'Specialized Oil & Gas components and LNG equipment supply services in Qatar.'
     });
 
     const galleryImages = [
@@ -36,18 +36,17 @@ const LngComponents = () => {
     ];
 
     const features = [
-        'Cryogenic Ready Components',
-        'High-Pressure Tested Systems',
-        'International Standards Compliance',
-        'Global Sourcing Network',
-        'Technical Material Selection',
-        'Fast-Track Procurement'
+        'International and local sourcing',
+        'On-time delivery across Qatar',
+        'Customs documentation support',
+        'Technical consultation for equipment',
+        'Quality & Standards Compliance'
     ];
 
     return (
         <ServiceLayout
-            title="LNG Plant Components"
-            description="We specialize in the supply of high-quality LNG plant components sourced from globally approved manufacturers. Our solutions support liquefaction, storage, regasification, and export facilities across Qatar and the UAE. Every component strictly complies with international Oil & Gas standards."
+            title="Oil & Gas Components & LNG Supply"
+            description="Holy Bro Group W.L.L provides specialized Oil & Gas components and LNG equipment supply services in Qatar, supporting energy and industrial infrastructure projects with high-quality, certified materials. Our goal is to strengthen Qatar’s industrial energy infrastructure through dependable supply chain solutions."
             heroImage={LngHeroImage}
             features={features}
             galleryImages={galleryImages}
@@ -62,57 +61,57 @@ const LngComponents = () => {
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <ComponentCard
-                            title="Cryogenic Piping"
+                            title="Cryogenic Systems"
                             icon={Wind}
                             items={[
-                                'Cryogenic pipes (CS, SS, DSS)',
-                                'Vacuum-insulated piping (VIP)',
-                                'Expansion joints',
-                                'Pipe supports'
+                                'Precision-engineered parts',
+                                'Handling liquefied natural gas',
+                                'Extreme temperature resistance',
+                                'Cryogenic piping & valves'
                             ]}
                             delay={0.1}
                         />
                         <ComponentCard
-                            title="Valves & Control"
+                            title="Specialized Equipment"
                             icon={Settings}
                             items={[
-                                'Cryogenic ball & gate valves',
-                                'Control valves',
-                                'ESD valves',
-                                'Actuated systems'
+                                'High-performance valves',
+                                'Industrial pumps',
+                                'Heat exchangers',
+                                'Tailored for LNG processing'
                             ]}
                             delay={0.2}
                         />
                         <ComponentCard
-                            title="Heat Exchangers"
-                            icon={ThermometerSnowflake}
+                            title="Quality Assurance"
+                            icon={ShieldCheck}
                             items={[
-                                'Plate-fin exchangers',
-                                'Shell & tube exchangers',
-                                'Vaporizers',
-                                'Cold box assemblies'
+                                'International safety benchmarks',
+                                'Operational API standards',
+                                'ASME compliance',
+                                'ISO certified materials'
                             ]}
                             delay={0.3}
                         />
                         <ComponentCard
-                            title="Storage & Transfer"
+                            title="Instrumentation Support"
                             icon={Database}
                             items={[
-                                'Storage tank accessories',
-                                'Loading arms',
-                                'Pumps & compressors',
-                                'Insulation systems'
+                                'Advanced sensors',
+                                'Control systems',
+                                'Process monitoring',
+                                'Automation solutions'
                             ]}
                             delay={0.4}
                         />
                         <ComponentCard
-                            title="Instrumentation"
-                            icon={ShieldCheck}
+                            title="Pipeline Materials"
+                            icon={Factory}
                             items={[
-                                'Pressure & flow instruments',
-                                'Leak detection systems',
-                                'Fire & gas detection',
-                                'Safety valves'
+                                'Energy transport materials',
+                                'Structural integrity support',
+                                'Harsh environment durable',
+                                'End-to-End Coordination'
                             ]}
                             delay={0.5}
                         />
@@ -137,10 +136,10 @@ const LngComponents = () => {
                     </h2>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
                         {[
-                            'LNG Liquefaction Plants',
-                            'Storage & Regasification',
-                            'Offshore LNG Platforms',
-                            'Export & Marine Loading'
+                            'Ras Laffan Industrial City',
+                            'Mesaieed Industrial Area',
+                            'Doha Hub Operations',
+                            'EPC Contractor Sites'
                         ].map((area, idx) => (
                             <div key={idx} className="p-6 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors backdrop-blur-sm">
                                 <Globe className="w-8 h-8 text-accent-cyan mx-auto mb-4" />
@@ -158,31 +157,31 @@ const LngComponents = () => {
                         <div className="lg:w-1/2">
                             <h3 className="text-2xl font-bold text-industrial-900 mb-8 flex items-center">
                                 <ShieldCheck className="w-6 h-6 text-primary mr-2" />
-                                Standards & Compliance
+                                Why Choose Us in Qatar?
                             </h3>
                             <div className="flex flex-wrap gap-3 mb-8">
-                                {['API', 'ASME', 'ASTM', 'ISO', 'IEC', 'Client-specific EPC'].map((std) => (
+                                {['API', 'ASME', 'ISO', 'QNV 2030'].map((std) => (
                                     <span key={std} className="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg font-semibold border border-slate-200">
                                         {std}
                                     </span>
                                 ))}
                             </div>
                             <p className="text-slate-600 mb-6 border-l-4 border-primary pl-4 bg-primary/5 py-4">
-                                Each delivery includes full documentation, Mill Test Certificates (MTCs), and traceability records ensuring complete compliance.
+                                Combining local Qatar market knowledge with international supply chain capabilities, adhering to the strictest safety and performance regulations.
                             </p>
                         </div>
                         <div className="lg:w-1/2">
                             <h3 className="text-2xl font-bold text-industrial-900 mb-8 flex items-center">
                                 <Settings className="w-6 h-6 text-accent-cyan mr-2" />
-                                Project Support Services
+                                Competitive Advantages
                             </h3>
                             <ul className="space-y-4">
                                 {[
-                                    'Technical material selection assistance',
-                                    'Vendor documentation & drawing review',
-                                    'QA/QC inspection coordination',
-                                    'Shutdown & turnaround support',
-                                    'Fast-track emergency procurement'
+                                    'Operational Reliability & Technical Expertise',
+                                    'End-to-End Coordination (Sourcing to Site)',
+                                    'Cost-Effective Logistics Solutions',
+                                    'Scalable Solutions for EPC Projects',
+                                    'Commitment to Qatar National Vision 2030'
                                 ].map((service, i) => (
                                     <li key={i} className="flex items-start">
                                         <CheckCircle2 className="w-5 h-5 text-accent-cyan mr-3 mt-1 flex-shrink-0" />

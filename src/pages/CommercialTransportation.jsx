@@ -1,16 +1,14 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import {
-    Truck,
     Container,
-    Ship,
     Map,
     Clock,
+    Truck,
+    CheckCircle2,
+    Users,
+    Car,
     ShieldAlert,
-    PackageCheck,
-    Anchor,
-    Plane,
-    CheckCircle2
+    PackageCheck
 } from 'lucide-react';
 import TransportHeroImage from '../assets/lng-ship.png'; // Reusing existing asset as placeholder for Heavy Transport
 import IndustrialCargoImage from '../assets/lng-pipes.png';
@@ -23,10 +21,10 @@ import { useSEO } from '../hooks/useSEO';
 const CommercialTransportation = () => {
     // SEO Metadata
     useSEO({
-        title: 'Commercial Transportation & Logistics | Holy Bro International W.L.L',
-        description: 'Professional commercial transportation and logistics services in Qatar. Heavy equipment transport, cargo delivery, fleet management, and supply chain solutions.',
-        ogTitle: 'Commercial Transportation & Logistics | Holy Bro International W.L.L',
-        ogDescription: 'Professional commercial transportation and logistics services in Qatar. Heavy equipment transport, cargo delivery, and fleet management.'
+        title: 'Commercial Transportation | Holy Bro International W.L.L',
+        description: 'Business logistics, corporate fleet solutions, and bulk distribution services for enterprises and government sectors in Qatar.',
+        ogTitle: 'Commercial Transportation | Holy Bro International W.L.L',
+        ogDescription: 'Business logistics, corporate fleet solutions, and bulk distribution services in Qatar.'
     });
 
     const galleryImages = [
@@ -36,18 +34,18 @@ const CommercialTransportation = () => {
     ];
 
     const features = [
-        'Heavy Equipment Transport',
-        'Land, Sea & Air Freight',
-        'Project Cargo Logistics',
-        'Customs Clearance',
-        'Supply Chain Optimization',
-        'Warehousing Solutions'
+        'Staff Transportation Services',
+        'Long-Term Fleet Rental',
+        'Corporate & Airport Transfers',
+        'Retail Supply Chain Transport',
+        'Bulk Commodity Distribution',
+        'Scheduled Logistics Operations'
     ];
 
     return (
         <ServiceLayout
             title="Commercial Transportation"
-            description="Efficient, reliable, and safe transportation solutions for heavy industry and commercial sectors. We handle complex logistics, heavy equipment transport, and multi-modal freight forwarding across the GCC and beyond."
+            description="Business Logistics & Fleet Solutions. We offer commercial transportation services tailored for corporate clients, government entities, and private sector businesses. Our fleet solutions are structured for reliability, comfort, and maximum operational efficiency."
             heroImage={TransportHeroImage}
             features={features}
             galleryImages={galleryImages}
@@ -56,25 +54,26 @@ const CommercialTransportation = () => {
             <Section className="bg-slate-50">
                 <ContainerLayout>
                     <div className="text-center max-w-3xl mx-auto mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-industrial-900 mb-4">Logistics Capabilities</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold text-industrial-900 mb-4">Corporate & Contract-Based Transport</h2>
                         <div className="h-1 w-20 bg-orange-600 mx-auto rounded-full"></div>
+                        <p className="mt-6 text-slate-600 text-lg">Reliable fleet solutions ensuring operational continuity for your enterprise.</p>
                     </div>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <ServiceCard
-                            title="Heavy Equipment Transport"
-                            icon={Truck}
-                            desc="Specialized low-bed trailers and cranes for moving heavy machinery and industrial equipment."
+                            title="Staff Transportation"
+                            icon={Users}
+                            desc="Safe, comfortable, and punctual transportation solutions for employees across industrial and corporate sectors."
                         />
                         <ServiceCard
-                            title="Sea & Air Freight"
-                            icon={Ship}
-                            desc="Global import/export solutions partners with major shipping lines and cargo carriers."
+                            title="Long-Term Rental"
+                            icon={Car}
+                            desc="Dedicated long-term fleet rental agreements tailored to specific corporate requirements."
                         />
                         <ServiceCard
-                            title="Project Logistics"
-                            icon={Map}
-                            desc="Complete turnkey solutions for large-scale projects, including route surveys and permits."
+                            title="Corporate Transfers"
+                            icon={Clock}
+                            desc="Executive airport transfers and contract-based corporate mobility logistics."
                         />
                     </div>
                 </ContainerLayout>
@@ -129,27 +128,30 @@ const CommercialTransportation = () => {
                 </ContainerLayout>
             </Section>
 
-            {/* Modes of Transport */}
+            {/* Bulk & Distribution Logistics */}
             <Section className="bg-industrial-900 text-white" dark>
                 <ContainerLayout>
                     <h2 className="text-3xl font-bold mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-400">
-                        Multi-Modal Transport
+                        Bulk & Distribution Logistics
                     </h2>
+                    <div className="text-center max-w-3xl mx-auto mb-12 text-gray-400 text-lg">
+                        We help businesses maintain smooth, uninterrupted supply chain operations with our advanced distribution network.
+                    </div>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                         <div className="p-8 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors group">
-                            <Truck className="w-12 h-12 text-orange-500 mx-auto mb-6 group-hover:scale-110 transition-transform" />
-                            <h3 className="text-xl font-bold mb-4">Land Freight</h3>
-                            <p className="text-gray-400">Extensive road network coverage across Qatar, Saudi Arabia, UAE, and Oman.</p>
+                            <Container className="w-12 h-12 text-orange-500 mx-auto mb-6 group-hover:scale-110 transition-transform" />
+                            <h3 className="text-xl font-bold mb-4">Commercial Distribution</h3>
+                            <p className="text-gray-400">Efficient distribution of commercial goods to retail and wholesale networks.</p>
                         </div>
                         <div className="p-8 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors group">
-                            <Anchor className="w-12 h-12 text-blue-400 mx-auto mb-6 group-hover:scale-110 transition-transform" />
-                            <h3 className="text-xl font-bold mb-4">Sea Freight</h3>
-                            <p className="text-gray-400">FCL & LCL shipments, break-bulk cargo, and port-to-port logistics.</p>
+                            <Map className="w-12 h-12 text-blue-400 mx-auto mb-6 group-hover:scale-110 transition-transform" />
+                            <h3 className="text-xl font-bold mb-4">Supply Chain Logistics</h3>
+                            <p className="text-gray-400">End-to-end transport supporting large-scale retail and commercial supply chains.</p>
                         </div>
                         <div className="p-8 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors group">
-                            <Plane className="w-12 h-12 text-sky-400 mx-auto mb-6 group-hover:scale-110 transition-transform" />
-                            <h3 className="text-xl font-bold mb-4">Air Freight</h3>
-                            <p className="text-gray-400">Express air cargo services for urgent and high-value shipments.</p>
+                            <Truck className="w-12 h-12 text-emerald-400 mx-auto mb-6 group-hover:scale-110 transition-transform" />
+                            <h3 className="text-xl font-bold mb-4">Scheduled Movement</h3>
+                            <p className="text-gray-400">Highly reliable, scheduled intercity cargo movement tailored for enterprise flow.</p>
                         </div>
                     </div>
                 </ContainerLayout>
