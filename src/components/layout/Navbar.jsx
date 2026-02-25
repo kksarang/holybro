@@ -48,7 +48,7 @@ const Navbar = () => {
             title: "Engineering & Freight",
             items: [
                 { name: "Construction & Contracting", path: "/services/construction-contracting" },
-                { name: "Transportation Services", path: "/services/transportation-services" },
+                { name: "Transportation Services", path: "/services/passenger-transportation" },
             ]
         }
     ];
@@ -70,7 +70,11 @@ const Navbar = () => {
                 <div className="flex justify-between h-20 items-center">
                     {/* Logo */}
                     <div className="flex-shrink-0 flex items-center">
-                        <NavLink to="/" className="flex items-center gap-1 py-1">
+                        <NavLink
+                            to="/"
+                            className="flex items-center gap-1 py-1"
+                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                        >
                             <img
                                 src={logo}
                                 alt="Holy Bro International"
