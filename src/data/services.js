@@ -1,4 +1,4 @@
-import { Factory, BrickWall, Car, HardHat, Building2, Truck } from 'lucide-react';
+import { Factory, BrickWall, Car, HardHat, Building2, MapPin } from 'lucide-react';
 
 export const services = [
     {
@@ -21,21 +21,22 @@ export const services = [
         borderColor: 'hover:border-amber-200',
         slug: 'building-materials'
     },
+
     {
         title: 'Transportation Services',
-        description: 'Professional transportation solutions designed to ensure safe, timely, and efficient movement of goods across regions. Expertise in construction material and heavy equipment transport.',
-        shortDescription: 'Safe & Efficient Logistics Solutions',
-        icon: Truck,
-        features: ['Material Transport', 'Heavy Equipment Logistics', 'Fleet Management', 'GPS Tracking'],
-        color: 'bg-green-50 text-green-600',
-        borderColor: 'hover:border-green-200',
-        slug: 'transportation-services'
+        description: 'Premium executive and personal transportation services in Qatar for corporate clients, executives, tourists, and daily commuters. Airport transfers, corporate events, vacation trips, and more.',
+        shortDescription: 'Executive & Chauffeur Services in Qatar',
+        icon: Car,
+        features: ['Airport Transfers', 'Corporate Chauffeur', 'Event Transport', 'Office & School Pick-Drop'],
+        color: 'bg-amber-50 text-amber-600',
+        borderColor: 'hover:border-amber-200',
+        slug: 'passenger-transportation'
     },
     {
         title: 'Commercial Transportation',
         description: 'Business Logistics & Fleet Solutions. We offer commercial transportation services for corporate clients, government entities, and private sector businesses.',
         shortDescription: 'Corporate & Bulk Distribution Logistics',
-        icon: Car,
+        icon: MapPin,
         features: ['Staff Transportation', 'Long-term Fleet Rental', 'Bulk & Distribution', 'Retail Logistics'],
         color: 'bg-orange-50 text-orange-600',
         borderColor: 'hover:border-orange-200',

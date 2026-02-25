@@ -7,16 +7,17 @@ import { services } from '../data/services';
 // Lazy load the rich layout components
 const LngComponents = lazy(() => import('./LngComponents'));
 const BuildingMaterials = lazy(() => import('./BuildingMaterials'));
-const Transportation = lazy(() => import('./Transportation'));
+
 const CommercialTransportation = lazy(() => import('./CommercialTransportation'));
 const Construction = lazy(() => import('./Construction'));
 const ManpowerServices = lazy(() => import('./ManpowerServices'));
+const PassengerTransportation = lazy(() => import('./PassengerTransportation'));
 
 // Secure mapping: connect dynamic slug to rich static component
 const componentMap = {
     'oil-gas-lng': LngComponents,
     'building-materials': BuildingMaterials,
-    'transportation-services': Transportation,
+    'passenger-transportation': PassengerTransportation,
     'commercial-transportation': CommercialTransportation,
     'construction-contracting': Construction,
     'manpower-supply': ManpowerServices
