@@ -60,15 +60,26 @@ const Testimonials = () => {
                             transition={{ delay: index * 0.1, duration: 0.5 }}
                             className="bg-white rounded-3xl p-8 shadow-card hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full"
                         >
-                            <div className="flex gap-1 mb-6">
+                            <div className="flex gap-1 mb-5">
                                 {[...Array(testimonial.rating)].map((_, i) => (
                                     <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />
                                 ))}
                             </div>
 
-                            <p className="text-slate-600 italic mb-8 flex-grow leading-relaxed">
-                                "{testimonial.content}"
-                            </p>
+                            <div className="flex-grow mb-8">
+                                <span
+                                    className="text-5xl leading-none text-primary/20 font-serif select-none"
+                                    style={{ fontFamily: 'Lora, Georgia, serif', lineHeight: 1 }}
+                                >
+                                    &ldquo;
+                                </span>
+                                <p
+                                    className="text-slate-700 mb-0 leading-relaxed text-[15px]"
+                                    style={{ fontFamily: 'Lora, Georgia, serif', fontStyle: 'italic', fontWeight: 400 }}
+                                >
+                                    {testimonial.content}
+                                </p>
+                            </div>
 
                             <div className="flex items-center gap-4 mt-auto">
                                 <div className={`w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg ${testimonial.color}`}>
