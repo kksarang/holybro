@@ -4,7 +4,7 @@ import Section from '../layout/Section';
 import Container from '../layout/Container';
 import { User, Users, Building2, Briefcase, Truck, HardHat } from 'lucide-react';
 
-const OrgNode = ({ label, role, icon:  color = "blue", children }) => (
+const OrgNode = ({ label, role, icon: Icon, color = "blue", children }) => (
     <div className="flex flex-col items-center relative">
         <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -106,7 +106,7 @@ const OrgChart = () => {
     );
 };
 
-const Node = ({ role, label, icon:  color = "blue" }) => (
+const Node = ({ role, label, icon: Icon, color = "blue" }) => (
     <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         whileInView={{ opacity: 1, scale: 1 }}
