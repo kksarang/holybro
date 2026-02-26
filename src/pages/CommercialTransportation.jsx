@@ -160,7 +160,7 @@ const CommercialTransportation = () => {
     );
 };
 
-const ServiceCard = ({ title, icon:  desc }) => (
+const ServiceCard = ({ title, icon: Icon, desc }) => (
     <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-slate-200 group">
         <div className="w-14 h-14 bg-orange-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-orange-600 transition-colors">
             <Icon className="w-7 h-7 text-orange-600 group-hover:text-white transition-colors" />

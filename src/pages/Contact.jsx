@@ -226,7 +226,7 @@ const Contact = () => {
     );
 };
 
-const ContactInfoBlock = ({ icon:  title, content }) => (
+const ContactInfoBlock = ({ icon: Icon, title, content }) => (
     <div className="flex items-start group">
         <div className="w-12 h-12 bg-white border border-slate-200 rounded-xl flex items-center justify-center shrink-0 mr-4 shadow-sm group-hover:border-accent-cyan/50 group-hover:shadow-md transition-all">
             <Icon className="h-6 w-6 text-industrial-600 group-hover:text-accent-cyan transition-colors" />

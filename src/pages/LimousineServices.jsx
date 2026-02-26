@@ -157,7 +157,7 @@ const LimousineServices = () => {
     );
 };
 
-const ServiceCard = ({ title, icon:  features }) => (
+const ServiceCard = ({ title, icon: Icon, features }) => (
     <div className="bg-slate-50 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-slate-200 group">
         <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors shadow-sm border border-slate-100">
             <Icon className="w-6 h-6 text-primary group-hover:text-white transition-colors" />
