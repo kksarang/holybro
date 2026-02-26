@@ -17,10 +17,6 @@ const Navbar = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    useEffect(() => {
-        setIsOpen(false);
-    }, [location]);
-
     const navLinks = [
         { name: 'Home', path: '/' },
         { name: 'Services', path: '/services' },

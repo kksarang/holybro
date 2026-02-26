@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
+import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import Section from '../layout/Section';
 import Container from '../layout/Container';

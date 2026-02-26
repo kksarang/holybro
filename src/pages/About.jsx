@@ -1,5 +1,5 @@
-import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
 import { Award, Target, Users, History } from 'lucide-react';
 import HomeCTA from '../components/home/HomeCTA';
 

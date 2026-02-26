@@ -7,7 +7,7 @@ class ErrorBoundary extends React.Component {
         this.state = { hasError: false, error: null, errorInfo: null };
     }
 
-    static getDerivedStateFromError(error) {
+    static getDerivedStateFromError() {
         return { hasError: true };
     }
 
@@ -18,9 +18,7 @@ class ErrorBoundary extends React.Component {
         });
 
         // Log error to console in development
-        if (process.env.NODE_ENV === 'development') {
-            console.error('Error caught by boundary:', error, errorInfo);
-        }
+        console.error('Error caught by boundary:', errorInfo);
     }
 
     render() {
@@ -56,17 +54,15 @@ class ErrorBoundary extends React.Component {
                         >
                             Refresh Page
                         </button>
-                        {process.env.NODE_ENV === 'development' && this.state.error && (
-                            <details className="mt-6 text-left">
-                                <summary className="cursor-pointer text-sm text-slate-500 hover:text-slate-700">
-                                    Error Details (Development Only)
-                                </summary>
-                                <pre className="mt-2 text-xs bg-slate-100 p-4 rounded overflow-auto max-h-40">
-                                    {this.state.error.toString()}
-                                    {this.state.errorInfo && this.state.errorInfo.componentStack}
-                                </pre>
-                            </details>
-                        )}
+                        <details className="mt-6 text-left">
+                            <summary className="cursor-pointer text-sm text-slate-500 hover:text-slate-700">
+                                Error Details
+                            </summary>
+                            <pre className="mt-2 text-xs bg-slate-100 p-4 rounded overflow-auto max-h-40">
+                                {this.state.error && this.state.error.toString()}
+                                {this.state.errorInfo && this.state.errorInfo.componentStack}
+                            </pre>
+                        </details>
                     </div>
                 </div>
             );

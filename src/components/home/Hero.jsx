@@ -1,6 +1,7 @@
+import { motion } from 'framer-motion';
 import { Link as ScrollLink } from 'react-scroll';
 import { Link } from 'react-router-dom';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { useScroll, useTransform } from 'framer-motion';
 import { ChevronDown, ArrowRight } from 'lucide-react';
 import heroBg from '../../assets/home_optimized.jpg';
 

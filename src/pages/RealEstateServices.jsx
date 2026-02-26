@@ -1,5 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
+import React from 'react';
 import {
     Building2,
     Key,
@@ -158,7 +158,7 @@ const RealEstateServices = () => {
     );
 };
 
-const ServiceCard = ({ title, icon: Icon, features }) => (
+const ServiceCard = ({ title, icon:  features }) => (
     <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-slate-200 group">
         <div className="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-emerald-600 transition-colors">
             <Icon className="w-6 h-6 text-emerald-600 group-hover:text-white transition-colors" />

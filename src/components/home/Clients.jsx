@@ -1,7 +1,7 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 import Section from '../layout/Section';
 import Container from '../layout/Container';
-import { motion } from 'framer-motion';
 
 const clients = [
     'Qatar Petroleum', 'Qatargas', 'Ashghal', 'Kahramaa',

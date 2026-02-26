@@ -13,6 +13,7 @@ const Services = lazy(() => import('./pages/Services'));
 const Contact = lazy(() => import('./pages/Contact'));
 // Dynamic Slug Wrapper
 const ServiceDetails = lazy(() => import('./pages/ServiceDetails'));
+const Construction = lazy(() => import('./pages/Construction'));
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
                 <Route path="about" element={<About />} />
                 <Route path="services" element={<Services />} />
                 <Route path="contact" element={<Contact />} />
+                <Route path="construction" element={<Construction />} />
                 <Route path="services/:slug" element={<ServiceDetails />} />
               </Route>
             </Routes>

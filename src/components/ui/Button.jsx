@@ -1,5 +1,5 @@
+import React from 'react';
 import { motion } from 'framer-motion';
-
 const Button = ({ children, variant = 'primary', className = '', ...props }) => {
     const baseStyles = "inline-flex items-center justify-center px-6 py-3 rounded-full font-semibold transition-all duration-300 transform active:scale-95";
 
