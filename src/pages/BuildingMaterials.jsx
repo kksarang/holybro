@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import React, { useState } from 'react';
 import {
     Factory,
@@ -208,8 +208,8 @@ const BuildingMaterials = () => {
                                 key={i}
                                 onClick={() => setOpenCategory(i)}
                                 className={`flex items-center gap-3 px-6 py-4 rounded-2xl font-semibold transition-all border-2 text-left ${openCategory === i
-                                        ? `bg-gradient-to-r ${cat.color} text-white border-transparent shadow-lg`
-                                        : `bg-white text-slate-700 border-slate-200 hover:border-amber-300`
+                                    ? `bg-gradient-to-r ${cat.color} text-white border-transparent shadow-lg`
+                                    : `bg-white text-slate-700 border-slate-200 hover:border-amber-300`
                                     }`}
                             >
                                 <span className={`text-sm font-black opacity-60`}>{cat.number}</span>

@@ -1,15 +1,29 @@
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Mail, Phone, MapPin, Send, CheckCircle, Clock } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, CheckCircle, Clock, ChevronRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import HomeCTA from '../components/home/HomeCTA';
 import Section from '../components/layout/Section';
 import Container from '../components/layout/Container';
+import ContactHeroImage from '../assets/home_optimized.jpg';
+
+const contactQuickInfo = [
+    { icon: Phone, value: '+974 55949262', label: 'Call Us' },
+    { icon: Mail, value: 'info@holybrogroup.com', label: 'Email Us' },
+    { icon: MapPin, value: 'Doha, Qatar', label: 'Location' },
+    { icon: Clock, value: 'Mon - Sat', label: '8AM - 6PM' },
+];
 
 const Contact = () => {
     const [formState, setFormState] = useState({ name: '', email: '', service: '', message: '' });
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
+
+    const { scrollY } = useScroll();
+    const bgY = useTransform(scrollY, [0, 500], [0, 150]);
+    const bgScale = useTransform(scrollY, [0, 500], [1, 1.15]);
+    const overlayOpacity = useTransform(scrollY, [0, 300], [0.6, 0.85]);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -34,15 +48,96 @@ const Contact = () => {
                 <meta name="description" content="Reach out to Holybro Group for your business needs. Contact us via phone, email, or visit our office in Doha, Qatar." />
             </Helmet>
 
-            {/* Header */}
-            <div className="bg-industrial-900 py-20 text-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-r from-industrial-900 via-slate-800 to-industrial-900 opacity-90" />
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1516387938699-a93567ec168e?q=80&w=2071&auto=format&fit=crop')] bg-cover bg-center mix-blend-overlay opacity-20" />
-                <Container className="relative z-10">
-                    <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Contact Us</h1>
-                    <p className="text-lg text-slate-300 max-w-2xl mx-auto">
-                        Have a project in mind? We'd love to hear from you.
-                    </p>
+            {/* ========== PREMIUM HERO SECTION ========== */}
+            <div className="relative min-h-[550px] lg:h-[55vh] lg:min-h-[420px] flex items-end overflow-hidden">
+                {/* Parallax Background Image */}
+                <motion.div
+                    className="absolute inset-0 w-full h-full z-0"
+                    style={{ y: bgY, scale: bgScale }}
+                >
+                    <img
+                        src={ContactHeroImage}
+                        alt="Contact Holybro Group - Qatar"
+                        className="w-full h-full object-cover object-center"
+                    />
+                </motion.div>
+
+                {/* Multi-layer overlays for depth */}
+                <motion.div
+                    className="absolute inset-0 z-[1]"
+                    style={{ opacity: overlayOpacity }}
+                >
+                    <div className="absolute inset-0 bg-gradient-to-t from-industrial-950 via-industrial-900/70 to-transparent" />
+                </motion.div>
+                <div className="absolute inset-0 z-[2] bg-gradient-to-r from-primary-dark/50 via-transparent to-primary/30" />
+
+                {/* Decorative geometric accents */}
+                <div className="absolute top-0 left-0 w-full h-1 z-[5] bg-gradient-to-r from-secondary via-accent-cyan to-secondary opacity-80" />
+                <div className="absolute bottom-0 left-0 right-0 h-px z-[5] bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+
+                {/* Main Content */}
+                <Container className="relative z-10 pt-52 pb-12 lg:pt-24 lg:pb-12">
+                    {/* Breadcrumb */}
+                    <motion.nav
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.6, delay: 0.2 }}
+                        className="flex items-center gap-2 text-sm text-white/60 mb-8"
+                    >
+                        <Link to="/" className="hover:text-white transition-colors">Home</Link>
+                        <ChevronRight className="w-3.5 h-3.5" />
+                        <span className="text-white font-medium">Contact</span>
+                    </motion.nav>
+
+                    <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8">
+                        {/* Left: Title & Description */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 30 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8, delay: 0.3 }}
+                            className="max-w-2xl"
+                        >
+                            {/* Accent line */}
+                            <div className="flex items-center gap-3 mb-5">
+                                <div className="h-[2px] w-10 bg-secondary rounded-full" />
+                                <span className="text-secondary font-semibold text-sm tracking-widest uppercase">Get In Touch</span>
+                            </div>
+
+                            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-5 leading-tight tracking-tight">
+                                Contact <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary-light to-secondary">Us</span>
+                            </h1>
+
+                            <p className="text-lg text-slate-300 leading-relaxed max-w-xl">
+                                Have a project in mind? We'd love to hear from you. Reach out and let's build something great together.
+                            </p>
+                        </motion.div>
+
+                        {/* Right: Quick contact info chips */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8, delay: 0.6 }}
+                            className="flex flex-wrap gap-6 lg:gap-8"
+                        >
+                            {contactQuickInfo.map((item, i) => (
+                                <motion.div
+                                    key={item.label}
+                                    initial={{ opacity: 0, y: 15 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.5, delay: 0.7 + i * 0.1 }}
+                                    className="flex items-center gap-3 bg-white/5 backdrop-blur-md border border-white/10 rounded-xl px-4 py-3 hover:bg-white/10 transition-all duration-300"
+                                >
+                                    <div className="w-10 h-10 rounded-lg bg-secondary/20 flex items-center justify-center">
+                                        <item.icon className="w-5 h-5 text-secondary-light" />
+                                    </div>
+                                    <div>
+                                        <div className="text-white font-bold text-sm leading-tight">{item.value}</div>
+                                        <div className="text-slate-400 text-xs">{item.label}</div>
+                                    </div>
+                                </motion.div>
+                            ))}
+                        </motion.div>
+                    </div>
                 </Container>
             </div>
 
@@ -203,8 +298,8 @@ const Contact = () => {
                                         type="submit"
                                         disabled={isSubmitting}
                                         className={`w-full flex items-center justify-center px-6 py-4 rounded-lg text-white font-bold text-lg transition-all shadow-md ${isSubmitting
-                                                ? 'bg-slate-400 cursor-not-allowed'
-                                                : 'bg-gradient-to-r from-industrial-800 to-industrial-900 hover:from-accent-cyan hover:to-blue-600 hover:shadow-xl transform hover:-translate-y-1'
+                                            ? 'bg-slate-400 cursor-not-allowed'
+                                            : 'bg-gradient-to-r from-industrial-800 to-industrial-900 hover:from-accent-cyan hover:to-blue-600 hover:shadow-xl transform hover:-translate-y-1'
                                             }`}
                                     >
                                         {isSubmitting ? 'Sending...' : (

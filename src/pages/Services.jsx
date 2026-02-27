@@ -2,15 +2,27 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 // eslint-disable-next-line no-unused-vars
-import { motion } from 'framer-motion';
-import { ArrowRight, CheckCircle2 } from 'lucide-react';
+import { motion, useScroll, useTransform } from 'framer-motion';
+import { ArrowRight, CheckCircle2, ChevronRight, Briefcase, Globe, Shield, Award } from 'lucide-react';
 import HomeCTA from '../components/home/HomeCTA';
 import Section from '../components/layout/Section';
 import Container from '../components/layout/Container';
 import { services } from '../data/services';
-import BuildingHeroImage from '../assets/building-hero.png'; // Use a generic hero image
+import ServicesHeroImage from '../assets/home_optimized.jpg';
+
+const stats = [
+    { icon: Briefcase, value: '6+', label: 'Service Lines' },
+    { icon: Globe, value: '150+', label: 'Projects Delivered' },
+    { icon: Shield, value: '100%', label: 'Quality Assured' },
+    { icon: Award, value: '15+', label: 'Years Experience' },
+];
 
 const Services = () => {
+    const { scrollY } = useScroll();
+    const bgY = useTransform(scrollY, [0, 500], [0, 150]);
+    const bgScale = useTransform(scrollY, [0, 500], [1, 1.15]);
+    const overlayOpacity = useTransform(scrollY, [0, 300], [0.6, 0.85]);
+
     return (
         <>
             <Helmet>
@@ -18,28 +30,96 @@ const Services = () => {
                 <meta name="description" content="Explore Holybro Group's diverse services including Real Estate, Trading, Contracting, Transportation, and Limousine services." />
             </Helmet>
 
-            {/* Hero Section */}
-            <div className="relative h-[50vh] flex items-center justify-center overflow-hidden">
-                <div className="absolute inset-0">
+            {/* ========== PREMIUM HERO SECTION ========== */}
+            <div className="relative min-h-[550px] lg:h-[55vh] lg:min-h-[420px] flex items-end overflow-hidden">
+                {/* Parallax Background Image */}
+                <motion.div
+                    className="absolute inset-0 w-full h-full z-0"
+                    style={{ y: bgY, scale: bgScale }}
+                >
                     <img
-                        src={BuildingHeroImage}
-                        alt="Holybro Services"
-                        className="w-full h-full object-cover"
+                        src={ServicesHeroImage}
+                        alt="Holybro Group Services - Qatar Skyline"
+                        className="w-full h-full object-cover object-center"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-r from-industrial-900 via-industrial-900/90 to-industrial-800/80" />
-                </div>
+                </motion.div>
 
-                <Container className="relative z-10 text-center">
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
+                {/* Multi-layer overlays for depth */}
+                <motion.div
+                    className="absolute inset-0 z-[1]"
+                    style={{ opacity: overlayOpacity }}
+                >
+                    <div className="absolute inset-0 bg-gradient-to-t from-industrial-950 via-industrial-900/70 to-transparent" />
+                </motion.div>
+                <div className="absolute inset-0 z-[2] bg-gradient-to-r from-primary-dark/50 via-transparent to-primary/30" />
+
+                {/* Decorative geometric accents */}
+                <div className="absolute top-0 left-0 w-full h-1 z-[5] bg-gradient-to-r from-secondary via-accent-cyan to-secondary opacity-80" />
+                <div className="absolute bottom-0 left-0 right-0 h-px z-[5] bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+
+                {/* Main Content */}
+                <Container className="relative z-10 pt-52 pb-12 lg:pt-24 lg:pb-12">
+                    {/* Breadcrumb */}
+                    <motion.nav
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.6, delay: 0.2 }}
+                        className="flex items-center gap-2 text-sm text-white/60 mb-8"
                     >
-                        <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Our Services</h1>
-                        <p className="text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
-                            Delivering excellence across multiple sectors with a commitment to quality, integrity, and innovation.
-                        </p>
-                    </motion.div>
+                        <Link to="/" className="hover:text-white transition-colors">Home</Link>
+                        <ChevronRight className="w-3.5 h-3.5" />
+                        <span className="text-white font-medium">Services</span>
+                    </motion.nav>
+
+                    <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8">
+                        {/* Left: Title & Description */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 30 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8, delay: 0.3 }}
+                            className="max-w-2xl"
+                        >
+                            {/* Accent line */}
+                            <div className="flex items-center gap-3 mb-5">
+                                <div className="h-[2px] w-10 bg-secondary rounded-full" />
+                                <span className="text-secondary font-semibold text-sm tracking-widest uppercase">What We Do</span>
+                            </div>
+
+                            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-5 leading-tight tracking-tight">
+                                Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary-light to-secondary">Services</span>
+                            </h1>
+
+                            <p className="text-lg text-slate-300 leading-relaxed max-w-xl">
+                                Delivering excellence across multiple sectors with a commitment to quality, integrity, and innovation across Qatar's growing landscape.
+                            </p>
+                        </motion.div>
+
+                        {/* Right: Stats bar */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8, delay: 0.6 }}
+                            className="flex flex-wrap gap-6 lg:gap-8"
+                        >
+                            {stats.map((stat, i) => (
+                                <motion.div
+                                    key={stat.label}
+                                    initial={{ opacity: 0, y: 15 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.5, delay: 0.7 + i * 0.1 }}
+                                    className="flex items-center gap-3 bg-white/5 backdrop-blur-md border border-white/10 rounded-xl px-4 py-3 hover:bg-white/10 transition-all duration-300"
+                                >
+                                    <div className="w-10 h-10 rounded-lg bg-secondary/20 flex items-center justify-center">
+                                        <stat.icon className="w-5 h-5 text-secondary-light" />
+                                    </div>
+                                    <div>
+                                        <div className="text-white font-bold text-lg leading-tight">{stat.value}</div>
+                                        <div className="text-slate-400 text-xs">{stat.label}</div>
+                                    </div>
+                                </motion.div>
+                            ))}
+                        </motion.div>
+                    </div>
                 </Container>
             </div>
 

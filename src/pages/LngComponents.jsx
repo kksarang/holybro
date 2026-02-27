@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import React, { useState } from 'react';
 import {
     Factory,
@@ -264,8 +264,8 @@ const LngComponents = () => {
                                 key={i}
                                 onClick={() => setActiveTab(i)}
                                 className={`flex items-center gap-2 px-5 py-3 rounded-xl font-semibold transition-all text-sm border-2 ${activeTab === i
-                                        ? `bg-gradient-to-r ${cat.color} text-white border-transparent shadow-lg`
-                                        : 'bg-white text-slate-700 border-slate-200 hover:border-cyan-300'
+                                    ? `bg-gradient-to-r ${cat.color} text-white border-transparent shadow-lg`
+                                    : 'bg-white text-slate-700 border-slate-200 hover:border-cyan-300'
                                     }`}
                             >
                                 <span className="opacity-50 font-black text-xs">{cat.number}</span>
