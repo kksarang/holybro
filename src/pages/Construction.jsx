@@ -25,7 +25,7 @@ import ConstImg4 from '../assets/images/const_4.webp';
 import ConstImg5 from '../assets/images/const_5.webp';
 import ConstImg6 from '../assets/images/const_6.webp';
 import ConstImg7 from '../assets/images/const_7.webp';
-import ConstBannerNew from '../assets/images/const_banner_new.webp';
+import ConstBannerNew from '../assets/images/construction_cranes.webp';
 import ConstScaffolding from '../assets/images/const_scaffolding.webp';
 import ServiceLayout from '../components/services/ServiceLayout';
 import Section from '../components/layout/Section';
@@ -157,7 +157,6 @@ const Construction = () => {
         { id: '1', src: ConstImg1, alt: 'Civil Construction Qatar', caption: 'High-Scale Project Execution' },
         { id: '2', src: ConstImg2, alt: 'Building Maintenance Qatar', caption: 'Facility Lifecycle Management' },
         { id: '3', src: ConstImg3, alt: 'MEP Services Qatar', caption: 'Integrated MEP & HVAC Engineering' },
-        { id: '4', src: ConstScaffolding, alt: 'Construction Scaffolding Qatar', caption: 'Professional Scaffolding Solutions' },
     ];
 
     const features = [

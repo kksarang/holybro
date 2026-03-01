@@ -162,25 +162,25 @@ const BuildingMaterials = () => {
             features={features}
             galleryImages={galleryImages}
         >
-
             {/* ── Trust Badges ── */}
-            <Section className="bg-amber-600 py-8">
-                <Container>
-                    <div className="flex flex-wrap justify-center gap-8 text-white text-center">
-                        {[
-                            { icon: ShieldCheck, label: 'Certified Products' },
-                            { icon: Star, label: 'Competitive Pricing' },
-                            { icon: Package, label: 'BOQ-Based Supply' },
-                            { icon: Truck, label: 'Scheduled & Emergency Delivery' },
-                            { icon: Zap, label: 'Reliable Stock Availability' },
-                        ].map((b, i) => (
-                            <div key={i} className="flex items-center gap-2 font-semibold">
-                                <b.icon className="w-5 h-5" />
-                                <span>{b.label}</span>
-                            </div>
-                        ))}
-                    </div>
-                </Container>
+            <Section className="bg-amber-600" noPadding>
+                <div className="py-8">
+                    <Container>
+                        <div className="flex flex-wrap justify-center gap-8 text-white text-center">
+                            {[
+                                { icon: ShieldCheck, label: 'Certified Products' },
+                                { icon: Star, label: 'Competitive Pricing' },
+                                { icon: Package, label: 'BOQ-Based Supply' },
+                                { icon: Truck, label: 'Scheduled & Emergency Delivery' },
+                                { icon: Zap, label: 'Reliable Stock Availability' },
+                            ].map((b, i) => (
+                                <div key={i} className="flex items-center gap-2 font-semibold">
+                                    <b.icon className="w-5 h-5" />
+                                    <span>{b.label}</span>
+                                </div>
+                            ))}
+                        </div>
+                    </Container>
             </Section>
 
             {/* ── Core Supply Categories ── */}
