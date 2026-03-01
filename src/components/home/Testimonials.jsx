@@ -69,13 +69,11 @@ const Testimonials = () => {
                             <div className="flex-grow mb-8">
                                 <span
                                     className="text-5xl leading-none text-primary/20 font-serif select-none"
-                                    style={{ fontFamily: 'Lora, Georgia, serif', lineHeight: 1 }}
                                 >
                                     &ldquo;
                                 </span>
                                 <p
-                                    className="text-slate-700 mb-0 leading-relaxed text-[15px]"
-                                    style={{ fontFamily: 'Lora, Georgia, serif', fontStyle: 'italic', fontWeight: 400 }}
+                                    className="text-slate-700 mb-0 leading-relaxed text-[15px] font-serif italic"
                                 >
                                     {testimonial.content}
                                 </p>

@@ -11,9 +11,9 @@ import {
     Gem,
     CheckCircle2
 } from 'lucide-react';
-import LimoHeroImage from '../assets/limo-hero.png';
-import LimoInteriorImage from '../assets/limo-interior.png';
-import LimoChauffeurImage from '../assets/limo-chauffeur.png';
+import LimoHeroImage from '../assets/limo-hero.webp';
+import LimoInteriorImage from '../assets/limo-interior.webp';
+import LimoChauffeurImage from '../assets/limo-chauffeur.webp';
 import ServiceLayout from '../components/services/ServiceLayout';
 import Section from '../components/layout/Section';
 import Container from '../components/layout/Container';
@@ -62,7 +62,7 @@ const LimousineServices = () => {
                                 viewport={{ once: true }}
                                 className="rounded-2xl overflow-hidden shadow-2xl relative z-10 border border-slate-200"
                             >
-                                <img src={LimoInteriorImage} alt="Luxury Interior" className="w-full h-auto" />
+                                <img loading="lazy" src={LimoInteriorImage} alt="Luxury Interior" className="w-full h-auto" />
                                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-8">
                                     <p className="text-white text-lg font-medium">Step inside perfection.</p>
                                 </div>
@@ -132,7 +132,7 @@ const LimousineServices = () => {
             {/* Chauffeur Section */}
             <Section className="bg-industrial-900 text-white relative overflow-hidden" dark>
                 <div className="absolute inset-0 opacity-20">
-                    <img src={LimoChauffeurImage} alt="Background" className="w-full h-full object-cover grayscale" />
+                    <img loading="lazy" src={LimoChauffeurImage} alt="Background" className="w-full h-full object-cover grayscale" />
                 </div>
                 <div className="absolute inset-0 bg-industrial-900/80"></div>
 

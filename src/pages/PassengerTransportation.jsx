@@ -16,9 +16,9 @@ import {
     ChevronRight,
     Phone
 } from 'lucide-react';
-import LimoHeroImage from '../assets/images/passenger_transport_banner.jpg';
-import LimoInteriorImage from '../assets/images/airport_interior.jpg';
-import LimoChauffeurImage from '../assets/images/qatar_airways.jpg';
+import LimoHeroImage from '../assets/images/passenger_transport_banner.webp';
+import LimoInteriorImage from '../assets/images/airport_interior.webp';
+import LimoChauffeurImage from '../assets/images/qatar_airways.webp';
 import ServiceLayout from '../components/services/ServiceLayout';
 import Section from '../components/layout/Section';
 import Container from '../components/layout/Container';
@@ -170,7 +170,7 @@ const PassengerTransportation = () => {
             {/* ── Why Choose Us ── */}
             <Section className="bg-industrial-900 relative overflow-hidden">
                 <div className="absolute inset-0">
-                    <img src={LimoChauffeurImage} alt="background" className="w-full h-full object-cover opacity-10 grayscale" />
+                    <img loading="lazy" src={LimoChauffeurImage} alt="background" className="w-full h-full object-cover opacity-10 grayscale" />
                     <div className="absolute inset-0 bg-industrial-900/90" />
                 </div>
                 <Container className="relative z-10">

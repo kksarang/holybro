@@ -21,11 +21,11 @@ import {
     Scale,
     Award
 } from 'lucide-react';
-import ManpowerHeroImage from '../assets/manpower-hero.png';
-import ManpowerTeamImage from '../assets/manpower-team.png';
-import ManpowerMeetingImage from '../assets/manpower-meeting.png';
-import ManpowerBannerNew from '../assets/images/manpower_banner_new.jpg';
-import ManpowerTeamNew from '../assets/images/manpower_team_new.jpg';
+import ManpowerHeroImage from '../assets/manpower-hero.webp';
+import ManpowerTeamImage from '../assets/manpower-team.webp';
+import ManpowerMeetingImage from '../assets/manpower-meeting.webp';
+import ManpowerBannerNew from '../assets/images/manpower_banner_new.webp';
+import ManpowerTeamNew from '../assets/images/manpower_team_new.webp';
 import ServiceLayout from '../components/services/ServiceLayout';
 import Section from '../components/layout/Section';
 import Container from '../components/layout/Container';
@@ -233,8 +233,7 @@ const ManpowerServices = () => {
                                     <div className="flex flex-col lg:flex-row">
                                         {/* Image panel */}
                                         <div className="lg:w-2/5 relative min-h-[280px]">
-                                            <img
-                                                src={cat.image}
+                                            <img loading="lazy" src={cat.image}
                                                 alt={cat.title}
                                                 className="w-full h-full object-cover"
                                             />
@@ -275,7 +274,7 @@ const ManpowerServices = () => {
             {/* ── Why Choose Us ── */}
             <Section className="bg-industrial-900 relative overflow-hidden">
                 <div className="absolute inset-0">
-                    <img src={ManpowerBannerNew} alt="" className="w-full h-full object-cover opacity-10 grayscale" />
+                    <img loading="lazy" src={ManpowerBannerNew} alt="" className="w-full h-full object-cover opacity-10 grayscale" />
                     <div className="absolute inset-0 bg-industrial-900/95" />
                 </div>
                 <Container className="relative z-10 text-white">

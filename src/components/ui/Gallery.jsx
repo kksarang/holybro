@@ -41,12 +41,10 @@ const Gallery = ({ images, title = "Data Gallery" }) => {
                             className="group relative aspect-[4/3] rounded-2xl overflow-hidden cursor-pointer shadow-md hover:shadow-xl transition-all"
                             onClick={() => setSelectedId(img.id)}
                         >
-                            <img
-                                src={img.src}
+                            <img loading="lazy" src={img.src}
                                 alt={img.alt}
                                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                                loading="lazy"
-                            />
+                                loading="lazy" />
                             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
                                 <span className="bg-white/20 backdrop-blur-md p-3 rounded-full text-white">
                                     <ZoomIn className="w-6 h-6" />
@@ -99,8 +97,7 @@ const Gallery = ({ images, title = "Data Gallery" }) => {
                             className="relative max-w-full max-h-full rounded-lg overflow-hidden shadow-2xl"
                             onClick={(e) => e.stopPropagation()}
                         >
-                            <img
-                                src={selectedImage.src}
+                            <img loading="lazy" src={selectedImage.src}
                                 alt={selectedImage.alt}
                                 className="w-auto max-h-[85vh] object-contain rounded-lg"
                             />

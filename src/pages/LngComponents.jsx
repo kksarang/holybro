@@ -18,10 +18,10 @@ import {
     MapPin,
     Leaf
 } from 'lucide-react';
-import LngHeroImage from '../assets/images/lng_banner_new.jpg';
-import LngShipImage from '../assets/images/lng_plant_night.jpg';
-import LngRigImage from '../assets/images/lng_storage.jpg';
-import LngPipesImage from '../assets/images/lng_pipeline.jpg';
+import LngHeroImage from '../assets/images/lng_banner_new.webp';
+import LngShipImage from '../assets/images/lng_plant_night.webp';
+import LngRigImage from '../assets/images/lng_storage.webp';
+import LngPipesImage from '../assets/images/lng_pipeline.webp';
 import ServiceLayout from '../components/services/ServiceLayout';
 import Section from '../components/layout/Section';
 import Container from '../components/layout/Container';
@@ -289,7 +289,7 @@ const LngComponents = () => {
                                 >
                                     <div className="flex flex-col lg:flex-row">
                                         <div className="lg:w-2/5 relative min-h-[280px]">
-                                            <img src={cat.image} alt={cat.title} className="w-full h-full object-cover" />
+                                            <img loading="lazy" src={cat.image} alt={cat.title} className="w-full h-full object-cover" />
                                             <div className={`absolute inset-0 bg-gradient-to-r ${cat.color} opacity-60`} />
                                             <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
                                                 <span className="text-6xl font-black opacity-20 leading-none block">{cat.number}</span>
@@ -322,7 +322,7 @@ const LngComponents = () => {
             {/* ── Why Choose Us ── */}
             <Section className="bg-industrial-900 relative overflow-hidden">
                 <div className="absolute inset-0">
-                    <img src={LngHeroImage} alt="" className="w-full h-full object-cover opacity-10 grayscale" />
+                    <img loading="lazy" src={LngHeroImage} alt="" className="w-full h-full object-cover opacity-10 grayscale" />
                     <div className="absolute inset-0 bg-industrial-900/90" />
                 </div>
                 <Container className="relative z-10">

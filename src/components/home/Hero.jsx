@@ -3,7 +3,7 @@ import { Link as ScrollLink } from 'react-scroll';
 import { Link } from 'react-router-dom';
 import { useScroll, useTransform } from 'framer-motion';
 import { ChevronDown, ArrowRight } from 'lucide-react';
-import heroBg from '../../assets/home_optimized.jpg';
+import heroBg from '../../assets/home_optimized.webp';
 
 const Hero = () => {
     const { scrollY } = useScroll();

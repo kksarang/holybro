@@ -18,9 +18,9 @@ import {
     Navigation,
     ArrowRight
 } from 'lucide-react';
-import TransportHeroImage from '../assets/images/transport_hero.png';
-import IndustrialCargoImage from '../assets/images/transport_logistics.png';
-import ProjectLogisticsImage from '../assets/images/transport_fleet.png';
+import TransportHeroImage from '../assets/images/transport_hero.webp';
+import IndustrialCargoImage from '../assets/images/transport_logistics.webp';
+import ProjectLogisticsImage from '../assets/images/transport_fleet.webp';
 import { useSEO } from '../hooks/useSEO';
 
 // ─── Service Divisions ─────────────────────────────────────────────────────
@@ -137,7 +137,7 @@ const CommercialTransportation = () => {
             {/* ─── Hero Section ─── */}
             <div className="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-24 pb-16">
                 <div className="absolute inset-0">
-                    <img src={TransportHeroImage} alt="Commercial Transportation Qatar" className="w-full h-full object-cover" />
+                    <img loading="lazy" src={TransportHeroImage} alt="Commercial Transportation Qatar" className="w-full h-full object-cover" />
                     <div className="absolute inset-0 bg-gradient-to-br from-slate-900/95 via-blue-950/90 to-orange-950/80" />
                 </div>
                 {/* Animated grid */}
@@ -218,7 +218,7 @@ const CommercialTransportation = () => {
                         >
                             {/* Left: Image */}
                             <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3]">
-                                <img src={ActiveDivision.image} alt={ActiveDivision.label} className="w-full h-full object-cover" />
+                                <img loading="lazy" src={ActiveDivision.image} alt={ActiveDivision.label} className="w-full h-full object-cover" />
                                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent" />
                                 <div className="absolute bottom-0 left-0 p-6">
                                     <span className="text-6xl font-black text-white/10">{ActiveDivision.id}</span>

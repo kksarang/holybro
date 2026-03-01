@@ -18,15 +18,15 @@ import {
     Factory,
     ChevronRight
 } from 'lucide-react';
-import ConstImg1 from '../assets/images/const_1.jpg';
-import ConstImg2 from '../assets/images/const_2.jpg';
-import ConstImg3 from '../assets/images/const_3.jpg';
-import ConstImg4 from '../assets/images/const_4.jpg';
-import ConstImg5 from '../assets/images/const_5.jpg';
-import ConstImg6 from '../assets/images/const_6.jpg';
-import ConstImg7 from '../assets/images/const_7.jpg';
-import ConstBannerNew from '../assets/images/const_banner_new.jpg';
-import ConstScaffolding from '../assets/images/const_scaffolding.jpg';
+import ConstImg1 from '../assets/images/const_1.webp';
+import ConstImg2 from '../assets/images/const_2.webp';
+import ConstImg3 from '../assets/images/const_3.webp';
+import ConstImg4 from '../assets/images/const_4.webp';
+import ConstImg5 from '../assets/images/const_5.webp';
+import ConstImg6 from '../assets/images/const_6.webp';
+import ConstImg7 from '../assets/images/const_7.webp';
+import ConstBannerNew from '../assets/images/const_banner_new.webp';
+import ConstScaffolding from '../assets/images/const_scaffolding.webp';
 import ServiceLayout from '../components/services/ServiceLayout';
 import Section from '../components/layout/Section';
 import Container from '../components/layout/Container';
@@ -249,8 +249,7 @@ const Construction = () => {
                                     <div className="flex flex-col lg:flex-row">
                                         {/* Image panel */}
                                         <div className="lg:w-2/5 relative min-h-[300px]">
-                                            <img
-                                                src={cat.image}
+                                            <img loading="lazy" src={cat.image}
                                                 alt={cat.title}
                                                 className="w-full h-full object-cover"
                                             />
@@ -291,7 +290,7 @@ const Construction = () => {
             {/* ── Execution Excellence (Why Choose Us) ── */}
             <Section className="bg-industrial-900 relative overflow-hidden">
                 <div className="absolute inset-0">
-                    <img src={ConstBannerNew} alt="" className="w-full h-full object-cover opacity-10 grayscale" />
+                    <img loading="lazy" src={ConstBannerNew} alt="" className="w-full h-full object-cover opacity-10 grayscale" />
                     <div className="absolute inset-0 bg-industrial-900/95" />
                 </div>
                 <Container className="relative z-10 text-white">

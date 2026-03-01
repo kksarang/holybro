@@ -5,8 +5,7 @@ const ServiceCard = ({ title, description, image, link = "/services" }) => {
     return (
         <div className="group relative bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 transition-all duration-300 hover:border-emerald-500/50 hover:shadow-xl hover:shadow-emerald-500/10 hover:-translate-y-1">
             <div className="h-48 overflow-hidden">
-                <img
-                    src={image}
+                <img loading="lazy" src={image}
                     alt={title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />

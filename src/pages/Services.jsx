@@ -8,7 +8,7 @@ import HomeCTA from '../components/home/HomeCTA';
 import Section from '../components/layout/Section';
 import Container from '../components/layout/Container';
 import { services } from '../data/services';
-import ServicesHeroImage from '../assets/home_optimized.jpg';
+import ServicesHeroImage from '../assets/home_optimized.webp';
 
 const stats = [
     { icon: Briefcase, value: '6+', label: 'Service Lines' },
@@ -37,8 +37,7 @@ const Services = () => {
                     className="absolute inset-0 w-full h-full z-0"
                     style={{ y: bgY, scale: bgScale }}
                 >
-                    <img
-                        src={ServicesHeroImage}
+                    <img loading="lazy" src={ServicesHeroImage}
                         alt="Holybro Group Services - Qatar Skyline"
                         className="w-full h-full object-cover object-center"
                     />

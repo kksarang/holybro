@@ -9,7 +9,7 @@ import {
     HardHat,
     ChevronRight
 } from 'lucide-react';
-import TransportHeroImage from '../assets/lng-ship.png';
+import TransportHeroImage from '../assets/lng-ship.webp';
 import ServiceLayout from '../components/services/ServiceLayout';
 import Section from '../components/layout/Section';
 import Container from '../components/layout/Container';
@@ -112,7 +112,7 @@ const Transportation = () => {
                     <div className="grid lg:grid-cols-2 gap-16 items-center">
                         <div className="order-2 lg:order-1 relative">
                             <div className="absolute inset-0 bg-gradient-to-tr from-green-600 to-emerald-500 rounded-2xl transform -rotate-3 scale-105 opacity-10"></div>
-                            <img src={TransportHeroImage} alt="Fleet Management" className="relative rounded-2xl shadow-xl z-10 w-full" />
+                            <img loading="lazy" src={TransportHeroImage} alt="Fleet Management" className="relative rounded-2xl shadow-xl z-10 w-full" />
                         </div>
                         <div className="order-1 lg:order-2">
                             <h2 className="text-3xl md:text-4xl font-bold text-industrial-900 mb-6">Fleet Management & Tracking</h2>

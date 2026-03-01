@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import HomeCTA from '../components/home/HomeCTA';
 import Section from '../components/layout/Section';
 import Container from '../components/layout/Container';
-import ContactHeroImage from '../assets/home_optimized.jpg';
+import ContactHeroImage from '../assets/home_optimized.webp';
 
 const contactQuickInfo = [
     { icon: Phone, value: '+974 55949262', label: 'Call Us' },
@@ -55,8 +55,7 @@ const Contact = () => {
                     className="absolute inset-0 w-full h-full z-0"
                     style={{ y: bgY, scale: bgScale }}
                 >
-                    <img
-                        src={ContactHeroImage}
+                    <img loading="lazy" src={ContactHeroImage}
                         alt="Contact Holybro Group - Qatar"
                         className="w-full h-full object-cover object-center"
                     />
@@ -200,11 +199,9 @@ const Contact = () => {
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.874465492723!2d51.4429712!3d25.2861068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45c534ffdce87f%3A0x44d9319f78cfd4b1!2sDoha%2C%20Qatar!5e0!3m2!1sen!2sus!4v1707000000000!5m2!1sen!2sus"
                                     width="100%"
                                     height="100%"
-                                    style={{ border: 0 }}
                                     allowFullScreen=""
-                                    loading="lazy"
-                                    referrerPolicy="no-referrer-when-downgrade"
-                                    className="absolute inset-0 grayscale hover:grayscale-0 transition-all duration-500"
+                                    loading="lazy" referrerPolicy="no-referrer-when-downgrade"
+                                    className="border-0 absolute inset-0 grayscale hover:grayscale-0 transition-all duration-500"
                                 />
                             </div>
                         </motion.div>

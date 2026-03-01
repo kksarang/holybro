@@ -165,7 +165,7 @@ const ServicesOverview = () => {
                                         }}
                                     >
                                         View Details
-                                        <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" style={{ color: '#005AA7' }} />
+                                        <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1 text-[#005AA7]" />
                                     </span>
                                 </div>
                             </div>

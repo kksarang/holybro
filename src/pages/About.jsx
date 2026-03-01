@@ -4,8 +4,8 @@ import { Award, Target, Users, History, ChevronRight, Building2, Globe, Handshak
 import { Link } from 'react-router-dom';
 import HomeCTA from '../components/home/HomeCTA';
 import Container from '../components/layout/Container';
-import AboutHeroImage from '../assets/home_optimized.jpg';
-import KataraTowersImage from '../assets/images/katara_towers.jpg';
+import AboutHeroImage from '../assets/home_optimized.webp';
+import KataraTowersImage from '../assets/images/katara_towers.webp';
 
 const aboutStats = [
     { icon: History, value: '15+', label: 'Years Experience' },
@@ -34,8 +34,7 @@ const About = () => {
                     className="absolute inset-0 w-full h-full z-0"
                     style={{ y: bgY, scale: bgScale }}
                 >
-                    <img
-                        src={AboutHeroImage}
+                    <img loading="lazy" src={AboutHeroImage}
                         alt="About Holybro Group - Qatar"
                         className="w-full h-full object-cover object-center"
                     />
@@ -161,8 +160,7 @@ const About = () => {
                             transition={{ duration: 0.6 }}
                             className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3]"
                         >
-                            <img
-                                src={KataraTowersImage}
+                            <img loading="lazy" src={KataraTowersImage}
                                 alt="Katara Towers Qatar"
                                 className="w-full h-full object-cover"
                             />

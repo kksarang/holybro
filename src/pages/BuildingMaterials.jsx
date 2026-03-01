@@ -17,10 +17,10 @@ import {
     Package,
     Building2
 } from 'lucide-react';
-import BuildingHeroImage from '../assets/images/building_materials_banner_new.jpg';
-import BuildingSteelImage from '../assets/building-steel.png';
-import BuildingConcreteImage from '../assets/building-concrete.png';
-import BuildingFinishingImage from '../assets/building-finishing.png';
+import BuildingHeroImage from '../assets/images/building_materials_banner_new.webp';
+import BuildingSteelImage from '../assets/building-steel.webp';
+import BuildingConcreteImage from '../assets/building-concrete.webp';
+import BuildingFinishingImage from '../assets/building-finishing.webp';
 import ServiceLayout from '../components/services/ServiceLayout';
 import Section from '../components/layout/Section';
 import Container from '../components/layout/Container';
@@ -234,8 +234,7 @@ const BuildingMaterials = () => {
                                     <div className="flex flex-col lg:flex-row">
                                         {/* Image panel */}
                                         <div className="lg:w-2/5 relative min-h-[280px]">
-                                            <img
-                                                src={cat.image}
+                                            <img loading="lazy" src={cat.image}
                                                 alt={cat.title}
                                                 className="w-full h-full object-cover"
                                             />
@@ -276,7 +275,7 @@ const BuildingMaterials = () => {
             {/* ── Why Choose Us ── */}
             <Section className="bg-industrial-900 relative overflow-hidden">
                 <div className="absolute inset-0">
-                    <img src={BuildingHeroImage} alt="" className="w-full h-full object-cover opacity-10 grayscale" />
+                    <img loading="lazy" src={BuildingHeroImage} alt="" className="w-full h-full object-cover opacity-10 grayscale" />
                     <div className="absolute inset-0 bg-industrial-900/90" />
                 </div>
                 <Container className="relative z-10">

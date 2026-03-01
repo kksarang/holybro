@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import ctaBg from '../../assets/hhh_optimized.jpg';
+import ctaBg from '../../assets/hhh_optimized.webp';
 
 const HomeCTA = () => {
     return (
@@ -25,7 +25,7 @@ const HomeCTA = () => {
                 <h2 className="text-3xl font-extrabold text-white sm:text-4xl mb-6">
                     Ready to Start Your Project?
                 </h2>
-                <p className="text-white text-lg mb-8 max-w-2xl mx-auto" style={{ opacity: 0.9 }}>
+                <p className="text-white text-lg mb-8 max-w-2xl mx-auto opacity-90">
                     Contact us today to discuss your requirements and how Holy Bro International W.L.L can help you achieve your goals.
                 </p>
                 <Link

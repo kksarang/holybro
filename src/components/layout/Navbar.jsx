@@ -4,7 +4,7 @@ import { Menu, X, ChevronDown } from 'lucide-react';
 // eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from 'framer-motion';
 import Button from '../ui/Button';
-import logo from '../../assets/logoone.png';
+import logo from '../../assets/logoone.webp';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -75,8 +75,7 @@ const Navbar = () => {
                             className="flex items-center gap-1 py-1"
                             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                         >
-                            <img
-                                src={logo}
+                            <img loading="lazy" src={logo}
                                 alt="Holy Bro International"
                                 className="h-14 md:h-16 w-auto object-contain transition-all duration-300"
                             />
