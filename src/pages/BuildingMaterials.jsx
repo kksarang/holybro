@@ -181,10 +181,11 @@ const BuildingMaterials = () => {
                             ))}
                         </div>
                     </Container>
+                </div>
             </Section>
 
             {/* ── Core Supply Categories ── */}
-            <Section className="bg-slate-50">
+            <Section className="bg-slate-50 pt-0">
                 <Container>
                     <div className="text-center max-w-3xl mx-auto mb-16">
                         <motion.h2
@@ -341,7 +342,7 @@ const BuildingMaterials = () => {
             </Section>
 
             {/* ── Industries We Serve ── */}
-            <Section className="bg-white">
+            <Section className="bg-white pt-0">
                 <Container>
                     <div className="text-center max-w-3xl mx-auto mb-14">
                         <motion.h2

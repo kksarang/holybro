@@ -168,7 +168,7 @@ const PassengerTransportation = () => {
         >
 
             {/* ── Why Choose Us ── */}
-            <Section className="bg-industrial-900 relative overflow-hidden">
+            <Section className="bg-industrial-900 pt-0 relative overflow-hidden">
                 <div className="absolute inset-0">
                     <img loading="lazy" src={LimoChauffeurImage} alt="background" className="w-full h-full object-cover opacity-10 grayscale" />
                     <div className="absolute inset-0 bg-industrial-900/90" />
@@ -206,7 +206,7 @@ const PassengerTransportation = () => {
             </Section>
 
             {/* ── 7 Service Categories ── */}
-            <Section className="bg-slate-50">
+            <Section className="bg-slate-50 pt-0">
                 <Container>
                     <div className="text-center max-w-3xl mx-auto mb-16">
                         <motion.h2
@@ -279,7 +279,7 @@ const PassengerTransportation = () => {
             </Section>
 
             {/* ── Coverage + Safety ── */}
-            <Section className="bg-white">
+            <Section className="bg-white pt-0">
                 <Container>
                     <div className="grid lg:grid-cols-2 gap-16 items-start">
                         {/* Coverage */}

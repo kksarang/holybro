@@ -182,27 +182,29 @@ const LngComponents = () => {
         >
 
             {/* ── Cyan trust strip ── */}
-            <Section className="bg-cyan-700 py-8">
-                <Container>
-                    <div className="flex flex-wrap justify-center gap-8 text-white text-center">
-                        {[
-                            { icon: ShieldCheck, label: 'Internationally Certified' },
-                            { icon: Zap, label: 'Engineered for Reliability' },
-                            { icon: Globe, label: 'Integrated Supply Solutions' },
-                            { icon: Clock, label: 'Emergency Procurement' },
-                            { icon: Award, label: 'QatarEnergy Compliant' },
-                        ].map((b, i) => (
-                            <div key={i} className="flex items-center gap-2 font-semibold">
-                                <b.icon className="w-5 h-5" />
-                                <span>{b.label}</span>
-                            </div>
-                        ))}
-                    </div>
-                </Container>
+            <Section className="bg-cyan-700" noPadding>
+                <div className="py-8">
+                    <Container>
+                        <div className="flex flex-wrap justify-center gap-8 text-white text-center">
+                            {[
+                                { icon: ShieldCheck, label: 'Internationally Certified' },
+                                { icon: Zap, label: 'Engineered for Reliability' },
+                                { icon: Globe, label: 'Integrated Supply Solutions' },
+                                { icon: Clock, label: 'Emergency Procurement' },
+                                { icon: Award, label: 'QatarEnergy Compliant' },
+                            ].map((b, i) => (
+                                <div key={i} className="flex items-center gap-2 font-semibold">
+                                    <b.icon className="w-5 h-5" />
+                                    <span>{b.label}</span>
+                                </div>
+                            ))}
+                        </div>
+                    </Container>
+                </div>
             </Section>
 
             {/* ── Core Capabilities ── */}
-            <Section className="bg-white">
+            <Section className="bg-white pt-0">
                 <Container>
                     <div className="text-center max-w-3xl mx-auto mb-12">
                         <motion.h2
@@ -240,7 +242,7 @@ const LngComponents = () => {
             </Section>
 
             {/* ── Product Categories (tabbed) ── */}
-            <Section className="bg-slate-50">
+            <Section className="bg-slate-50 pt-0">
                 <Container>
                     <div className="text-center max-w-3xl mx-auto mb-12">
                         <motion.h2
@@ -382,7 +384,7 @@ const LngComponents = () => {
             </Section>
 
             {/* ── Application Areas ── */}
-            <Section className="bg-white">
+            <Section className="bg-white pt-0">
                 <Container>
                     <div className="text-center max-w-3xl mx-auto mb-12">
                         <motion.h2
@@ -475,7 +477,7 @@ const LngComponents = () => {
                 </Container>
             </Section>
 
-        </ServiceLayout>
+        </ServiceLayout >
     );
 };
 

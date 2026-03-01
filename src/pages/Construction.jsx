@@ -177,27 +177,29 @@ const Construction = () => {
             galleryImages={galleryImages}
         >
             {/* ── Value Proposition Banner ── */}
-            <Section className="bg-purple-600 py-8">
-                <Container>
-                    <div className="flex flex-wrap justify-center gap-6 text-white text-center">
-                        {[
-                            { label: 'Engineering Excellence' },
-                            { label: 'Qatar Building Standards' },
-                            { label: 'Timely Execution' },
-                            { label: 'Cost-Efficient Solutions' },
-                            { label: 'High Safety Standards' },
-                        ].map((b, i) => (
-                            <div key={i} className="flex items-center gap-2 font-semibold bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm">
-                                <CheckCircle2 className="w-4 h-4 text-purple-200" />
-                                <span className="text-sm">{b.label}</span>
-                            </div>
-                        ))}
-                    </div>
-                </Container>
+            <Section className="bg-purple-600" noPadding>
+                <div className="py-8">
+                    <Container>
+                        <div className="flex flex-wrap justify-center gap-6 text-white text-center">
+                            {[
+                                { label: 'Engineering Excellence' },
+                                { label: 'Qatar Building Standards' },
+                                { label: 'Timely Execution' },
+                                { label: 'Cost-Efficient Solutions' },
+                                { label: 'High Safety Standards' },
+                            ].map((b, i) => (
+                                <div key={i} className="flex items-center gap-2 font-semibold bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm">
+                                    <CheckCircle2 className="w-4 h-4 text-purple-200" />
+                                    <span className="text-sm">{b.label}</span>
+                                </div>
+                            ))}
+                        </div>
+                    </Container>
+                </div>
             </Section>
 
             {/* ── Core Service Divisions (Tabbed UI) ── */}
-            <Section className="bg-slate-50">
+            <Section className="bg-slate-50 pt-0">
                 <Container>
                     <div className="text-center max-w-3xl mx-auto mb-16">
                         <motion.h2
@@ -325,7 +327,7 @@ const Construction = () => {
             </Section>
 
             {/* ── Industries We Serve ── */}
-            <Section className="bg-white">
+            <Section className="bg-white pt-0">
                 <Container>
                     <div className="text-center max-w-3xl mx-auto mb-14">
                         <h2 className="text-3xl md:text-4xl font-bold text-industrial-900 mb-4">Industries We Proudly Support</h2>
@@ -370,7 +372,7 @@ const Construction = () => {
                     </div>
                 </Container>
             </Section>
-        </ServiceLayout>
+        </ServiceLayout >
     );
 };
 

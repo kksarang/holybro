@@ -52,7 +52,7 @@ const LimousineServices = () => {
             galleryImages={galleryImages}
         >
             {/* Extended Overview */}
-            <Section className="bg-slate-50">
+            <Section className="bg-slate-50 pt-0">
                 <Container>
                     <div className="grid lg:grid-cols-2 gap-16 items-center">
                         <div className="order-2 lg:order-1 relative">
@@ -102,7 +102,7 @@ const LimousineServices = () => {
             </Section>
 
             {/* Services Grid */}
-            <Section className="bg-white">
+            <Section className="bg-white pt-0">
                 <Container>
                     <div className="text-center max-w-3xl mx-auto mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold text-industrial-900 mb-4">Our Elite Services</h2>
