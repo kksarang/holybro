@@ -105,7 +105,7 @@ const Footer = () => {
                         <p>&copy; {new Date().getFullYear()} Holy Bro International W.L.L. All rights reserved.</p>
                         <span className="hidden md:block text-slate-300">|</span>
                         <p className="mt-2 md:mt-0">
-                            Developed by <a href="https://kksarang.github.io/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline transition-all">kksystem</a>
+                            Developed by <a href="https://sarangrajan.in/kksystems" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline transition-all">kksystems</a>
                         </p>
                     </div>
                     <div className="flex space-x-6 mt-4 md:mt-0">

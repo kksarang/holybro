@@ -80,7 +80,7 @@ const Footer = () => {
                 <div className="border-t border-slate-800 pt-8 text-center text-xs text-slate-500">
                     <p>&copy; {new Date().getFullYear()} Holy Bro International W.L.L. All rights reserved.</p>
                     <p className="mt-2">
-                        Website Developed & Maintained by <a href="https://kksarang.github.io/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-accent transition-colors">KK System</a>
+                        Website Developed & Maintained by <a href="https://sarangrajan.in/kksystems" target="_blank" rel="noopener noreferrer" className="text-white hover:text-accent transition-colors">KK Systems</a>
                     </p>
                 </div>
             </div>
