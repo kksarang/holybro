@@ -16,9 +16,9 @@ import {
     ChevronRight,
     Phone
 } from 'lucide-react';
-import LimoHeroImage from '../assets/limo-hero.png';
-import LimoInteriorImage from '../assets/limo-interior.png';
-import LimoChauffeurImage from '../assets/limo-chauffeur.png';
+import LimoHeroImage from '../assets/images/passenger_transport_banner.jpg';
+import LimoInteriorImage from '../assets/images/airport_interior.jpg';
+import LimoChauffeurImage from '../assets/images/qatar_airways.jpg';
 import ServiceLayout from '../components/services/ServiceLayout';
 import Section from '../components/layout/Section';
 import Container from '../components/layout/Container';

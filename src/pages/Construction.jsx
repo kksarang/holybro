@@ -18,9 +18,15 @@ import {
     Factory,
     ChevronRight
 } from 'lucide-react';
-import ConstructionHeroImage from '../assets/building-hero.png';
-import MaintenanceImage from '../assets/lng-plant.png'; // Placeholder
-import MepImage from '../assets/building-steel.png'; // Placeholder
+import ConstImg1 from '../assets/images/const_1.jpg';
+import ConstImg2 from '../assets/images/const_2.jpg';
+import ConstImg3 from '../assets/images/const_3.jpg';
+import ConstImg4 from '../assets/images/const_4.jpg';
+import ConstImg5 from '../assets/images/const_5.jpg';
+import ConstImg6 from '../assets/images/const_6.jpg';
+import ConstImg7 from '../assets/images/const_7.jpg';
+import ConstBannerNew from '../assets/images/const_banner_new.jpg';
+import ConstScaffolding from '../assets/images/const_scaffolding.jpg';
 import ServiceLayout from '../components/services/ServiceLayout';
 import Section from '../components/layout/Section';
 import Container from '../components/layout/Container';
@@ -31,7 +37,7 @@ const constructionDivisions = [
     {
         number: '01',
         icon: Building2,
-        image: ConstructionHeroImage,
+        image: ConstImg1,
         title: 'General Construction & Execution',
         subtitle: 'Civil Construction & Structural Engineering',
         description: 'From ground-up construction to structural remodeling, we follow modern architectural designs and strict structural safety standards for all developments.',
@@ -49,7 +55,7 @@ const constructionDivisions = [
     {
         number: '02',
         icon: Target,
-        image: MaintenanceImage,
+        image: ConstImg2,
         title: 'Project Management & Excellence',
         subtitle: 'Precision Planning & Timely Delivery',
         description: 'Advanced project management ensuring projects are delivered on time, within budget, and meeting all technical and safety approvals.',
@@ -67,7 +73,7 @@ const constructionDivisions = [
     {
         number: '03',
         icon: Wrench,
-        image: ConstructionHeroImage,
+        image: ConstImg3,
         title: 'Facilities Management',
         subtitle: 'Building Maintenance & Support',
         description: 'Comprehensive facility management focusing on preventive checks, rapid emergency response, and strategic asset lifecycle management.',
@@ -85,7 +91,7 @@ const constructionDivisions = [
     {
         number: '04',
         icon: Thermometer,
-        image: MepImage,
+        image: ConstImg4,
         title: 'AC Maintenance & HVAC',
         subtitle: 'Climate Control Solutions in Qatar',
         description: 'End-to-end HVAC services ensuring uninterrupted cooling performance, superior indoor air quality, and optimized energy efficiency.',
@@ -103,7 +109,7 @@ const constructionDivisions = [
     {
         number: '05',
         icon: Settings,
-        image: MaintenanceImage,
+        image: ConstImg5,
         title: 'MEP Engineering Services',
         subtitle: 'Integrated Mechanical & Electrical Solutions',
         description: 'Reliable execution of Mechanical, Electrical, and Plumbing engineering services essential for building safety and operational continuity.',
@@ -120,7 +126,7 @@ const constructionDivisions = [
     {
         number: '06',
         icon: Zap,
-        image: MepImage,
+        image: ConstImg6,
         title: 'Electrical & Sanitary Contracting',
         subtitle: 'Safe & Efficient Utility Networks',
         description: 'Expert electrical and sanitary contracting designed for safety, maximum efficiency, and strict regulatory compliance.',
@@ -148,9 +154,10 @@ const Construction = () => {
     });
 
     const galleryImages = [
-        { id: '1', src: ConstructionHeroImage, alt: 'Civil Construction Qatar', caption: 'High-Scale Project Execution' },
-        { id: '2', src: MaintenanceImage, alt: 'Building Maintenance Qatar', caption: 'Facility Lifecycle Management' },
-        { id: '3', src: MepImage, alt: 'MEP Services Qatar', caption: 'Integrated MEP & HVAC Engineering' },
+        { id: '1', src: ConstImg1, alt: 'Civil Construction Qatar', caption: 'High-Scale Project Execution' },
+        { id: '2', src: ConstImg2, alt: 'Building Maintenance Qatar', caption: 'Facility Lifecycle Management' },
+        { id: '3', src: ConstImg3, alt: 'MEP Services Qatar', caption: 'Integrated MEP & HVAC Engineering' },
+        { id: '4', src: ConstScaffolding, alt: 'Construction Scaffolding Qatar', caption: 'Professional Scaffolding Solutions' },
     ];
 
     const features = [
@@ -166,7 +173,7 @@ const Construction = () => {
         <ServiceLayout
             title="Construction & Contracting"
             description="At HOLY BRO INTERNATIONAL W.L.L, we deliver fully integrated Construction, Contracting, MEP, HVAC, Electrical, Sanitary, and Facility Maintenance Solutions across Qatar. From ground-up construction to long-term facility management, we ensure precision, durability, and accountability."
-            heroImage={ConstructionHeroImage}
+            heroImage={ConstBannerNew}
             features={features}
             galleryImages={galleryImages}
         >
@@ -284,7 +291,7 @@ const Construction = () => {
             {/* ── Execution Excellence (Why Choose Us) ── */}
             <Section className="bg-industrial-900 relative overflow-hidden">
                 <div className="absolute inset-0">
-                    <img src={ConstructionHeroImage} alt="" className="w-full h-full object-cover opacity-10 grayscale" />
+                    <img src={ConstBannerNew} alt="" className="w-full h-full object-cover opacity-10 grayscale" />
                     <div className="absolute inset-0 bg-industrial-900/95" />
                 </div>
                 <Container className="relative z-10 text-white">

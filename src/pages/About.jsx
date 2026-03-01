@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import HomeCTA from '../components/home/HomeCTA';
 import Container from '../components/layout/Container';
 import AboutHeroImage from '../assets/home_optimized.jpg';
+import KataraTowersImage from '../assets/images/katara_towers.jpg';
 
 const aboutStats = [
     { icon: History, value: '15+', label: 'Years Experience' },
@@ -161,8 +162,8 @@ const About = () => {
                             className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3]"
                         >
                             <img
-                                src="https://images.unsplash.com/photo-1486325212027-8081e485255e?q=80&w=2070&auto=format&fit=crop"
-                                alt="Holy Bro Group Qatar operations"
+                                src={KataraTowersImage}
+                                alt="Katara Towers Qatar"
                                 className="w-full h-full object-cover"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent" />
@@ -333,6 +334,20 @@ const About = () => {
                                 ],
                                 accentClass: 'border-blue-500 bg-blue-50',
                                 badgeClass: 'bg-blue-100 text-blue-700',
+                            },
+                            {
+                                badge: 'Transportation Services Qatar',
+                                title: 'Transportation Services in Qatar',
+                                desc: 'We offer a complete suite of transportation and logistics solutions across Qatar. Our modern fleet handles everything from heavy commercial transport and materials logistics to executive passenger services and corporate employee commuting.',
+                                items: [
+                                    'Heavy transport and construction materials logistics',
+                                    'Commercial fleet operations and management',
+                                    'Executive and VIP luxury transportation',
+                                    'Corporate and industrial employee commute services',
+                                    '24/7 dedicated fleet support and routing',
+                                ],
+                                accentClass: 'border-purple-500 bg-purple-50',
+                                badgeClass: 'bg-purple-100 text-purple-700',
                             },
                         ].map((service, i) => (
                             <motion.div

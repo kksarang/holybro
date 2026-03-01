@@ -14,7 +14,7 @@ const Footer = () => {
                             <img src={logo} alt="Holy Bro International" className="h-16 w-auto object-contain" />
                         </Link>
                         <p className="text-slate-400 text-sm leading-relaxed mb-6">
-                            A leading conglomerate providing top-tier services in Real Estate, Trading, Contracting, and more. Committed to excellence and quality since 2008.
+                            A leading conglomerate providing top-tier services in Industrial, Construction, Manpower, and Transportation. Committed to excellence and quality since 2008.
                         </p>
                         <div className="flex space-x-4">
                             {[Facebook, Twitter, Instagram, Linkedin].map((Icon, i) => (

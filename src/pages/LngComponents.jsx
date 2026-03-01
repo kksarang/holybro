@@ -18,10 +18,10 @@ import {
     MapPin,
     Leaf
 } from 'lucide-react';
-import LngHeroImage from '../assets/lng-plant.png';
-import LngShipImage from '../assets/lng-ship.png';
-import LngRigImage from '../assets/lng-rig.png';
-import LngPipesImage from '../assets/lng-pipes.png';
+import LngHeroImage from '../assets/images/lng_banner_new.jpg';
+import LngShipImage from '../assets/images/lng_plant_night.jpg';
+import LngRigImage from '../assets/images/lng_storage.jpg';
+import LngPipesImage from '../assets/images/lng_pipeline.jpg';
 import ServiceLayout from '../components/services/ServiceLayout';
 import Section from '../components/layout/Section';
 import Container from '../components/layout/Container';

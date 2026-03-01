@@ -25,13 +25,13 @@ const Navbar = () => {
     useEffect(() => {
         // eslint-disable-next-line react-hooks/set-state-in-effect
         setIsOpen(false);
-         
+
         setServicesOpen(false);
     }, [location]);
 
     const serviceGroups = [
         {
-            title: "Industrial & Trading",
+            title: "Industrial & Energy",
             items: [
                 { name: "LNG Plant Components", path: "/services/oil-gas-lng" },
                 { name: "Building Materials", path: "/services/building-materials" },

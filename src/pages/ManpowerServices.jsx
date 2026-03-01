@@ -24,6 +24,8 @@ import {
 import ManpowerHeroImage from '../assets/manpower-hero.png';
 import ManpowerTeamImage from '../assets/manpower-team.png';
 import ManpowerMeetingImage from '../assets/manpower-meeting.png';
+import ManpowerBannerNew from '../assets/images/manpower_banner_new.jpg';
+import ManpowerTeamNew from '../assets/images/manpower_team_new.jpg';
 import ServiceLayout from '../components/services/ServiceLayout';
 import Section from '../components/layout/Section';
 import Container from '../components/layout/Container';
@@ -155,7 +157,7 @@ const ManpowerServices = () => {
         <ServiceLayout
             title="Professional Manpower Supply"
             description="At HOLY BRO INTERNATIONAL W.L.L, we provide tailored manpower solutions for Qatar's most demanding sectors. We deliver skilled, certified, and performance-driven workforce to meet project demands with focus on efficiency, compliance, and safety."
-            heroImage={ManpowerHeroImage}
+            heroImage={ManpowerBannerNew}
             features={features}
             galleryImages={galleryImages}
         >
@@ -273,7 +275,7 @@ const ManpowerServices = () => {
             {/* ── Why Choose Us ── */}
             <Section className="bg-industrial-900 relative overflow-hidden">
                 <div className="absolute inset-0">
-                    <img src={ManpowerHeroImage} alt="" className="w-full h-full object-cover opacity-10 grayscale" />
+                    <img src={ManpowerBannerNew} alt="" className="w-full h-full object-cover opacity-10 grayscale" />
                     <div className="absolute inset-0 bg-industrial-900/95" />
                 </div>
                 <Container className="relative z-10 text-white">

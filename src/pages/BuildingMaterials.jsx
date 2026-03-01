@@ -17,7 +17,7 @@ import {
     Package,
     Building2
 } from 'lucide-react';
-import BuildingHeroImage from '../assets/building-hero.png';
+import BuildingHeroImage from '../assets/images/building_materials_banner_new.jpg';
 import BuildingSteelImage from '../assets/building-steel.png';
 import BuildingConcreteImage from '../assets/building-concrete.png';
 import BuildingFinishingImage from '../assets/building-finishing.png';

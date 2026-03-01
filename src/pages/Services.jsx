@@ -27,7 +27,7 @@ const Services = () => {
         <>
             <Helmet>
                 <title>Our Services | Holybro Group</title>
-                <meta name="description" content="Explore Holybro Group's diverse services including Real Estate, Trading, Contracting, Transportation, and Limousine services." />
+                <meta name="description" content="Explore Holybro Group's diverse services including Industrial Supplies, Construction, Manpower, and Logistics in Qatar." />
             </Helmet>
 
             {/* ========== PREMIUM HERO SECTION ========== */}

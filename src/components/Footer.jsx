@@ -13,7 +13,7 @@ const Footer = () => {
                             <img src={logo} alt="Holy Bro International" className="h-16 w-auto object-contain mb-2" />
                         </Link>
                         <p className="text-slate-500 text-sm leading-relaxed mb-6 font-medium">
-                            Building the future with excellence. Your trusted partner for Real Estate, Trading, and dynamic business solutions in Qatar.
+                            Building the future with excellence. Your trusted partner for Industrial, Construction, Manpower, and Transportation solutions in Qatar.
                         </p>
                         <div className="flex space-x-4">
                             {[Facebook, Twitter, Instagram, Linkedin].map((Icon, index) => (
@@ -55,11 +55,11 @@ const Footer = () => {
                         <h3 className="text-slate-800 font-bold mb-6">Our Services</h3>
                         <ul className="space-y-4">
                             {[
-                                'Real Estate',
-                                'Trading',
-                                'Contracting',
-                                'Transportation',
-                                'Limousine',
+                                'LNG Plant Components',
+                                'Building Materials',
+                                'Manpower Supply',
+                                'Construction & Contracting',
+                                'Transportation Services',
                             ].map((service) => (
                                 <li key={service}>
                                     <Link
