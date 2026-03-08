@@ -40,7 +40,7 @@ const Hero = () => {
                     className="max-w-4xl w-full"
                 >
                     {/* Tagline */}
-                    <div className="flex items-center gap-2 md:gap-3 mb-4 md:mb-6">
+                    <div className="hero-tagline-container flex items-center gap-2 md:gap-3 mb-4 md:mb-6">
                         <div className="h-0.5 w-6 md:w-12 bg-white shadow-[0_0_10px_rgba(255,255,255,0.5)]"></div>
                         <span className="text-white font-bold tracking-[0.1em] md:tracking-[0.2em] text-[10px] sm:text-xs md:text-base uppercase shadow-black drop-shadow-md">
                             Providing Sustainable Development

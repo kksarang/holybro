@@ -139,4 +139,11 @@
       display: flex !important;
     }
   }
+
+  /* Tagline spacing fix for mobile logo overlap */
+  @media (max-width: 768px) {
+    .hero-tagline-container {
+      margin-top: 50px !important;
+    }
+  }
 }
