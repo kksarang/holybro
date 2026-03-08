@@ -21,7 +21,9 @@ const Home = () => {
 
             <main id="main-content">
                 <Hero />
-                <Stats />
+                <div className="section-after-banner">
+                    <Stats />
+                </div>
                 <ServicesOverview />
                 <Certifications />
                 <Clients />

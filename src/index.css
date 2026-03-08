@@ -67,4 +67,41 @@
   .skip-to-content:focus {
     top: 0;
   }
+
+  /* Reset top spacing globally for mobile */
+  @media (max-width: 768px) {
+    html, body {
+      margin: 0 !important;
+      padding: 0 !important;
+      padding-top: 0 !important;
+    }
+
+    #home {
+      margin-top: 0 !important;
+      padding-top: 0 !important;
+      position: relative;
+      top: 0 !important;
+      height: auto !important;
+      min-height: 50vh !important;
+      width: 100vw !important;
+    }
+
+    .hero-image-inner {
+      position: relative !important;
+      width: 100vw !important;
+      height: auto !important;
+      min-height: 50vh !important;
+      background-size: contain !important;
+      background-position: top center !important;
+    }
+  }
+
+  /* Full image banner rules */
+  .hero-container {
+    background-color: #0B3C5D; /* Match brand color for bars if contain adds them */
+  }
+
+  .section-after-banner {
+    background-color: white !important;
+  }
 }

@@ -104,18 +104,14 @@ const ServicesOverview = () => {
             `}</style>
             <Container>
                 {/* Section Header */}
-                <div className="text-center max-w-3xl mx-auto mb-20">
+                <div className="text-center max-w-3xl mx-auto mb-10 md:mb-20">
                     <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">
                         Our Expertise
                     </span>
-                    <h2 className="text-4xl md:text-6xl font-extrabold text-slate-900 mb-6 leading-tight">
-                        Providing World-Class{' '}
-                        <span className="animated-gradient">
-
-                        </span>
+                    <h2 className="text-xl sm:text-4xl md:text-6xl font-extrabold text-slate-900 mb-2 md:mb-6 leading-tight">
+                        Providing World-Class
                     </h2>
-                    <h2 className="text-4xl md:text-6xl font-extrabold text-slate-900 mb-6 leading-tight">
-                        {' '}
+                    <h2 className="text-xl sm:text-4xl md:text-6xl font-extrabold text-slate-900 mb-6 leading-tight">
                         <span className="animated-gradient">
                             Industrial Solutions
                         </span>
@@ -134,15 +130,15 @@ const ServicesOverview = () => {
                             className="block focus:outline-none"
                             style={{ animationDelay: `${index * 0.1}s` }}
                         >
-                            <div className="service-card group relative bg-white border border-slate-200 rounded-2xl p-10 flex flex-col h-full">
+                            <div className="service-card group relative bg-white border border-slate-200 rounded-2xl p-6 md:p-10 flex flex-col h-full">
                                 {/* Icon */}
                                 <div
-                                    className="service-icon w-20 h-20 rounded-2xl flex items-center justify-center mb-8 shadow-lg"
+                                    className="service-icon w-16 h-16 md:w-20 md:h-20 rounded-2xl flex items-center justify-center mb-6 md:mb-8 shadow-lg"
                                     style={{
                                         background: 'linear-gradient(135deg, #2A2F74 0%, #005AA7 45%, #00A3D9 100%)'
                                     }}
                                 >
-                                    <service.icon className="h-10 w-10 text-white" strokeWidth={2} />
+                                    <service.icon className="h-8 w-8 md:h-10 md:w-10 text-white" strokeWidth={2} />
                                 </div>
 
                                 {/* Content */}

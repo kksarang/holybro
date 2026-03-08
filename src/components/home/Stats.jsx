@@ -14,7 +14,7 @@ const Stats = () => {
     return (
         <Section className="bg-white border-y border-slate-200">
             <Container>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-slate-200">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 text-center md:divide-x divide-slate-200">
                     {stats.map((stat, index) => (
                         <motion.div
                             key={index}
@@ -25,7 +25,7 @@ const Stats = () => {
                             className="px-4"
                         >
                             <div
-                                className="text-4xl md:text-5xl font-bold mb-2 font-mono"
+                                className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 font-mono"
                                 style={{
                                     background: 'linear-gradient(90deg, #2A2F74 10%, #005AA7 45%, #00A3D9 110%)',
                                     WebkitBackgroundClip: 'text',

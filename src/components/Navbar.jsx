@@ -49,12 +49,12 @@ const Navbar = () => {
                 }`}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between items-center h-24">
+                <div className="flex justify-between items-center h-16 md:h-24">
                     {/* Logo */}
-                    <Link to="/" className="flex items-center space-x-2 group">
+                    <Link to="/" className="flex items-center group flex-shrink-0">
                         <img loading="lazy" src={logo}
                             alt="Holy Bro International"
-                            className="h-16 w-auto object-contain transition-all duration-300"
+                            className="h-10 md:h-16 w-auto object-contain transition-all duration-300"
                             style={{ filter: !isScrolled && isDarkHero ? 'brightness(0) invert(1)' : 'none' }}
                         />
                     </Link>
@@ -91,13 +91,13 @@ const Navbar = () => {
                         </Link>
                     </div>
 
-                    {/* Mobile Menu Button */}
-                    <div className="md:hidden">
+                    <div className="md:hidden flex items-center">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
-                            className={`${!isScrolled && isDarkHero ? 'text-white hover:text-secondary' : 'text-slate-600 hover:text-primary'} transition-colors`}
+                            className={`${!isScrolled && isDarkHero ? 'text-white hover:text-secondary' : 'text-slate-600 hover:text-primary'} transition-colors p-2`}
+                            aria-label="Toggle menu"
                         >
-                            {isOpen ? <X size={28} /> : <Menu size={28} />}
+                            {isOpen ? <X size={24} /> : <Menu size={24} />}
                         </button>
                     </div>
                 </div>
