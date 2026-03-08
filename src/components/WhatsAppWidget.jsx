@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 
 const WhatsAppWidget = () => {
-    const whatsappLink = "https://api.whatsapp.com/send?phone=97455949262&text=Hi%20Good%20Day!";
+    const whatsappLink = "https://api.whatsapp.com/send?phone=97477547536&text=Hi%20Good%20Day!";
 
     return (
         <motion.a

@@ -9,7 +9,7 @@ import Container from '../components/layout/Container';
 import ContactHeroImage from '../assets/home_optimized.webp';
 
 const contactQuickInfo = [
-    { icon: Phone, value: '+974 55949262', label: 'Call Us' },
+    { icon: Phone, value: '+974 77547536', label: 'Call Us' },
     { icon: Mail, value: 'info@holybrogroup.com', label: 'Email Us' },
     { icon: MapPin, value: 'Doha, Qatar', label: 'Location' },
     { icon: Clock, value: 'Mon - Sat', label: '8AM - 6PM' },
@@ -174,7 +174,7 @@ const Contact = () => {
                                     title="Call Us"
                                     content={
                                         <>
-                                            <a href="tel:+97455949262" className="hover:text-accent-cyan transition-colors">+974 55949262</a>
+                                            <a href="tel:+97477547536" className="hover:text-accent-cyan transition-colors">+974 77547536</a>
                                         </>
                                     }
                                 />

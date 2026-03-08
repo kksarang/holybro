@@ -19,7 +19,7 @@ const StructuredData = ({ type = 'Organization', data }) => {
                     },
                     "contactPoint": {
                         "@type": "ContactPoint",
-                        "telephone": "+974-55949262",
+                        "telephone": "+974-77547536",
                         "contactType": "customer service",
                         "availableLanguage": ["English", "Arabic"]
                     },
