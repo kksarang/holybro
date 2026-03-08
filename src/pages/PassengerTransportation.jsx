@@ -16,9 +16,10 @@ import {
     ChevronRight,
     Phone
 } from 'lucide-react';
-import LimoHeroImage from '../assets/images/passenger_transport_banner.webp';
+import LimoHeroImage from '../assets/images/home_quick.jpg';
 import LimoInteriorImage from '../assets/images/airport_interior.webp';
 import LimoChauffeurImage from '../assets/images/qatar_airways.webp';
+import RentCarImage from '../assets/rentcar.jpg';
 import ServiceLayout from '../components/services/ServiceLayout';
 import Section from '../components/layout/Section';
 import Container from '../components/layout/Container';
@@ -98,6 +99,7 @@ const serviceCategories = [
     {
         number: '06',
         icon: Key,
+        image: RentCarImage,
         title: 'Rent A Car',
         subtitle: 'Affordable & Reliable Car Rental',
         description: 'Looking for the best rent a car services in Qatar? Choose from economy cars to luxury SUVs with daily, weekly, or monthly plans. Competitive pricing, easy booking.',
@@ -233,13 +235,28 @@ const PassengerTransportation = () => {
                                 transition={{ delay: 0.05 }}
                                 className={`bg-white rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex flex-col lg:flex-row ${idx % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}
                             >
-                                {/* Coloured accent panel */}
-                                <div className={`lg:w-56 flex-shrink-0 bg-gradient-to-br ${svc.color} flex flex-col items-center justify-center p-8 text-white`}>
-                                    <span className="text-5xl font-black opacity-30 mb-2">{svc.number}</span>
-                                    <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center">
-                                        <svc.icon className="w-8 h-8 text-white" />
+                                {/* Media Panel (Image or Coloured accent block) */}
+                                {svc.image ? (
+                                    <div className="lg:w-72 xl:w-80 flex-shrink-0 relative">
+                                        <img 
+                                            loading="lazy" 
+                                            src={svc.image} 
+                                            alt={svc.title} 
+                                            className="w-full h-full object-cover min-h-[300px] lg:min-h-[100%]" 
+                                        />
+                                        <div className={`absolute inset-0 bg-gradient-to-t ${svc.color} opacity-40 mix-blend-multiply`} />
+                                        <div className="absolute top-4 left-4 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-xl flex items-center justify-center shadow-lg">
+                                            <svc.icon className={`w-6 h-6 ${svc.textColor}`} />
+                                        </div>
                                     </div>
-                                </div>
+                                ) : (
+                                    <div className={`lg:w-64 xl:w-72 flex-shrink-0 bg-gradient-to-br ${svc.color} flex flex-col items-center justify-center p-8 text-white min-h-[300px] lg:min-h-auto`}>
+                                        <span className="text-5xl lg:text-7xl font-black opacity-20 mb-4">{svc.number}</span>
+                                        <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center shadow-inner">
+                                            <svc.icon className="w-8 h-8 text-white" />
+                                        </div>
+                                    </div>
+                                )}
 
                                 {/* Content */}
                                 <div className="flex-1 p-8 lg:p-10">

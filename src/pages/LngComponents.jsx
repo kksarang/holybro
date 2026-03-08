@@ -18,8 +18,9 @@ import {
     MapPin,
     Leaf
 } from 'lucide-react';
-import LngHeroImage from '../assets/images/lng_banner_new.webp';
+import LngHeroImage from '../assets/images/lng_plant_night.webp';
 import LngShipImage from '../assets/images/lng_plant_night.webp';
+import ActuationImage from '../assets/images/Actuation.jpg';
 import LngRigImage from '../assets/images/lng_storage.webp';
 import LngPipesImage from '../assets/images/lng_pipeline.webp';
 import ServiceLayout from '../components/services/ServiceLayout';
@@ -72,7 +73,7 @@ const productCategories = [
     {
         number: '03',
         icon: Gauge,
-        image: LngShipImage,
+        image: ActuationImage,
         title: 'Valves, Actuation & Flow Control',
         subtitle: 'Safe & Precise Process Control Solutions',
         description: 'Ensuring safe, accurate, and reliable process control in high-pressure, high-risk industrial environments with internationally certified valve solutions.',

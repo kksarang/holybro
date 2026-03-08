@@ -97,7 +97,7 @@ const ServiceLayout = ({
 
             {/* Gallery Section */}
             {galleryImages.length > 0 && (
-                <Gallery images={galleryImages} title="Project Showcase" />
+                <Gallery images={galleryImages} title="Gallery" />
             )}
 
             {/* CTA Section */}

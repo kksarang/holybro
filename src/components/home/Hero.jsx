@@ -13,14 +13,14 @@ const Hero = () => {
     // Hero Background Image from assets
 
     return (
-        <section id="home" className="relative h-screen min-h-[800px] w-full overflow-hidden flex items-center">
+        <section id="home" className="relative h-auto min-h-[600px] md:h-screen md:min-h-[800px] w-full overflow-hidden flex items-center">
             {/* 1. Hero Background Image with Parallax */}
             <motion.div
                 className="absolute inset-0 w-full h-full z-0"
                 style={{ y }}
             >
                 <div
-                    className="absolute inset-0 bg-cover bg-center bg-no-repeat transform scale-105"
+                    className="absolute inset-0 bg-contain md:bg-cover bg-center bg-no-repeat transform md:scale-105"
                     style={{
                         backgroundImage: `url('${heroBg}')`,
                         backgroundPosition: 'center 20%' // Focus on upper part of buildings
@@ -37,7 +37,7 @@ const Hero = () => {
                     initial={{ opacity: 0, x: -30 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1, ease: "easeOut" }}
-                    className="max-w-4xl"
+                    className="max-w-4xl w-full"
                 >
                     {/* Tagline */}
                     <div className="flex items-center gap-3 mb-6">
@@ -61,10 +61,10 @@ const Hero = () => {
                     </p> */}
 
                     {/* Call-To-Action Buttons */}
-                    <div className="flex flex-col sm:flex-row gap-5">
+                    <div className="flex flex-col sm:flex-row gap-4 w-full max-w-md">
                         <Link
                             to="/services"
-                            className="group relative px-8 py-4 bg-secondary hover:bg-primary text-white rounded-lg cursor-pointer transition-all duration-300 transform hover:-translate-y-1 font-bold text-lg flex items-center justify-center overflow-hidden shadow-lg shadow-blue-900/20"
+                            className="group relative w-full sm:w-auto px-8 py-4 bg-secondary hover:bg-primary text-white rounded-lg cursor-pointer transition-all duration-300 transform hover:-translate-y-1 font-bold text-lg flex items-center justify-center overflow-hidden shadow-lg shadow-blue-900/20"
                         >
                             <span className="relative z-10 flex items-center">
                                 Explore Services
@@ -75,7 +75,7 @@ const Hero = () => {
 
                         <Link
                             to="/contact"
-                            className="px-8 py-4 border border-slate-400 text-white rounded-lg hover:border-secondary hover:bg-secondary/10 transition-all duration-300 font-medium text-lg flex items-center justify-center backdrop-blur-sm cursor-pointer"
+                            className="w-full sm:w-auto px-8 py-4 border border-slate-300 bg-slate-900/40 text-white rounded-lg hover:border-secondary hover:bg-secondary/60 transition-all duration-300 font-medium text-lg flex items-center justify-center backdrop-blur-md cursor-pointer shadow-lg"
                         >
                             Get in Touch
                         </Link>
