@@ -13,14 +13,14 @@ const Hero = () => {
     // Hero Background Image from assets
 
     return (
-        <section id="home" className="relative min-h-[50vh] md:h-screen w-full overflow-hidden flex items-center pt-0 md:pt-0 hero-container">
+        <section id="home" className="relative w-full aspect-video overflow-hidden flex items-center pt-0 md:pt-0 hero-container">
             {/* 1. Hero Background Image with Parallax */}
             <motion.div
                 className="absolute inset-0 w-full h-full z-0"
                 style={{ y }}
             >
                 <div
-                    className="absolute inset-0 bg-contain bg-center bg-no-repeat hero-image-inner"
+                    className="absolute inset-0 bg-contain bg-center bg-no-repeat hero-image-inner w-full h-full"
                     style={{
                         backgroundImage: `url('${heroBg}')`,
                         backgroundPosition: 'center'
@@ -75,7 +75,7 @@ const Hero = () => {
 
                         <Link
                             to="/contact"
-                            className="w-full sm:w-auto px-8 py-3.5 md:py-4 border border-slate-300 bg-slate-900/40 text-white rounded-lg hover:border-secondary hover:bg-secondary/60 transition-all duration-300 font-medium text-base md:text-lg flex items-center justify-center backdrop-blur-md cursor-pointer shadow-lg"
+                            className="get-in-touch-hero w-full sm:w-auto px-8 py-3.5 md:py-4 border border-slate-300 bg-slate-900/40 text-white rounded-lg hover:border-secondary hover:bg-secondary/60 transition-all duration-300 font-medium text-base md:text-lg flex items-center justify-center backdrop-blur-md cursor-pointer shadow-lg"
                         >
                             Get in Touch
                         </Link>

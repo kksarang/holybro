@@ -82,26 +82,61 @@
       position: relative;
       top: 0 !important;
       height: auto !important;
-      min-height: 50vh !important;
+      min-height: auto !important;
       width: 100vw !important;
+      aspect-ratio: 16 / 9 !important;
     }
 
     .hero-image-inner {
-      position: relative !important;
-      width: 100vw !important;
-      height: auto !important;
-      min-height: 50vh !important;
+      position: absolute !important;
+      width: 100% !important;
+      height: 100% !important;
       background-size: contain !important;
-      background-position: top center !important;
+      background-position: center !important;
     }
   }
 
   /* Full image banner rules */
   .hero-container {
-    background-color: #0B3C5D; /* Match brand color for bars if contain adds them */
+    background-color: #0B3C5D; /* Desktop brand color */
+  }
+
+  @media (max-width: 768px) {
+    .hero-container {
+      background-color: white !important; /* Mobile seamless transition */
+    }
   }
 
   .section-after-banner {
     background-color: white !important;
+  }
+
+  /* Hide Get in Touch button ONLY on mobile */
+  @media (max-width: 768px) {
+    .get-in-touch-hero {
+      display: none !important;
+    }
+    
+    /* Remove colored section after banner - force white */
+    .hero-container + *,
+    main,
+    section:not(.hero-container) {
+      background-color: white !important;
+      background: white !important;
+    }
+    
+    /* Ensure no colored overlay/gradient remains on mobile */
+    .hero-container [class*="overlay"],
+    .hero-container [class*="gradient"] {
+      background: none !important;
+      background-color: transparent !important;
+    }
+  }
+
+  /* Desktop keeps button visible */
+  @media (min-width: 769px) {
+    .get-in-touch-hero {
+      display: flex !important;
+    }
   }
 }
