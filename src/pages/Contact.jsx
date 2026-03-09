@@ -9,10 +9,10 @@ import Container from '../components/layout/Container';
 import ContactHeroImage from '../assets/home_optimized.webp';
 
 const contactQuickInfo = [
-    { icon: Phone, value: '+974 77547536', label: 'Call Us' },
+    { icon: Phone, value: '+974 31023132', label: 'Call Us' },
     { icon: Mail, value: 'info@holybrogroup.com', label: 'Email Us' },
     { icon: MapPin, value: 'Doha, Qatar', label: 'Location' },
-    { icon: Clock, value: 'Mon - Sat', label: '8AM - 6PM' },
+    { icon: Clock, value: 'Sat - Thu', label: '9AM - 7PM' },
 ];
 
 const Contact = () => {
@@ -174,7 +174,7 @@ const Contact = () => {
                                     title="Call Us"
                                     content={
                                         <>
-                                            <a href="tel:+97477547536" className="hover:text-accent-cyan transition-colors">+974 77547536</a>
+                                            <a href="tel:+97431023132" className="hover:text-accent-cyan transition-colors">+974 31023132</a>
                                         </>
                                     }
                                 />
@@ -186,9 +186,25 @@ const Contact = () => {
                                     }
                                 />
                                 <ContactInfoBlock
+                                    icon={Phone}
+                                    title="Sales Team"
+                                    content={
+                                        <div className="space-y-1">
+                                            <div className="flex items-center gap-2">
+                                                <span className="font-medium text-industrial-900">Mob:</span>
+                                                <a href="tel:+97431478899" className="hover:text-accent-cyan transition-colors">+974 31478899</a>
+                                            </div>
+                                            <div className="flex items-center gap-2">
+                                                <span className="font-medium text-industrial-900">Email:</span>
+                                                <a href="mailto:russelvk@holybrogroupqatar.com" className="hover:text-accent-cyan transition-colors">russelvk@holybrogroupqatar.com</a>
+                                            </div>
+                                        </div>
+                                    }
+                                />
+                                <ContactInfoBlock
                                     icon={Clock}
                                     title="Working Hours"
-                                    content="Mon - Sat, 8:00 AM - 6:00 PM"
+                                    content="Sat - Thu, 9:00 AM - 7:00 PM"
                                 />
                             </div>
 
