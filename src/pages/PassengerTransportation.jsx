@@ -18,7 +18,7 @@ import {
 } from 'lucide-react';
 import BusinessMeetingImage from '../assets/busineess.jpg';
 import TransportBannerImage from '../assets/images/passenger_transport_banner.webp';
-import CorporateEventImage from '../assets/limo-chauffeur.webp';
+import CorporateEventImage from '../assets/transportion.jpg';
 import EventTransportationImage from '../assets/eventt.jpg';
 import SchoolBusImage from '../assets/schoolbus.jpg';
 import LimoHeroImage from '../assets/images/home_quick.jpg';
