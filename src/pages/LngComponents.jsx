@@ -24,6 +24,7 @@ import ActuationImage from '../assets/images/Actuation.jpg';
 import LngRigImage from '../assets/images/lng_storage.webp';
 import LngPipesImage from '../assets/images/lng_pipeline.webp';
 import OilOneImage from '../assets/oilone.jpg';
+import OilPipesImage from '../assets/Oil.jpg';
 import ServiceLayout from '../components/services/ServiceLayout';
 import Section from '../components/layout/Section';
 import Container from '../components/layout/Container';
@@ -54,7 +55,7 @@ const productCategories = [
     {
         number: '02',
         icon: Settings,
-        image: LngRigImage,
+        image: OilPipesImage,
         title: 'Process & Mechanical Equipment',
         subtitle: 'Industrial-Grade Engineered Solutions',
         description: 'High-performance mechanical equipment designed for LNG plants, refineries, gas processing facilities, and industrial infrastructure operations.',
