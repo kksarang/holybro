@@ -10,7 +10,7 @@ const ServiceLayout = ({
     title,
     description,
     heroImage,
-    heroImagePosition = 'top', // Added this prop
+    heroImagePosition = 'center', // Added this prop
     features = [],
     galleryImages = [],
     children
