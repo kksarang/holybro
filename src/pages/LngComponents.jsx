@@ -25,6 +25,8 @@ import LngRigImage from '../assets/images/lng_storage.webp';
 import LngPipesImage from '../assets/images/lng_pipeline.webp';
 import OilOneImage from '../assets/oilone.jpg';
 import OilPipesImage from '../assets/Oil.jpg';
+import PipelineMaterialsImage from '../assets/oilgasfive.jpg';
+import InstrumentationImage from '../assets/oilgasfour.jpg';
 import ServiceLayout from '../components/services/ServiceLayout';
 import Section from '../components/layout/Section';
 import Container from '../components/layout/Container';
@@ -94,7 +96,7 @@ const productCategories = [
     {
         number: '04',
         icon: Database,
-        image: LngHeroImage,
+        image: InstrumentationImage,
         title: 'Instrumentation & Automation',
         subtitle: 'Intelligent Monitoring & Control Systems',
         description: 'Advanced monitoring and automation systems to enhance operational performance, safety, and efficiency across oil, gas, and LNG facilities.',
@@ -113,7 +115,7 @@ const productCategories = [
     {
         number: '05',
         icon: Layers,
-        image: LngPipesImage,
+        image: PipelineMaterialsImage,
         title: 'Pipeline & Structural Materials',
         subtitle: 'Durable Infrastructure Materials',
         description: 'Corrosion-resistant, high-strength materials engineered for long-term infrastructure integrity in demanding oil, gas, and LNG environments.',
