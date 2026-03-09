@@ -16,6 +16,11 @@ import {
     ChevronRight,
     Phone
 } from 'lucide-react';
+import BusinessMeetingImage from '../assets/busineess.jpg';
+import TransportBannerImage from '../assets/images/passenger_transport_banner.webp';
+import CorporateEventImage from '../assets/limo-chauffeur.webp';
+import EventTransportationImage from '../assets/eventt.jpg';
+import SchoolBusImage from '../assets/schoolbus.jpg';
 import LimoHeroImage from '../assets/images/home_quick.jpg';
 import LimoInteriorImage from '../assets/images/airport_interior.webp';
 import LimoChauffeurImage from '../assets/images/qatar_airways.webp';
@@ -39,6 +44,7 @@ const serviceCategories = [
     {
         number: '01',
         icon: Users,
+        image: BusinessMeetingImage,
         title: 'Business Meeting Transportation',
         subtitle: 'Corporate Chauffeur & Executive Cars',
         description: 'Reliable business meeting transportation in Qatar with executive cars, chauffeur services, and airport transfers. Confidential and secure transport for your team.',
@@ -51,6 +57,7 @@ const serviceCategories = [
     {
         number: '02',
         icon: Calendar,
+        image: CorporateEventImage,
         title: 'Corporate Event Transportation',
         subtitle: 'Group Shuttles & Conference Logistics',
         description: 'Professional transportation services for corporate events in Qatar. We coordinate executive cars, group shuttles, and VIP event logistics support.',
@@ -63,6 +70,7 @@ const serviceCategories = [
     {
         number: '03',
         icon: Plane,
+        image: TransportBannerImage,
         title: 'Airport Transfers',
         subtitle: 'Chauffeur & Executive Car Services',
         description: 'Professional airport transfer services in Qatar providing timely, safe, and comfortable travel. Flight monitoring ensures you are always picked up on time.',
@@ -75,6 +83,7 @@ const serviceCategories = [
     {
         number: '04',
         icon: MapPin,
+        image: LimoChauffeurImage,
         title: 'Vacation Trip Transportation',
         subtitle: 'Private Tours & Excursions',
         description: 'Explore Qatar hassle-free with our vacation trip transportation. Chauffeur-driven private vehicles for city tours, desert safaris, and cultural experiences.',
@@ -87,6 +96,7 @@ const serviceCategories = [
     {
         number: '05',
         icon: Star,
+        image: EventTransportationImage,
         title: 'Event Transportation',
         subtitle: 'Weddings, Social & Corporate Events',
         description: 'Professional event transportation across Doha and key venues. Chauffeur-driven executive cars and wedding services for every occasion.',
@@ -112,6 +122,7 @@ const serviceCategories = [
     {
         number: '07',
         icon: GraduationCap,
+        image: SchoolBusImage,
         title: 'Office & School Pick and Drop',
         subtitle: 'Safe & Reliable Daily Transportation',
         description: 'Professional office and school pick and drop services across Doha. Experienced and verified drivers with well-maintained vehicles — trusted by families and corporates.',

@@ -23,6 +23,7 @@ import LngShipImage from '../assets/images/lng_plant_night.webp';
 import ActuationImage from '../assets/images/Actuation.jpg';
 import LngRigImage from '../assets/images/lng_storage.webp';
 import LngPipesImage from '../assets/images/lng_pipeline.webp';
+import OilOneImage from '../assets/oilone.jpg';
 import ServiceLayout from '../components/services/ServiceLayout';
 import Section from '../components/layout/Section';
 import Container from '../components/layout/Container';
@@ -33,7 +34,7 @@ const productCategories = [
     {
         number: '01',
         icon: Wind,
-        image: LngPipesImage,
+        image: OilOneImage,
         title: 'Cryogenic Systems & LNG Components',
         subtitle: 'Ultra-Low Temperature LNG Applications',
         description: 'High-performance solutions engineered to withstand extreme cryogenic conditions while maintaining maximum safety, reliability, and operational efficiency.',
