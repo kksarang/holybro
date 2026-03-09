@@ -2,7 +2,7 @@ import { Factory, BrickWall, Car, HardHat, Building2, MapPin } from 'lucide-reac
 
 export const services = [
     {
-        title: 'Oil & Gas Components & LNG Supply',
+        title: 'Oil & Gas Component Supply',
         description: 'Quality specialized Oil & Gas components and LNG equipment supporting energy and industrial infrastructure projects with high-quality, certified materials.',
         shortDescription: 'LNG Plant Components & Industrial Supplies',
         icon: Factory,
