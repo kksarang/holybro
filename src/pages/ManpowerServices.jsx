@@ -158,6 +158,7 @@ const ManpowerServices = () => {
             title="Professional Manpower Supply"
             description="At HOLY BRO INTERNATIONAL W.L.L, we provide tailored manpower solutions for Qatar's most demanding sectors. We deliver skilled, certified, and performance-driven workforce to meet project demands with focus on efficiency, compliance, and safety."
             heroImage={ManpowerBannerNew}
+            heroImagePosition="top 250%"
             features={features}
             galleryImages={galleryImages}
         >

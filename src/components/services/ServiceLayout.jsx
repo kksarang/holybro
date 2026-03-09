@@ -10,6 +10,7 @@ const ServiceLayout = ({
     title,
     description,
     heroImage,
+    heroImagePosition = 'top', // Added this prop
     features = [],
     galleryImages = [],
     children
@@ -22,6 +23,7 @@ const ServiceLayout = ({
                     <img loading="lazy" src={heroImage}
                         alt={title}
                         className="w-full h-full object-cover"
+                        style={{ objectPosition: heroImagePosition }}
                     />
                     <div className="absolute inset-0 bg-industrial-900/70 mix-blend-multiply"></div>
                     <div className="absolute inset-0 bg-gradient-to-t from-industrial-900 via-transparent to-transparent"></div>
