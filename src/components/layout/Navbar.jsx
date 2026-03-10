@@ -76,7 +76,7 @@ const Navbar = () => {
                             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                         >
                             <img loading="lazy" src={logo}
-                                alt="Holy Bro International"
+                                alt="Holy Bro Group"
                                 className="h-14 md:h-16 w-auto object-contain transition-all duration-300"
                             />
                         </NavLink>

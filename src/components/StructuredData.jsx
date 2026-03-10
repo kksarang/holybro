@@ -8,7 +8,7 @@ const StructuredData = ({ type = 'Organization', data }) => {
                 return {
                     "@context": "https://schema.org",
                     "@type": "Organization",
-                    "name": "Holy Bro International W.L.L",
+                    "name": "Holy Bro Group W.L.L",
                     "url": "https://kksarang.github.io/holybro/",
                     "logo": "https://kksarang.github.io/holybro/logo.webp",
                     "description": "Leading company in Qatar providing LNG plant components, construction materials, manpower supply, and commercial transportation services.",
@@ -36,7 +36,7 @@ const StructuredData = ({ type = 'Organization', data }) => {
                     "serviceType": data.title,
                     "provider": {
                         "@type": "Organization",
-                        "name": "Holybro Group"
+                        "name": "Holy Bro Group W.L.L"
                     },
                     "description": data.description,
                     "areaServed": {

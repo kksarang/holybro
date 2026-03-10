@@ -53,7 +53,7 @@ const Navbar = () => {
                     {/* Logo */}
                     <Link to="/" className="flex items-center group flex-shrink-0">
                         <img loading="lazy" src={logo}
-                            alt="Holy Bro International"
+                            alt="Holy Bro Group"
                             className="h-10 md:h-16 w-auto object-contain transition-all duration-300"
                             style={{ filter: !isScrolled && isDarkHero ? 'brightness(0) invert(1)' : 'none' }}
                         />

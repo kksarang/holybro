@@ -14,7 +14,7 @@ const stats = [
     { icon: Briefcase, value: '6+', label: 'Service Lines' },
     { icon: Globe, value: '150+', label: 'Projects Delivered' },
     { icon: Shield, value: '100%', label: 'Quality Assured' },
-    { icon: Award, value: '15+', label: 'Years Experience' },
+    { icon: Award, value: '13+', label: 'Years Experience' },
 ];
 
 const Services = () => {

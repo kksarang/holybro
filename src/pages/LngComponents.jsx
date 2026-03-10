@@ -156,9 +156,9 @@ const LngComponents = () => {
     const [activeTab, setActiveTab] = useState(0);
 
     useSEO({
-        title: 'Oil & Gas Component Supply in Qatar | Holy Bro International W.L.L',
-        description: 'Holy Bro International W.L.L delivers high-performance Oil & Gas and LNG components in Qatar. Cryogenic systems, process equipment, valves, instrumentation, and pipeline materials. Certified to ASME, API, ISO.',
-        ogTitle: 'Oil & Gas Component Supply | Holy Bro International W.L.L',
+        title: 'Oil & Gas Component Supply in Qatar | Holy Bro Group W.L.L',
+        description: 'Holy Bro Group W.L.L delivers high-performance Oil & Gas and LNG components in Qatar. Cryogenic systems, process equipment, valves, instrumentation, and pipeline materials. Certified to ASME, API, ISO.',
+        ogTitle: 'Oil & Gas Component Supply | Holy Bro Group W.L.L',
         ogDescription: 'Certified Oil & Gas and LNG components in Qatar — cryogenic systems, valves, instrumentation, pipeline materials. Supporting Ras Laffan operations and QatarEnergy projects.'
     });
 
@@ -180,7 +180,7 @@ const LngComponents = () => {
     return (
         <ServiceLayout
             title="Oil & Gas Component Supply"
-            description="HOLY BRO INTERNATIONAL W.L.L delivers high-performance components, engineered packages, and integrated supply solutions for LNG production, gas processing, oil refining, storage, transportation, and export operations across Qatar. Strategically supporting projects near Ras Laffan Industrial City and major national energy operators."
+            description="HOLY BRO GROUP W.L.L delivers high-performance components, engineered packages, and integrated supply solutions for LNG production, gas processing, oil refining, storage, transportation, and export operations across Qatar. Strategically supporting projects near Ras Laffan Industrial City and major national energy operators."
             heroImage={LngHeroImage}
             features={features}
             galleryImages={galleryImages}
@@ -340,7 +340,7 @@ const LngComponents = () => {
                             viewport={{ once: true }}
                             className="text-3xl md:text-4xl font-bold text-white mb-4"
                         >
-                            Why Choose HOLY BRO INTERNATIONAL W.L.L?
+                            Why Choose HOLY BRO GROUP W.L.L?
                         </motion.h2>
                         <div className="h-1 w-20 bg-cyan-500 mx-auto rounded-full mb-4" />
                         <p className="text-slate-400 text-lg max-w-2xl mx-auto">

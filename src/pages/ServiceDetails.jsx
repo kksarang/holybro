@@ -35,7 +35,7 @@ const ServiceDetails = () => {
         return (
             <div className="min-h-[70vh] flex flex-col items-center justify-center text-center px-4 pt-20">
                 <Helmet>
-                    <title>Service Not Found | Holy Bro International W.L.L</title>
+                    <title>Service Not Found | Holy Bro Group W.L.L</title>
                 </Helmet>
                 <div className="w-20 h-20 bg-red-50 text-red-500 rounded-full flex items-center justify-center mb-6">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">

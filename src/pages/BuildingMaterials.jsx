@@ -133,9 +133,9 @@ const BuildingMaterials = () => {
     const [openCategory, setOpenCategory] = useState(0);
 
     useSEO({
-        title: 'Building Materials Supply in Qatar | Holy Bro International W.L.L',
+        title: 'Building Materials Supply in Qatar | Holy Bro Group W.L.L',
         description: 'Trusted building materials supplier in Qatar. Certified structural, finishing, and MEP materials for residential, commercial, industrial & infrastructure projects. BOQ supply, on-time delivery.',
-        ogTitle: 'Building Materials Supply in Qatar | Holy Bro International W.L.L',
+        ogTitle: 'Building Materials Supply in Qatar | Holy Bro Group W.L.L',
         ogDescription: 'Certified structural, finishing, and MEP building materials for all project types in Qatar. BOQ-based supply with on-time delivery across Doha.'
     });
 
@@ -157,7 +157,7 @@ const BuildingMaterials = () => {
     return (
         <ServiceLayout
             title="Building Materials Supply in Qatar"
-            description="HOLY BRO INTERNATIONAL W.L.L is a trusted building materials supplier in Qatar, delivering certified, high-quality construction products for residential, commercial, industrial, and infrastructure projects. From foundation to finishing — we ensure quality, precision, and timely supply."
+            description="HOLY BRO GROUP W.L.L is a trusted building materials supplier in Qatar, delivering certified, high-quality construction products for residential, commercial, industrial, and infrastructure projects. From foundation to finishing — we ensure quality, precision, and timely supply."
             heroImage={BuildingHeroImage}
             features={features}
             galleryImages={galleryImages}
@@ -287,7 +287,7 @@ const BuildingMaterials = () => {
                             viewport={{ once: true }}
                             className="text-3xl md:text-4xl font-bold text-white mb-4"
                         >
-                            Why Choose HOLY BRO INTERNATIONAL W.L.L?
+                            Why Choose HOLY BRO GROUP W.L.L?
                         </motion.h2>
                         <div className="h-1 w-20 bg-amber-500 mx-auto rounded-full mb-4" />
                         <p className="text-slate-400 text-lg max-w-2xl mx-auto">
@@ -392,7 +392,7 @@ const BuildingMaterials = () => {
                         <h2 className="text-3xl md:text-5xl font-bold mb-4">Partner With Us</h2>
                         <p className="text-amber-100 text-lg mb-6 max-w-2xl mx-auto">
                             Whether your project is small-scale residential or large infrastructure development,
-                            HOLY BRO INTERNATIONAL W.L.L ensures precision, quality, timely supply, and competitive rates.
+                            HOLY BRO GROUP W.L.L ensures precision, quality, timely supply, and competitive rates.
                         </p>
                         <div className="flex flex-wrap justify-center gap-6 mb-10 text-sm font-semibold">
                             {['✔ Precision', '✔ Quality', '✔ Timely Supply', '✔ Competitive Rates'].map((t, i) => (

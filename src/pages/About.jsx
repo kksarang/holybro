@@ -8,7 +8,7 @@ import AboutHeroImage from '../assets/home_optimized.webp';
 import KataraTowersImage from '../assets/images/katara_towers.webp';
 
 const aboutStats = [
-    { icon: History, value: '15+', label: 'Years Experience' },
+    { icon: History, value: '13+', label: 'Years Experience' },
     { icon: Users, value: '500+', label: 'Team Members' },
     { icon: Building2, value: '6+', label: 'Business Verticals' },
     { icon: Handshake, value: '200+', label: 'Trusted Clients' },
@@ -82,7 +82,7 @@ const About = () => {
                             </div>
 
                             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-5 leading-tight tracking-tight">
-                                About <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary-light to-secondary">Holy Bro International</span>
+                                About <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary-light to-secondary">Holy Bro Group</span>
                             </h1>
 
                             <p className="text-lg text-slate-300 leading-relaxed max-w-xl">
@@ -141,7 +141,7 @@ const About = () => {
                             </p>
                             <div className="mt-8 grid grid-cols-2 gap-4">
                                 {[
-                                    { value: '15+', label: 'Years of Excellence' },
+                                    { value: '13+', label: 'Years of Excellence' },
                                     { value: '200+', label: 'Trusted Clients' },
                                     { value: '500+', label: 'Workforce Deployed' },
                                     { value: '6+', label: 'Service Verticals' },
@@ -389,7 +389,7 @@ const About = () => {
                     <div className="h-1 w-16 bg-secondary mx-auto rounded-full mb-12" />
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
                         {[
-                            { icon: '🏆', title: '15+ Years of Industry Experience', desc: 'Proven expertise across Qatar\'s industrial and infrastructure sectors.' },
+                            { icon: '🏆', title: '13+ Years of Industry Experience', desc: 'Proven expertise across Qatar\'s industrial and infrastructure sectors.' },
                             { icon: '🔗', title: 'Integrated Multi-Service Solutions', desc: 'One partner for LNG, building materials, manpower, and transportation.' },
                             { icon: '🌐', title: 'Strong Supplier & Industrial Network', desc: 'Global and local supplier partnerships ensuring quality and availability.' },
                             { icon: '🛡️', title: 'Commitment to Safety & Compliance', desc: 'Fully compliant with ASME, API, ISO 9001, 14001, and 45001 standards.' },

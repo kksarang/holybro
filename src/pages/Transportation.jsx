@@ -18,9 +18,9 @@ import { useSEO } from '../hooks/useSEO';
 const Transportation = () => {
     // SEO Metadata
     useSEO({
-        title: 'Transportation Services & Material Logistics | Holy Bro International W.L.L',
+        title: 'Transportation Services & Material Logistics | Holy Bro Group W.L.L',
         description: 'Professional transportation and logistics solutions in Qatar. Specialized in construction material transport, heavy equipment movement, and GPS fleet management.',
-        ogTitle: 'Transportation Services & Material Logistics | Holy Bro International',
+        ogTitle: 'Transportation Services & Material Logistics | Holy Bro Group W.L.L',
         ogDescription: 'Specialized in construction material transport, heavy equipment movement, and GPS fleet management in Qatar.'
     });
 

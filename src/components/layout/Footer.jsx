@@ -11,7 +11,7 @@ const Footer = () => {
                     {/* Company Info */}
                     <div>
                         <Link to="/" className="inline-block mb-6">
-                            <img loading="lazy" src={logo} alt="Holy Bro International" className="h-16 w-auto object-contain" />
+                            <img loading="lazy" src={logo} alt="Holy Bro Group" className="h-16 w-auto object-contain" />
                         </Link>
                         <p className="text-slate-400 text-sm leading-relaxed mb-6">
                             A leading conglomerate providing top-tier services in Industrial, Construction, Manpower, and Transportation. Committed to excellence and quality since 2008.
@@ -88,7 +88,7 @@ const Footer = () => {
                 </div>
 
                 <div className="border-t border-slate-800 pt-8 text-center text-xs text-slate-500">
-                    <p>&copy; {new Date().getFullYear()} Holy Bro International W.L.L. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} Holy Bro Group W.L.L. All rights reserved.</p>
                     <p className="mt-2">
                         Website Developed & Maintained by <a href="https://sarangrajan.in/kksystems" target="_blank" rel="noopener noreferrer" className="text-white hover:text-accent transition-colors">KK Systems</a>
                     </p>

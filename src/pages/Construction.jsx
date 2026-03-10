@@ -147,7 +147,7 @@ const Construction = () => {
 
     // SEO Metadata Strategy: Qatar keyword focused
     useSEO({
-        title: 'Construction, MEP & Building Maintenance Services in Qatar | Holy Bro International',
+        title: 'Construction, MEP & Building Maintenance Services in Qatar | Holy Bro Group',
         description: 'Integrated Construction, Contracting, MEP, HVAC, and Facility Maintenance solutions in Qatar. Specialist in residential, commercial, industrial and infrastructure projects.',
         ogTitle: 'Construction, MEP & Maintenance Services in Qatar',
         ogDescription: 'Integrated Construction, Contracting, MEP, HVAC, and Facility Maintenance solutions in Qatar.'
@@ -171,7 +171,7 @@ const Construction = () => {
     return (
         <ServiceLayout
             title="Construction & Contracting"
-            description="At HOLY BRO INTERNATIONAL W.L.L, we deliver fully integrated Construction, Contracting, MEP, HVAC, Electrical, Sanitary, and Facility Maintenance Solutions across Qatar. From ground-up construction to long-term facility management, we ensure precision, durability, and accountability."
+            description="At HOLY BRO GROUP W.L.L, we deliver fully integrated Construction, Contracting, MEP, HVAC, Electrical, Sanitary, and Facility Maintenance Solutions across Qatar. From ground-up construction to long-term facility management, we ensure precision, durability, and accountability."
             heroImage={ConstBannerNew}
             features={features}
             galleryImages={galleryImages}
@@ -296,7 +296,7 @@ const Construction = () => {
                 </div>
                 <Container className="relative z-10 text-white">
                     <div className="text-center mb-14">
-                        <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose Holy Bro International?</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose Holy Bro Group?</h2>
                         <div className="h-1 w-20 bg-purple-500 mx-auto rounded-full mb-4" />
                         <p className="text-slate-400 text-lg max-w-2xl mx-auto">
                             We do more than construct buildings — we protect your investment through advanced management and proactive strategies.

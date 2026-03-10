@@ -135,9 +135,9 @@ const ManpowerServices = () => {
 
     // SEO Metadata
     useSEO({
-        title: 'Professional Manpower Supply Services in Qatar | Holy Bro International W.L.L',
+        title: 'Professional Manpower Supply Services in Qatar | Holy Bro Group W.L.L',
         description: 'Strategic workforce solutions in Qatar. Skilled, certified manpower for construction, oil & gas, LNG, and infrastructure sectors. Engineering experts, HSE professionals, and technical workforce.',
-        ogTitle: 'Strategic Manpower Supply Solutions | Holy Bro International W.L.L',
+        ogTitle: 'Strategic Manpower Supply Solutions | Holy Bro Group W.L.L',
         ogDescription: 'Certified and performance-driven manpower for engineering, safety, and technical sectors in Qatar.'
     });
 
@@ -159,7 +159,7 @@ const ManpowerServices = () => {
     return (
         <ServiceLayout
             title="Professional Manpower Supply"
-            description="At HOLY BRO INTERNATIONAL W.L.L, we provide tailored manpower solutions for Qatar's most demanding sectors. We deliver skilled, certified, and performance-driven workforce to meet project demands with focus on efficiency, compliance, and safety."
+            description="At HOLY BRO GROUP W.L.L, we provide tailored manpower solutions for Qatar's most demanding sectors. We deliver skilled, certified, and performance-driven workforce to meet project demands with focus on efficiency, compliance, and safety."
             heroImage={ManpowerBannerNew}
             heroImagePosition="center top"
             features={features}

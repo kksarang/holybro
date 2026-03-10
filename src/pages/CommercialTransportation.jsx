@@ -123,9 +123,9 @@ const CommercialTransportation = () => {
     const [activeTab, setActiveTab] = useState(0);
 
     useSEO({
-        title: 'Commercial Transportation & Heavy Haulage Services in Qatar | Holy Bro International',
+        title: 'Commercial Transportation & Heavy Haulage Services in Qatar | Holy Bro Group W.L.L',
         description: 'Reliable commercial transportation, heavy equipment haulage, container logistics, and fleet solutions across Qatar. Serving construction, oil & gas, LNG, and infrastructure sectors.',
-        ogTitle: 'Commercial Transportation Services in Qatar | Holy Bro International',
+        ogTitle: 'Commercial Transportation Services in Qatar | Holy Bro Group W.L.L',
         ogDescription: 'Heavy haulage, container logistics, and fleet solutions for construction, oil & gas, and industrial sectors in Qatar.'
     });
 
@@ -159,7 +159,7 @@ const CommercialTransportation = () => {
                     </motion.h1>
 
                     <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="text-lg text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed">
-                        At HOLY BRO INTERNATIONAL W.L.L, we deliver reliable and scalable commercial transportation across Qatar — from heavy equipment haulage to container logistics, serving Doha, Ras Laffan, Mesaieed, Dukhan, and major industrial zones.
+                        At HOLY BRO GROUP W.L.L, we deliver reliable and scalable commercial transportation across Qatar — from heavy equipment haulage to container logistics, serving Doha, Ras Laffan, Mesaieed, Dukhan, and major industrial zones.
                     </motion.p>
 
                     <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }} className="flex flex-wrap justify-center gap-6 mb-10">
@@ -272,7 +272,7 @@ const CommercialTransportation = () => {
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="text-center mb-12">
                         <p className="text-primary-light font-semibold tracking-widest text-sm uppercase mb-3">Our Advantage</p>
-                        <h2 className="text-3xl md:text-4xl font-bold text-slate-900">Why Choose Holy Bro International?</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold text-slate-900">Why Choose Holy Bro Group?</h2>
                     </div>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {whyChoose.map((item, i) => (
@@ -321,7 +321,7 @@ const CommercialTransportation = () => {
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Let's Move Your Project Forward</h2>
                     <p className="text-slate-400 text-lg mb-10 leading-relaxed">
                         Looking for dependable Commercial Transportation Services in Qatar?<br />
-                        Partner with HOLY BRO INTERNATIONAL W.L.L for secure, efficient, and scalable fleet & logistics solutions.
+                        Partner with HOLY BRO GROUP W.L.L for secure, efficient, and scalable fleet & logistics solutions.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a href="/holybro/#/contact" className="inline-flex items-center justify-center gap-2 bg-primary-light hover:bg-primary-DEFAULT text-white px-8 py-4 rounded-full font-semibold text-lg transition-all hover:-translate-y-0.5 shadow-lg shadow-primary-light/30">

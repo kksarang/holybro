@@ -150,9 +150,9 @@ const safetyStandards = [
 // ─── Main Component ───────────────────────────────────────────────────────────
 const PassengerTransportation = () => {
     useSEO({
-        title: 'Transportation Services in Qatar | Holy Bro International W.L.L',
+        title: 'Transportation Services in Qatar | Holy Bro Group W.L.L',
         description: 'Executive and corporate passenger transportation in Qatar. Airport transfers, business meetings, event transport, rent a car, school/office pick-drop across Doha. Professional chauffeur services 24/7.',
-        ogTitle: 'Premium Transportation Services in Qatar | Holy Bro International',
+        ogTitle: 'Premium Transportation Services in Qatar | Holy Bro Group W.L.L',
         ogDescription: 'Luxury chauffeur services, airport transfers, corporate events, vacation trips, and school pick-drop across Doha and Qatar.'
     });
 
@@ -174,7 +174,7 @@ const PassengerTransportation = () => {
     return (
         <ServiceLayout
             title="Transportation Services in Qatar"
-            description="At HOLY BRO INTERNATIONAL W.L.L, we provide premium passenger transportation services in Qatar for corporate clients, executives, tourists, and daily commuters. Our services focus on comfort, punctuality, professionalism, and safety across Doha and major business hubs."
+            description="At HOLY BRO GROUP W.L.L, we provide premium passenger transportation services in Qatar for corporate clients, executives, tourists, and daily commuters. Our services focus on comfort, punctuality, professionalism, and safety across Doha and major business hubs."
             heroImage={LimoHeroImage}
             features={features}
             galleryImages={galleryImages}
@@ -386,7 +386,7 @@ const PassengerTransportation = () => {
                         </div>
                         <h2 className="text-3xl md:text-5xl font-bold mb-4">Book Transportation in Qatar Today</h2>
                         <p className="text-slate-300 text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
-                            HOLY BRO INTERNATIONAL W.L.L is your trusted partner for premium transportation in Qatar.
+                            HOLY BRO GROUP W.L.L is your trusted partner for premium transportation in Qatar.
                             Whether for business meetings, airport transfers, vacations, or daily commuting — we deliver
                             comfort, reliability, and professionalism every time.
                         </p>

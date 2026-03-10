@@ -26,7 +26,7 @@ const HomeCTA = () => {
                     Ready to Start Your Project?
                 </h2>
                 <p className="text-white text-lg mb-8 max-w-2xl mx-auto opacity-90">
-                    Contact us today to discuss your requirements and how Holy Bro International W.L.L can help you achieve your goals.
+                    Contact us today to discuss your requirements and how Holy Bro Group W.L.L can help you achieve your goals.
                 </p>
                 <Link
                     to="/contact"

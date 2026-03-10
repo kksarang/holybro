@@ -22,9 +22,9 @@ import { useSEO } from '../hooks/useSEO';
 const LimousineServices = () => {
     // SEO Metadata
     useSEO({
-        title: 'Premium Limousine & Chauffeur Services | Holy Bro International W.L.L',
+        title: 'Premium Limousine & Chauffeur Services | Holy Bro Group W.L.L',
         description: 'Luxury limousine and professional chauffeur services in Qatar. Corporate transportation, airport transfers, and VIP transport solutions with premium fleet.',
-        ogTitle: 'Premium Limousine & Chauffeur Services | Holy Bro International W.L.L',
+        ogTitle: 'Premium Limousine & Chauffeur Services | Holy Bro Group W.L.L',
         ogDescription: 'Luxury limousine and professional chauffeur services in Qatar. Corporate transportation, airport transfers, and VIP transport solutions.'
     });
 

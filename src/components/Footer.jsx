@@ -10,7 +10,7 @@ const Footer = () => {
                     {/* Brand Info */}
                     <div>
                         <Link to="/" className="flex items-center space-x-2 mb-6 group">
-                            <img loading="lazy" src={logo} alt="Holy Bro International" className="h-16 w-auto object-contain mb-2" />
+                            <img loading="lazy" src={logo} alt="Holy Bro Group" className="h-16 w-auto object-contain mb-2" />
                         </Link>
                         <p className="text-slate-500 text-sm leading-relaxed mb-6 font-medium">
                             Building the future with excellence. Your trusted partner for Industrial, Construction, Manpower, and Transportation solutions in Qatar.
@@ -102,7 +102,7 @@ const Footer = () => {
 
                 <div className="border-t border-slate-100 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-400 font-medium">
                     <div className="flex flex-col md:flex-row items-center md:space-x-4">
-                        <p>&copy; {new Date().getFullYear()} Holy Bro International W.L.L. All rights reserved.</p>
+                        <p>&copy; {new Date().getFullYear()} Holy Bro Group W.L.L. All rights reserved.</p>
                         <span className="hidden md:block text-slate-300">|</span>
                         <p className="mt-2 md:mt-0">
                             Developed by <a href="https://sarangrajan.in/kksystems" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline transition-all">kksystems</a>

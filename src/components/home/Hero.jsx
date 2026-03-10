@@ -51,7 +51,7 @@ const Hero = () => {
                     <h1 className="text-xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight mb-6 drop-shadow-lg leading-tight uppercase">
                         HOLY BRO <br />
                         <span className="text-white block mt-1">
-                            INTERNATIONAL W.L.L
+                            .........       GROUP W.L.L
                         </span>
                     </h1>
 
