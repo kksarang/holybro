@@ -50,8 +50,8 @@ const Hero = () => {
                     {/* Main Heading */}
                     <h1 className="text-xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight mb-6 drop-shadow-lg leading-tight uppercase">
                         HOLY BRO <br />
-                        <span className="text-white block mt-1">
-                            .........       GROUP W.L.L
+                        <span className="text-white block mt-1 pl-12 sm:pl-20 md:pl-32 lg:pl-48">
+                            GROUP W.L.L
                         </span>
                     </h1>
 
