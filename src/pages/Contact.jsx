@@ -16,7 +16,7 @@ const contactQuickInfo = [
 ];
 
 const Contact = () => {
-    const [formState, setFormState] = useState({ name: '', email: '', service: '', message: '' });
+    const [formState, setFormState] = useState({ name: '', email: '', service_interest: '', message: '' });
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
 
@@ -29,12 +29,28 @@ const Contact = () => {
         e.preventDefault();
         setIsSubmitting(true);
 
-        // Simulate API call
-        await new Promise(resolve => setTimeout(resolve, 1500));
+        try {
+            const formData = new FormData(e.target);
+            const response = await fetch("https://formsubmit.co/ajax/russellvk123@gmail.com", {
+                method: "POST",
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
 
-        setIsSubmitting(false);
-        setIsSuccess(true);
-        setFormState({ name: '', email: '', service: '', message: '' });
+            if (response.ok) {
+                setIsSuccess(true);
+                setFormState({ name: '', email: '', service_interest: '', message: '' });
+            } else {
+                throw new Error('Form submission failed');
+            }
+        } catch (error) {
+            console.error("Error submitting form:", error);
+            alert("Oops! There was a problem submitting your form. Please try again.");
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     const handleChange = (e) => {
@@ -245,6 +261,11 @@ const Contact = () => {
                                 </div>
                             ) : (
                                 <form onSubmit={handleSubmit} className="space-y-6">
+                                    {/* FormSubmit.co Configuration */}
+                                    <input type="hidden" name="_captcha" value="false" />
+                                    <input type="hidden" name="_template" value="table" />
+                                    <input type="hidden" name="_subject" value="New Holybro Website Enquiry" />
+
                                     <div>
                                         <label htmlFor="name" className="block text-sm font-semibold text-slate-700 mb-2">Full Name</label>
                                         <input
@@ -276,20 +297,21 @@ const Contact = () => {
                                     <div>
                                         <label htmlFor="service" className="block text-sm font-semibold text-slate-700 mb-2">Service Interest</label>
                                         <select
-                                            name="service"
+                                            name="service_interest"
                                             id="service"
                                             required
-                                            value={formState.service}
+                                            value={formState.service_interest}
                                             onChange={handleChange}
                                             className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-accent-cyan focus:border-accent-cyan outline-none transition-all"
                                         >
                                             <option value="" disabled>Select a service...</option>
                                             <option value="General Inquiry">General Inquiry</option>
-                                            <option value="Real Estate">Real Estate Services</option>
-                                            <option value="Trading">Trading & Contracting</option>
-                                            <option value="Transportation">Transportation & Logistics</option>
-                                            <option value="Manpower">Manpower Supply</option>
-                                            <option value="Limousine">Limousine Services</option>
+                                            <option value="LNG Plant Components">LNG Plant Components</option>
+                                            <option value="Building Materials Supply">Building Materials Supply</option>
+                                            <option value="Construction & Contracting">Construction & Contracting</option>
+                                            <option value="Professional Manpower">Professional Manpower</option>
+                                            <option value="Transportation Services">Transportation Services</option>
+                                            <option value="Commercial Transportation">Commercial Transportation</option>
                                         </select>
                                     </div>
 
