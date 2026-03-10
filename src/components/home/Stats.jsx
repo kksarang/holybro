@@ -4,7 +4,7 @@ import Section from '../layout/Section';
 import Container from '../layout/Container';
 
 const stats = [
-    { value: '15+', label: 'Years of Excellence' },
+    { value: '13+', label: 'Years of Excellence' },
     { value: '500+', label: 'Projects Completed' },
     { value: '50+', label: 'Enterprise Clients' },
     { value: '100%', label: 'Safety Record' },

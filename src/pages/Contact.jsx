@@ -192,7 +192,7 @@ const Contact = () => {
                                         <div className="space-y-1">
                                             <div className="flex items-center gap-2">
                                                 <span className="font-medium text-industrial-900">Mob:</span>
-                                                <a href="tel:+97431478899" className="hover:text-accent-cyan transition-colors">+974 31478899</a>
+                                                <a href="tel:+97431478899" className="hover:text-accent-cyan transition-colors">+974 31478899 (WhatsApp)</a>
                                             </div>
                                             <div className="flex items-center gap-2">
                                                 <span className="font-medium text-industrial-900">Email:</span>
