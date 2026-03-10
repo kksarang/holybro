@@ -13,7 +13,7 @@ const Home = () => {
             <Helmet>
                 <title>Holybro Group | Leading Business Services in Qatar</title>
                 <meta name="description" content="Holybro Group offers premier services in Industrial Supplies, Construction, Manpower, and Logistics. Your trusted partner for business excellence in Qatar." />
-                <link rel="canonical" href="https://kksarang.github.io/holybro/" />
+                <link rel="canonical" href="https://www.holybrogroupqatar.com/" />
             </Helmet>
 
             <StructuredData type="Organization" />

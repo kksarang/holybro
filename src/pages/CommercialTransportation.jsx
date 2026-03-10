@@ -171,7 +171,7 @@ const CommercialTransportation = () => {
                         ))}
                     </motion.div>
 
-                    <motion.a initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4 }} href="/holybro/#/contact" className="inline-flex items-center gap-2 bg-primary-light hover:bg-primary-DEFAULT text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:-translate-y-0.5 shadow-lg shadow-primary-light/30">
+                    <motion.a initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4 }} href="/#/contact" className="inline-flex items-center gap-2 bg-primary-light hover:bg-primary-DEFAULT text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:-translate-y-0.5 shadow-lg shadow-primary-light/30">
                         Get a Transportation Quote <ChevronRight className="w-5 h-5" />
                     </motion.a>
                 </div>
@@ -324,10 +324,10 @@ const CommercialTransportation = () => {
                         Partner with HOLY BRO GROUP W.L.L for secure, efficient, and scalable fleet & logistics solutions.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="/holybro/#/contact" className="inline-flex items-center justify-center gap-2 bg-primary-light hover:bg-primary-DEFAULT text-white px-8 py-4 rounded-full font-semibold text-lg transition-all hover:-translate-y-0.5 shadow-lg shadow-primary-light/30">
+                        <a href="/#/contact" className="inline-flex items-center justify-center gap-2 bg-primary-light hover:bg-primary-DEFAULT text-white px-8 py-4 rounded-full font-semibold text-lg transition-all hover:-translate-y-0.5 shadow-lg shadow-primary-light/30">
                             Get a Custom Quote <ArrowRight className="w-5 h-5" />
                         </a>
-                        <a href="/holybro/#/services" className="inline-flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 border border-white/20 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all">
+                        <a href="/#/services" className="inline-flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 border border-white/20 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all">
                             View All Services
                         </a>
                     </div>
