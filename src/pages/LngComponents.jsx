@@ -23,7 +23,7 @@ import LngShipImage from '../assets/images/lng_plant_night.webp';
 import ActuationImage from '../assets/images/Actuation.jpg';
 import LngRigImage from '../assets/images/lng_storage.webp';
 import LngPipesImage from '../assets/images/lng_pipeline.webp';
-import OilOneImage from '../assets/oilone.jpg';
+import LNGmponentsImage from '../assets/LNGmponents.jpg';
 import OilPipesImage from '../assets/Oil.jpg';
 import PipelineMaterialsImage from '../assets/oilgasfive.jpg';
 import InstrumentationImage from '../assets/oilgasfour.jpg';
@@ -37,7 +37,7 @@ const productCategories = [
     {
         number: '01',
         icon: Wind,
-        image: OilOneImage,
+        image: LNGmponentsImage,
         title: 'Cryogenic Systems & LNG Components',
         subtitle: 'Ultra-Low Temperature LNG Applications',
         description: 'High-performance solutions engineered to withstand extreme cryogenic conditions while maintaining maximum safety, reliability, and operational efficiency.',
@@ -294,8 +294,8 @@ const LngComponents = () => {
                                     transition={{ duration: 0.3 }}
                                     className="bg-white rounded-3xl shadow-sm border border-slate-100 overflow-hidden"
                                 >
-                                    <div className="flex flex-col lg:flex-row">
-                                        <div className="lg:w-2/5 relative min-h-[280px]">
+                                    <div className="flex flex-col lg:flex-row lg:h-[500px]">
+                                        <div className="lg:w-2/5 relative min-h-[300px] lg:h-full">
                                             <img loading="lazy" src={cat.image} alt={cat.title} className="w-full h-full object-cover" />
                                             <div className={`absolute inset-0 bg-gradient-to-r ${cat.color} opacity-60`} />
                                             <div className="absolute bottom-0 left-0 right-0 p-8 text-white">

@@ -19,8 +19,8 @@ import {
 } from 'lucide-react';
 import BuildingHeroImage from '../assets/images/building_materials_banner_new.webp';
 import BuildingSteelImage from '../assets/building-steel.webp';
-import BuildingConcreteImage from '../assets/building-concrete.webp';
-import BuildingFinishingImage from '../assets/building-finishing.webp';
+import BuildingConcreteImage from '../assets/architwo.jpg';
+import BuildingFinishingImage from '../assets/archi.jpg';
 import ServiceLayout from '../components/services/ServiceLayout';
 import Section from '../components/layout/Section';
 import Container from '../components/layout/Container';
@@ -232,9 +232,9 @@ const BuildingMaterials = () => {
                                     transition={{ duration: 0.3 }}
                                     className="bg-white rounded-3xl shadow-sm border border-slate-100 overflow-hidden"
                                 >
-                                    <div className="flex flex-col lg:flex-row">
+                                    <div className="flex flex-col lg:flex-row lg:h-[500px]">
                                         {/* Image panel */}
-                                        <div className="lg:w-2/5 relative min-h-[280px]">
+                                        <div className="lg:w-2/5 relative min-h-[300px] lg:min-h-full">
                                             <img loading="lazy" src={cat.image}
                                                 alt={cat.title}
                                                 className="w-full h-full object-cover"

@@ -244,7 +244,7 @@ const PassengerTransportation = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.05 }}
-                                className={`bg-white rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex flex-col lg:flex-row ${idx % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}
+                                className={`bg-white rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex flex-col lg:flex-row lg:h-[420px] ${idx % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}
                             >
                                 {/* Media Panel (Image or Coloured accent block) */}
                                 {svc.image ? (

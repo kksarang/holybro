@@ -208,16 +208,16 @@ const CommercialTransportation = () => {
 
                     {/* Tab Content */}
                     <AnimatePresence mode="wait">
-                        <motion.div
-                            key={activeTab}
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            exit={{ opacity: 0, y: -10 }}
-                            transition={{ duration: 0.35 }}
-                            className="grid lg:grid-cols-2 gap-10 items-center"
-                        >
+                            <motion.div
+                                key={activeTab}
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                exit={{ opacity: 0, y: -10 }}
+                                transition={{ duration: 0.35 }}
+                                className="grid lg:grid-cols-2 gap-10 items-center lg:h-[520px]"
+                            >
                             {/* Left: Image */}
-                            <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3]">
+                            <div className="relative rounded-2xl overflow-hidden shadow-2xl lg:h-full min-h-[300px]">
                                 <img loading="lazy" src={ActiveDivision.image} alt={ActiveDivision.label} className="w-full h-full object-cover" />
                                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent" />
                                 <div className="absolute bottom-0 left-0 p-6">

@@ -18,12 +18,12 @@ import {
     Factory,
     ChevronRight
 } from 'lucide-react';
+import ProjectPlaningImage from '../assets/projectplaning.jpg';
+import FacilityImage from '../assets/fecility.jpg';
+import ACImage from '../assets/ac.jpg';
+import MEPImage from '../assets/mep.jpg';
+import ElectricianImage from '../assets/electrician.jpg';
 import ConstImg1 from '../assets/images/const_1.webp';
-import ConstImg2 from '../assets/images/const_2.webp';
-import ConstImg3 from '../assets/images/const_3.webp';
-import ConstImg4 from '../assets/images/const_4.webp';
-import ConstImg5 from '../assets/images/const_5.webp';
-import ConstImg6 from '../assets/images/const_6.webp';
 import ConstImg7 from '../assets/images/const_7.webp';
 import ConstBannerNew from '../assets/images/construction_cranes.webp';
 import ConstScaffolding from '../assets/images/const_scaffolding.webp';
@@ -55,7 +55,7 @@ const constructionDivisions = [
     {
         number: '02',
         icon: Target,
-        image: ConstImg2,
+        image: ProjectPlaningImage,
         title: 'Project Management & Excellence',
         subtitle: 'Precision Planning & Timely Delivery',
         description: 'Advanced project management ensuring projects are delivered on time, within budget, and meeting all technical and safety approvals.',
@@ -73,7 +73,7 @@ const constructionDivisions = [
     {
         number: '03',
         icon: Wrench,
-        image: ConstImg3,
+        image: FacilityImage,
         title: 'Facilities Management',
         subtitle: 'Building Maintenance & Support',
         description: 'Comprehensive facility management focusing on preventive checks, rapid emergency response, and strategic asset lifecycle management.',
@@ -91,7 +91,7 @@ const constructionDivisions = [
     {
         number: '04',
         icon: Thermometer,
-        image: ConstImg4,
+        image: ACImage,
         title: 'AC Maintenance & HVAC',
         subtitle: 'Climate Control Solutions in Qatar',
         description: 'End-to-end HVAC services ensuring uninterrupted cooling performance, superior indoor air quality, and optimized energy efficiency.',
@@ -109,7 +109,7 @@ const constructionDivisions = [
     {
         number: '05',
         icon: Settings,
-        image: ConstImg5,
+        image: MEPImage,
         title: 'MEP Engineering Services',
         subtitle: 'Integrated Mechanical & Electrical Solutions',
         description: 'Reliable execution of Mechanical, Electrical, and Plumbing engineering services essential for building safety and operational continuity.',
@@ -126,7 +126,7 @@ const constructionDivisions = [
     {
         number: '06',
         icon: Zap,
-        image: ConstImg6,
+        image: ElectricianImage,
         title: 'Electrical & Sanitary Contracting',
         subtitle: 'Safe & Efficient Utility Networks',
         description: 'Expert electrical and sanitary contracting designed for safety, maximum efficiency, and strict regulatory compliance.',
@@ -155,8 +155,8 @@ const Construction = () => {
 
     const galleryImages = [
         { id: '1', src: ConstImg1, alt: 'Civil Construction Qatar', caption: 'High-Scale Project Execution' },
-        { id: '2', src: ConstImg2, alt: 'Building Maintenance Qatar', caption: 'Facility Lifecycle Management' },
-        { id: '3', src: ConstImg3, alt: 'MEP Services Qatar', caption: 'Integrated MEP & HVAC Engineering' },
+        { id: '2', src: FacilityImage, alt: 'Building Maintenance Qatar', caption: 'Facility Lifecycle Management' },
+        { id: '3', src: MEPImage, alt: 'MEP Services Qatar', caption: 'Integrated MEP & HVAC Engineering' },
     ];
 
     const features = [
@@ -247,9 +247,9 @@ const Construction = () => {
                                     transition={{ duration: 0.3 }}
                                     className="bg-white rounded-3xl shadow-sm border border-slate-100 overflow-hidden"
                                 >
-                                    <div className="flex flex-col lg:flex-row">
+                                    <div className="flex flex-col lg:flex-row lg:h-[520px]">
                                         {/* Image panel */}
-                                        <div className="lg:w-2/5 relative min-h-[300px]">
+                                        <div className="lg:w-2/5 relative min-h-[300px] lg:h-full">
                                             <img loading="lazy" src={cat.image}
                                                 alt={cat.title}
                                                 className="w-full h-full object-cover"

@@ -26,6 +26,9 @@ import ManpowerTeamImage from '../assets/manpower-team.webp';
 import ManpowerMeetingImage from '../assets/manpower-meeting.webp';
 import ManpowerBannerNew from '../assets/images/manpower_banner_new.webp';
 import ManpowerTeamNew from '../assets/images/manpower_team_new.webp';
+import ManpowerHSEImage from '../assets/proff.jpg';
+import ManpowerTechnicalImage from '../assets/proftech.jpg';
+import ManpowerLogisticsImage from '../assets/techincalsupport.jpg';
 import ServiceLayout from '../components/services/ServiceLayout';
 import Section from '../components/layout/Section';
 import Container from '../components/layout/Container';
@@ -56,7 +59,7 @@ const manpowerCategories = [
     {
         number: '02',
         icon: ShieldCheck,
-        image: ManpowerMeetingImage,
+        image: ManpowerHSEImage,
         title: 'HSE & Safety Professionals',
         subtitle: 'Ensuring Workplace Safety & Compliance',
         description: 'Professional HSE personnel to maintain international safety standards and ensure regulatory compliance across all project environments.',
@@ -75,7 +78,7 @@ const manpowerCategories = [
     {
         number: '03',
         icon: Hammer,
-        image: ManpowerHeroImage,
+        image: ManpowerTechnicalImage,
         title: 'Technical & Skilled Workforce',
         subtitle: 'Certified Workforce for Operational Excellence',
         description: 'Our technical workforce ensures operational continuity and system reliability across industries, vetted for competence and hands-on experience.',
@@ -110,7 +113,7 @@ const manpowerCategories = [
     {
         number: '05',
         icon: Truck,
-        image: ManpowerTeamImage,
+        image: ManpowerLogisticsImage,
         title: 'Drivers & Logistics Support',
         subtitle: 'Safe & Timely Transportation Solutions',
         description: 'Licensed and experienced drivers to support logistics and transportation operations across Qatar, ensuring efficient movement of resources.',
@@ -140,8 +143,8 @@ const ManpowerServices = () => {
 
     const galleryImages = [
         { id: '1', src: ManpowerTeamImage, alt: 'Skilled Workforce Qatar', caption: 'Professional Engineering Teams' },
-        { id: '2', src: ManpowerMeetingImage, alt: 'HSE Safety Meeting', caption: 'Strict Safety & HSE Compliance' },
-        { id: '3', src: ManpowerHeroImage, alt: 'Industrial Manpower Qatar', caption: 'Skilled Technical Workforce' },
+        { id: '2', src: ManpowerHSEImage, alt: 'HSE Safety Meeting', caption: 'Strict Safety & HSE Compliance' },
+        { id: '3', src: ManpowerTechnicalImage, alt: 'Industrial Manpower Qatar', caption: 'Skilled Technical Workforce' },
     ];
 
     const features = [
@@ -233,9 +236,9 @@ const ManpowerServices = () => {
                                     transition={{ duration: 0.3 }}
                                     className="bg-white rounded-3xl shadow-sm border border-slate-100 overflow-hidden"
                                 >
-                                    <div className="flex flex-col lg:flex-row">
+                                    <div className="flex flex-col lg:flex-row lg:h-[560px]">
                                         {/* Image panel */}
-                                        <div className="lg:w-2/5 relative min-h-[280px]">
+                                        <div className="lg:w-2/5 relative min-h-[300px] lg:min-h-full">
                                             <img loading="lazy" src={cat.image}
                                                 alt={cat.title}
                                                 className="w-full h-full object-cover"
