@@ -134,10 +134,10 @@ const About = () => {
                                 Qatar's Trusted Industrial &amp; Technical Solutions Partner
                             </h2>
                             <p className="text-slate-600 text-lg leading-relaxed mb-4">
-                                Holy Bro Group W.L.L is one of Qatar's fastest-growing companies, delivering advanced technical, industrial, and transportation solutions since 2010. Headquartered in Qatar, we specialize in LNG plant component procurement, building material supply, professional manpower services, and commercial transportation.
+                                Holy Bro Group W.L.L is one of Qatar’s fastest-growing companies, providing advanced technical, industrial, and transportation solutions since 2013. Headquartered in Qatar, we specialize in the procurement of oil and gas plant components, building material supply, professional manpower services, and commercial transportation service.
                             </p>
                             <p className="text-slate-600 leading-relaxed">
-                                With over 15 years of experience, we have built a strong reputation for reliability, quality, and operational excellence across multiple industries. Our integrated service model allows us to provide end-to-end solutions tailored to meet the evolving demands of Qatar's industrial and infrastructure sectors.
+                                With over 13+ years of experience, we have built a strong reputation for reliability, quality, and operational excellence across multiple industries. Our integrated service model allows us to provide end-to-end solutions tailored to meet the evolving demands of Qatar's industrial and infrastructure sectors.
                             </p>
                             <div className="mt-8 grid grid-cols-2 gap-4">
                                 {[
@@ -189,7 +189,7 @@ const About = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                         {[
                             {
-                                year: '2010',
+                                year: '2013',
                                 title: 'Humble Beginnings',
                                 desc: "Founded in 2010 as a transportation service provider, Holy Bro Group W.L.L steadily expanded into trading, contracting, and professional manpower supply."
                             },

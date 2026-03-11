@@ -55,18 +55,18 @@ const Footer = () => {
                         <h3 className="text-slate-800 font-bold mb-6">Our Services</h3>
                         <ul className="space-y-4">
                             {[
-                                'LNG Plant Components',
-                                'Building Materials',
-                                'Manpower Supply',
-                                'Construction & Contracting',
-                                'Transportation Services',
+                                { name: 'Oil & Gas Plant Components', path: '/services/oil-gas-lng' },
+                                { name: 'Building Materials', path: '/services/building-materials' },
+                                { name: 'Manpower Supply', path: '/services/manpower-supply' },
+                                { name: 'Construction & Contracting', path: '/services/construction-contracting' },
+                                { name: 'Transportation Services', path: '/services/transportation-services' },
                             ].map((service) => (
-                                <li key={service}>
+                                <li key={service.name}>
                                     <Link
-                                        to="/services"
+                                        to={service.path}
                                         className="text-slate-500 hover:text-primary transition-colors text-sm font-medium"
                                     >
-                                        {service}
+                                        {service.name}
                                     </Link>
                                 </li>
                             ))}
@@ -94,7 +94,7 @@ const Footer = () => {
                             </li>
                             <li className="flex items-center space-x-3 text-slate-500 text-sm font-medium">
                                 <Mail size={18} className="text-primary shrink-0" />
-                                <span>info@holybrogroup.com</span>
+                                <span>info@holybrogroupqatar.com</span>
                             </li>
                         </ul>
                     </div>

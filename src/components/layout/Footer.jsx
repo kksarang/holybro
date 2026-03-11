@@ -41,7 +41,7 @@ const Footer = () => {
                     <div>
                         <h4 className="text-white font-semibold text-lg mb-6">Our Services</h4>
                         <ul className="space-y-3 text-sm">
-                            <li><Link to="/services/oil-gas-lng" className="hover:text-primary transition-colors">LNG Plant Components</Link></li>
+                            <li><Link to="/services/oil-gas-lng" className="hover:text-primary transition-colors">Oil & Gas Plant Components</Link></li>
                             <li><Link to="/services/building-materials" className="hover:text-primary transition-colors">Building Materials Supply</Link></li>
                             <li><Link to="/services/construction-contracting" className="hover:text-primary transition-colors">Construction & Contracting</Link></li>
                             <li><Link to="/services/manpower-supply" className="hover:text-primary transition-colors">Professional Manpower</Link></li>
@@ -81,7 +81,7 @@ const Footer = () => {
                             </li>
                             <li className="flex items-center">
                                 <Mail className="h-5 w-5 mr-3 text-primary shrink-0" />
-                                <span>info@holybrogroup.com</span>
+                                <span>info@holybrogroupqatar.com</span>
                             </li>
                         </ul>
                     </div>

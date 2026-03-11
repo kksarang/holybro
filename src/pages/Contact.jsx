@@ -10,7 +10,7 @@ import ContactHeroImage from '../assets/home_optimized.webp';
 
 const contactQuickInfo = [
     { icon: Phone, value: '+974 31023132', label: 'Call Us' },
-    { icon: Mail, value: 'info@holybrogroup.com', label: 'Email Us' },
+    { icon: Mail, value: 'info@holybrogroupqatar.com', label: 'Email Us' },
     { icon: MapPin, value: 'Doha, Qatar', label: 'Location' },
     { icon: Clock, value: 'Sat - Thu', label: '9AM - 7PM' },
 ];
@@ -198,7 +198,7 @@ const Contact = () => {
                                     icon={Mail}
                                     title="Email Us"
                                     content={
-                                        <a href="mailto:info@holybrogroup.com" className="hover:text-accent-cyan transition-colors">info@holybrogroup.com</a>
+                                        <a href="mailto:info@holybrogroupqatar.com" className="hover:text-accent-cyan transition-colors">info@holybrogroupqatar.com</a>
                                     }
                                 />
                                 <ContactInfoBlock
@@ -306,7 +306,7 @@ const Contact = () => {
                                         >
                                             <option value="" disabled>Select a service...</option>
                                             <option value="General Inquiry">General Inquiry</option>
-                                            <option value="LNG Plant Components">LNG Plant Components</option>
+                                            <option value="Oil & Gas Plant Components">Oil & Gas Plant Components</option>
                                             <option value="Building Materials Supply">Building Materials Supply</option>
                                             <option value="Construction & Contracting">Construction & Contracting</option>
                                             <option value="Professional Manpower">Professional Manpower</option>
