@@ -352,10 +352,10 @@ const ManpowerServices = () => {
                         Whether you need short-term staffing or annual manpower solutions, we deliver workforce excellence from day one.
                     </p>
                     <div className="flex flex-wrap justify-center gap-4">
-                        <a href="/#/contact" className="px-8 py-4 bg-white text-blue-700 rounded-xl font-bold hover:bg-blue-50 transition-all shadow-lg flex items-center">
+                        <a href="/contact" className="px-8 py-4 bg-white text-blue-700 rounded-xl font-bold hover:bg-blue-50 transition-all shadow-lg flex items-center">
                             Get Workforce Solutions <ChevronRight className="w-5 h-5 ml-2" />
                         </a>
-                        <a href="/#/services" className="px-8 py-4 border-2 border-white/40 hover:bg-white/10 text-white rounded-xl font-semibold transition-all">
+                        <a href="/services" className="px-8 py-4 border-2 border-white/40 hover:bg-white/10 text-white rounded-xl font-semibold transition-all">
                             View More Services
                         </a>
                     </div>

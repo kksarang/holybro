@@ -46,7 +46,7 @@ const ServiceDetails = () => {
                 <p className="text-lg text-slate-600 mb-8 max-w-lg mx-auto">
                     The specialized service you are trying to view does not exist or the link might be broken.
                 </p>
-                <a href="/#/services" className="bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-lg font-bold transition-colors shadow-lg shadow-primary/30">
+                <a href="/services" className="bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-lg font-bold transition-colors shadow-lg shadow-primary/30">
                     Explore All Services
                 </a>
             </div>

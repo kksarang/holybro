@@ -363,10 +363,10 @@ const Construction = () => {
                         Through advanced construction management, dependable MEP services, and proactive maintenance strategies, we deliver excellence always.
                     </p>
                     <div className="flex flex-wrap justify-center gap-4">
-                        <a href="/#/contact" className="px-8 py-4 bg-white text-purple-800 rounded-xl font-bold hover:bg-purple-50 transition-all shadow-lg flex items-center">
+                        <a href="/contact" className="px-8 py-4 bg-white text-purple-800 rounded-xl font-bold hover:bg-purple-50 transition-all shadow-lg flex items-center">
                             Start Your Project <ChevronRight className="w-5 h-5 ml-2" />
                         </a>
-                        <a href="/#/services" className="px-8 py-4 border-2 border-white/40 hover:bg-white/10 text-white rounded-xl font-semibold transition-all">
+                        <a href="/services" className="px-8 py-4 border-2 border-white/40 hover:bg-white/10 text-white rounded-xl font-semibold transition-all">
                             View All Services
                         </a>
                     </div>

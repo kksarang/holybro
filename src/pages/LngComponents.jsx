@@ -465,13 +465,13 @@ const LngComponents = () => {
                             </p>
                             <div className="flex flex-col gap-3">
                                 <a
-                                    href="/#/contact"
+                                    href="/contact"
                                     className="px-8 py-4 bg-cyan-500 hover:bg-cyan-400 text-white rounded-xl font-bold transition-all shadow-lg flex items-center justify-center"
                                 >
                                     Request a Quotation <ChevronRight className="w-5 h-5 ml-2" />
                                 </a>
                                 <a
-                                    href="/#/services"
+                                    href="/services"
                                     className="px-8 py-4 border border-white/20 hover:bg-white/10 text-white rounded-xl font-semibold transition-all"
                                 >
                                     View All Services

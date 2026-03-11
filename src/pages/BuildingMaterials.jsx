@@ -401,13 +401,13 @@ const BuildingMaterials = () => {
                         </div>
                         <div className="flex flex-wrap justify-center gap-4">
                             <a
-                                href="/#/contact"
+                                href="/contact"
                                 className="px-8 py-4 bg-white text-amber-700 rounded-xl font-bold hover:bg-amber-50 transition-all shadow-lg flex items-center"
                             >
                                 Request a Quotation <ChevronRight className="w-5 h-5 ml-2" />
                             </a>
                             <a
-                                href="/#/services"
+                                href="/services"
                                 className="px-8 py-4 border-2 border-white/40 hover:bg-white/10 text-white rounded-xl font-semibold transition-all"
                             >
                                 View All Services

@@ -392,13 +392,13 @@ const PassengerTransportation = () => {
                         </p>
                         <div className="flex flex-wrap justify-center gap-4">
                             <a
-                                href="/#/contact"
+                                href="/contact"
                                 className="px-8 py-4 bg-primary hover:bg-primary-dark text-white rounded-xl font-semibold transition-all shadow-lg hover:shadow-primary/25 flex items-center"
                             >
                                 Get a Quote <ChevronRight className="w-5 h-5 ml-2" />
                             </a>
                             <a
-                                href="/#/services"
+                                href="/services"
                                 className="px-8 py-4 border border-white/20 hover:bg-white/10 text-white rounded-xl font-semibold transition-all backdrop-blur-sm flex items-center"
                             >
                                 View All Services
