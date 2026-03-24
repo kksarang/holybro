@@ -11,7 +11,7 @@ const Footer = () => {
                     {/* Company Info */}
                     <div>
                         <Link to="/" className="inline-block mb-6">
-                            <img loading="lazy" src={logo} alt="Holy Bro Group" className="h-28 w-auto object-contain" style={{ filter: 'grayscale(1) invert(1) brightness(2)' }} />
+                            <img loading="lazy" src={logo} alt="Holy Bro Group" className="h-44 w-auto object-contain" style={{ filter: 'grayscale(1) invert(1) brightness(2)' }} />
                         </Link>
                         <p className="text-slate-400 text-sm leading-relaxed mb-6">
                             A leading conglomerate providing top-tier services in Industrial, Construction, Manpower, and Transportation. Committed to excellence and quality since 2008.

@@ -10,7 +10,7 @@ const Footer = () => {
                     {/* Brand Info */}
                     <div>
                         <Link to="/" className="flex items-center space-x-2 mb-6 group">
-                            <img loading="lazy" src={logo} alt="Holy Bro Group" className="h-28 w-auto object-contain mb-2" />
+                            <img loading="lazy" src={logo} alt="Holy Bro Group" className="h-44 w-auto object-contain mb-2" />
                         </Link>
                         <p className="text-slate-500 text-sm leading-relaxed mb-6 font-medium">
                             Building the future with excellence. Your trusted partner for Industrial, Construction, Manpower, and Transportation solutions in Qatar.
