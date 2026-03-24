@@ -67,7 +67,7 @@ const Navbar = () => {
     return (
         <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${navBackground}`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between h-24 items-center">
+                <div className="flex justify-between h-32 items-center">
                     {/* Logo */ }
                     <div className="flex-shrink-0 flex items-center">
                         <NavLink
@@ -77,7 +77,7 @@ const Navbar = () => {
                         >
                             <img loading="lazy" src={logo}
                                 alt="Holy Bro Group"
-                                className="h-20 w-auto object-contain transition-all duration-300"
+                                className="h-32 w-auto object-contain transition-all duration-300"
                                 style={{ filter: 'grayscale(1) invert(1) brightness(2)' }}
                             />
                         </NavLink>
