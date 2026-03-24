@@ -1,7 +1,9 @@
+import { Suspense, lazy } from 'react';
 import { Outlet } from 'react-router-dom';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
-import WhatsAppWidget from '../WhatsAppWidget';
+
+const WhatsAppWidget = lazy(() => import('../WhatsAppWidget'));
 
 const Layout = () => {
     return (
@@ -11,7 +13,9 @@ const Layout = () => {
                 <Outlet />
             </main>
             <Footer />
-            <WhatsAppWidget />
+            <Suspense fallback={null}>
+                <WhatsAppWidget />
+            </Suspense>
         </div>
     );
 };

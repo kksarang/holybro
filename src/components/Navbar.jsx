@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import Button from './ui/Button';
-import logo from '../assets/logoone.webp';
+import logo from '../assets/newwlogo.webp';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -49,13 +49,13 @@ const Navbar = () => {
                 }`}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between items-center h-16 md:h-24">
+                <div className="flex justify-between items-center h-24">
                     {/* Logo */}
                     <Link to="/" className="flex items-center group flex-shrink-0">
                         <img loading="lazy" src={logo}
                             alt="Holy Bro Group"
-                            className="h-10 md:h-16 w-auto object-contain transition-all duration-300"
-                            style={{ filter: !isScrolled && isDarkHero ? 'brightness(0) invert(1)' : 'none' }}
+                            className="h-20 w-auto object-contain transition-all duration-300"
+                            style={{ filter: !isScrolled && isDarkHero ? 'grayscale(1) invert(1) brightness(2)' : 'none' }}
                         />
                     </Link>
 

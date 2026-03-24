@@ -4,7 +4,7 @@ import { Menu, X, ChevronDown } from 'lucide-react';
 // eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from 'framer-motion';
 import Button from '../ui/Button';
-import logo from '../../assets/logoone.webp';
+import logo from '../../assets/newwlogo.webp';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -67,8 +67,8 @@ const Navbar = () => {
     return (
         <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${navBackground}`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between h-20 items-center">
-                    {/* Logo */}
+                <div className="flex justify-between h-24 items-center">
+                    {/* Logo */ }
                     <div className="flex-shrink-0 flex items-center">
                         <NavLink
                             to="/"
@@ -77,7 +77,8 @@ const Navbar = () => {
                         >
                             <img loading="lazy" src={logo}
                                 alt="Holy Bro Group"
-                                className="h-14 md:h-16 w-auto object-contain transition-all duration-300"
+                                className="h-20 w-auto object-contain transition-all duration-300"
+                                style={{ filter: 'grayscale(1) invert(1) brightness(2)' }}
                             />
                         </NavLink>
                     </div>
