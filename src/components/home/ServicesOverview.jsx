@@ -142,7 +142,8 @@ const ServicesOverview = () => {
                                 </div>
 
                                 {/* Content */}
-                                <h3 className="service-title text-2xl font-bold mb-4">
+                                <h3 className="service-title text-2xl font-bold mb-4 flex items-baseline gap-3">
+                                    <span className="text-secondary/50 font-mono text-xl">{index + 1}.</span>
                                     {service.title}
                                 </h3>
                                 <p className="text-slate-600 text-base leading-relaxed mb-8 flex-grow">

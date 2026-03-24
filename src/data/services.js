@@ -12,17 +12,6 @@ export const services = [
         slug: 'oil-gas-lng'
     },
     {
-        title: 'Building Materials Supply',
-        description: 'High-grade materials engineered for strength and durability, including structural steel, concrete, and premium finishing solutions for all projects.',
-        shortDescription: 'Building & Construction Materials',
-        icon: BrickWall,
-        features: ['Structural & Civil Materials', 'Finishing & Architectural', 'MEP Construction Materials', 'Project-Based Customization'],
-        color: 'bg-amber-50 text-amber-600',
-        borderColor: 'hover:border-amber-200',
-        slug: 'building-materials'
-    },
-
-    {
         title: 'Transportation Services',
         description: 'Premium executive and personal transportation services in Qatar for corporate clients, executives, tourists, and daily commuters. Airport transfers, corporate events, vacation trips, and more.',
         shortDescription: 'Executive & Chauffeur Services in Qatar',
@@ -61,5 +50,15 @@ export const services = [
         color: 'bg-indigo-50 text-indigo-600',
         borderColor: 'hover:border-indigo-200',
         slug: 'manpower-supply'
+    },
+    {
+        title: 'Building Materials Supply',
+        description: 'High-grade materials engineered for strength and durability, including structural steel, concrete, and premium finishing solutions for all projects.',
+        shortDescription: 'Building & Construction Materials',
+        icon: BrickWall,
+        features: ['Structural & Civil Materials', 'Finishing & Architectural', 'MEP Construction Materials', 'Project-Based Customization'],
+        color: 'bg-amber-50 text-amber-600',
+        borderColor: 'hover:border-amber-200',
+        slug: 'building-materials'
     }
 ];

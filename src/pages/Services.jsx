@@ -141,7 +141,8 @@ const Services = () => {
                                             <service.icon className={`h-8 w-8 text-${service.color}-600 group-hover:text-white transition-colors duration-300`} />
                                         </div>
 
-                                        <h3 className="text-2xl font-bold text-industrial-900 mb-4 group-hover:text-accent-cyan transition-colors">
+                                        <h3 className="text-2xl font-bold text-industrial-900 mb-4 group-hover:text-accent-cyan transition-colors flex items-baseline gap-3">
+                                            <span className="text-secondary/50 font-mono text-xl">{index + 1}.</span>
                                             {service.title}
                                         </h3>
 
