@@ -10,7 +10,7 @@ const StructuredData = ({ type = 'Organization', data }) => {
                     "@type": "Organization",
                     "name": "Holy Bro Group W.L.L",
                     "url": "https://www.holybrogroupqatar.com/",
-                    "logo": "https://www.holybrogroupqatar.com/logo.webp",
+                    "logo": "https://www.holybrogroupqatar.com/logomain.png",
                     "description": "Leading company in Qatar providing LNG plant components, construction materials, manpower supply, and commercial transportation services.",
                     "address": {
                         "@type": "PostalAddress",
