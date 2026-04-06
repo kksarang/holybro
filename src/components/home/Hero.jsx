@@ -13,7 +13,10 @@ const Hero = () => {
     // Hero Background Image from assets
 
     return (
-        <section id="home" className="relative w-full aspect-video overflow-hidden flex items-center pt-0 md:pt-0 hero-container">
+        <section
+            id="home"
+            className="relative w-full aspect-video overflow-hidden flex items-stretch md:items-center pt-0 hero-container"
+        >
             {/* 1. Hero Background Image with Parallax */}
             <motion.div
                 className="absolute inset-0 w-full h-full z-0"
@@ -31,8 +34,7 @@ const Hero = () => {
             {/* 2. Overlay Removed - Clean Background */}
 
             {/* 3. Content Container */}
-            <div className="relative z-20 container mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center">
-
+            <div className="relative z-20 container mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-end pt-24 pb-10 md:justify-center md:pt-0 md:pb-0">
                 <motion.div
                     initial={{ opacity: 0, x: -30 }}
                     animate={{ opacity: 1, x: 0 }}
