@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import PropTypes from 'prop-types';
+import { GOOGLE_MAPS_PLACE_URL } from '../data/contactInfo';
 
 const StructuredData = ({ type = 'Organization', data }) => {
     const getStructuredData = () => {
@@ -14,9 +15,12 @@ const StructuredData = ({ type = 'Organization', data }) => {
                     "description": "Leading company in Qatar providing LNG plant components, construction materials, manpower supply, and commercial transportation services.",
                     "address": {
                         "@type": "PostalAddress",
-                        "addressCountry": "QA",
-                        "addressLocality": "Qatar"
+                        "streetAddress": "Madhina Khalifa South, AL Rabeeha building 3, 2nd Floor - Room No.S4, Al jazeera Al Arabia District - 34, Street No. 362 - Building no 128",
+                        "addressLocality": "Doha",
+                        "postalCode": "92807",
+                        "addressCountry": "QA"
                     },
+                    "hasMap": GOOGLE_MAPS_PLACE_URL,
                     "contactPoint": {
                         "@type": "ContactPoint",
                         "telephone": "+974 31023132",

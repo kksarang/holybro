@@ -76,23 +76,14 @@
       padding-top: 0 !important;
     }
 
+    /* Hero image is 16:9 — match frame so object-contain shows the full photo (no crop, no fake “gap”) */
     #home {
       margin-top: 0 !important;
       padding-top: 0 !important;
       position: relative;
       top: 0 !important;
-      height: auto !important;
-      min-height: auto !important;
       width: 100vw !important;
-      aspect-ratio: 16 / 9 !important;
-    }
-
-    .hero-image-inner {
-      position: absolute !important;
-      width: 100% !important;
-      height: 100% !important;
-      background-size: contain !important;
-      background-position: center !important;
+      background-color: #0b3c5d !important;
     }
   }
 
@@ -102,8 +93,8 @@
   }
 
   @media (max-width: 768px) {
-    .hero-container {
-      background-color: white !important; /* Mobile seamless transition */
+    .hero-container:not(#home) {
+      background-color: white !important;
     }
   }
 
@@ -117,20 +108,13 @@
       display: none !important;
     }
     
-    /* Remove colored section after banner - force white */
     .hero-container + *,
-    main,
+    main > *:not(#home),
     section:not(.hero-container) {
       background-color: white !important;
       background: white !important;
     }
     
-    /* Ensure no colored overlay/gradient remains on mobile */
-    .hero-container [class*="overlay"],
-    .hero-container [class*="gradient"] {
-      background: none !important;
-      background-color: transparent !important;
-    }
   }
 
   /* Desktop keeps button visible */
@@ -140,10 +124,4 @@
     }
   }
 
-  /* Tagline spacing fix for mobile logo overlap */
-  @media (max-width: 768px) {
-    .hero-tagline-container {
-      margin-top: 50px !important;
-    }
-  }
 }

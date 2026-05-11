@@ -49,12 +49,12 @@ const Navbar = () => {
                 }`}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between items-center h-32">
-                    {/* Logo */}
+                <div className="flex h-16 items-center justify-between md:h-32">
+                    {/* Logo — smaller on mobile so hero can use vertical space */}
                     <Link to="/" className="flex items-center group flex-shrink-0">
                         <img loading="lazy" src={logo}
                             alt="Holy Bro Group"
-                            className="h-32 w-auto object-contain transition-all duration-300"
+                            className="h-[60px] w-auto max-w-[130px] object-contain transition-all duration-300 md:h-32 md:max-w-none"
                             style={{ filter: !isScrolled && isDarkHero ? 'grayscale(1) invert(1) brightness(2)' : 'none' }}
                         />
                     </Link>

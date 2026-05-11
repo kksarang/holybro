@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Facebook, Twitter, Instagram, Linkedin, MapPin, Phone, Mail } from 'lucide-react';
 import logo from '../assets/newwlogo.webp';
+import { OFFICE_ADDRESS_LINES, GOOGLE_MAPS_PLACE_URL } from '../data/contactInfo';
 
 const Footer = () => {
     return (
@@ -79,14 +80,19 @@ const Footer = () => {
                         <ul className="space-y-4">
                             <li className="flex items-start space-x-3 text-slate-500 text-sm font-medium">
                                 <MapPin size={18} className="text-primary mt-0.5 shrink-0" />
-                                <span>
-                                    Madhina Khalifa South, AL Rabeeha building 3,<br />
-                                    2nd Floor -Room No.S4,<br />
-                                    Al jazeera Al Arabia District -34,<br />
-                                    Street No. 362 - Building no 128,<br />
-                                    PO. Box .92807<br />
-                                    State of Qatar
-                                </span>
+                                <a
+                                    href={GOOGLE_MAPS_PLACE_URL}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:text-primary transition-colors"
+                                >
+                                    {OFFICE_ADDRESS_LINES.map((line, i) => (
+                                        <span key={i}>
+                                            {line}
+                                            {i < OFFICE_ADDRESS_LINES.length - 1 ? <br /> : null}
+                                        </span>
+                                    ))}
+                                </a>
                             </li>
                             <li className="flex items-center space-x-3 text-slate-500 text-sm font-medium">
                                 <Phone size={18} className="text-primary shrink-0" />
@@ -105,7 +111,7 @@ const Footer = () => {
                         <p>&copy; {new Date().getFullYear()} Holy Bro Group W.L.L. All rights reserved.</p>
                         <span className="hidden md:block text-slate-300">|</span>
                         <p className="mt-2 md:mt-0">
-                            Developed by <a href="https://sarangrajan.in/kksystems" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline transition-all">kksystems</a>
+                            Developed by <a href="https://sarangrajan.in/hexenity" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline transition-all">hexenity</a>
                         </p>
                     </div>
                     <div className="flex space-x-6 mt-4 md:mt-0">

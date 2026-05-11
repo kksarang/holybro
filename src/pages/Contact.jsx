@@ -7,11 +7,17 @@ import HomeCTA from '../components/home/HomeCTA';
 import Section from '../components/layout/Section';
 import Container from '../components/layout/Container';
 import ContactHeroImage from '../assets/home_optimized.webp';
+import {
+    OFFICE_ADDRESS_LINES,
+    OFFICE_LOCATION_SHORT,
+    GOOGLE_MAPS_EMBED_URL,
+    GOOGLE_MAPS_PLACE_URL,
+} from '../data/contactInfo';
 
 const contactQuickInfo = [
     { icon: Phone, value: '+974 31023132', label: 'Call Us' },
     { icon: Mail, value: 'info@holybrogroupqatar.com', label: 'Email Us' },
-    { icon: MapPin, value: 'Doha, Qatar', label: 'Location' },
+    { icon: MapPin, value: OFFICE_LOCATION_SHORT, label: 'Location' },
     { icon: Clock, value: 'Sat - Thu', label: '9AM - 7PM' },
 ];
 
@@ -61,7 +67,7 @@ const Contact = () => {
         <>
             <Helmet>
                 <title>Contact Us | Holybro Group</title>
-                <meta name="description" content="Reach out to Holybro Group for your business needs. Contact us via phone, email, or visit our office in Doha, Qatar." />
+                <meta name="description" content="Reach out to Holy Bro Group W.L.L — phone, email, or visit us at Madhina Khalifa South, Al Rabeeha building 3, Qatar. View on Google Maps." />
             </Helmet>
 
             {/* ========== PREMIUM HERO SECTION ========== */}
@@ -177,11 +183,21 @@ const Contact = () => {
                                     title="Visit Us"
                                     content={
                                         <>
-                                            Madhina Khalifa South, AL Rabeeha building 3,<br />
-                                            2nd Floor - Room No.S4,<br />
-                                            Al jazeera Al Arabia District - 34,<br />
-                                            Street No. 362 - Building no 128,<br />
-                                            PO. Box 92807, State of Qatar
+                                            {OFFICE_ADDRESS_LINES.map((line, i) => (
+                                                <span key={i}>
+                                                    {line}
+                                                    {i < OFFICE_ADDRESS_LINES.length - 1 ? <br /> : null}
+                                                </span>
+                                            ))}
+                                            <br />
+                                            <a
+                                                href={GOOGLE_MAPS_PLACE_URL}
+                                                className="mt-2 inline-block font-semibold text-accent-cyan hover:underline"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                Open in Google Maps →
+                                            </a>
                                         </>
                                     }
                                 />
@@ -227,12 +243,13 @@ const Contact = () => {
                             {/* Map Placeholder */}
                             <div className="mt-10 h-64 bg-slate-200 rounded-2xl overflow-hidden relative shadow-inner border border-slate-200">
                                 <iframe
-                                    title="Google Map"
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.874465492723!2d51.4429712!3d25.2861068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45c534ffdce87f%3A0x44d9319f78cfd4b1!2sDoha%2C%20Qatar!5e0!3m2!1sen!2sus!4v1707000000000!5m2!1sen!2sus"
+                                    title="Holy Bro Group W.L.L on Google Maps"
+                                    src={GOOGLE_MAPS_EMBED_URL}
                                     width="100%"
                                     height="100%"
-                                    allowFullScreen=""
-                                    loading="lazy" referrerPolicy="no-referrer-when-downgrade"
+                                    allowFullScreen
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
                                     className="border-0 absolute inset-0 grayscale hover:grayscale-0 transition-all duration-500"
                                 />
                             </div>

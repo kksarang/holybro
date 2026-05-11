@@ -21,6 +21,15 @@
     ExpiresDefault "access plus 2 days"
 </IfModule>
 
+# Refresh favicon/logo faster when changed
+<IfModule mod_headers.c>
+    <FilesMatch "^(favicon\.ico|favicon-48x48\.png|apple-touch-icon\.png|logomain\.png|manifest\.json)$">
+        Header set Cache-Control "no-cache, no-store, must-revalidate"
+        Header set Pragma "no-cache"
+        Header set Expires "0"
+    </FilesMatch>
+</IfModule>
+
 # Disable Directory Browsing
 Options -Indexes
 
